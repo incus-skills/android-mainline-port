@@ -62,7 +62,7 @@ Tag: **[Frequent] [Time-consuming]**
 
 ### First Linux Write to a PMIC Register Disrupts an Entire Test Run When Bundled into a Large Change
 
-- **Symptoms:** after RTC writes are enabled, SPMI arbitration rejects writes repeatedly (dozens per second), preventing other functions from being tested in that run.
+- **Symptoms:** after RTC writes are enabled, SPMI arbitration rejects writes repeatedly (more than ten times per second), preventing other functions from being tested in that run.
 - **Resolution:** make the first write to a PMIC or security-sensitive register a separate, single-variable experiment from a RAM-booted system.
 - **Applicability:** Qualcomm; general method.
 
