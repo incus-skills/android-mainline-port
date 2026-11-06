@@ -3,12 +3,12 @@
 ## 当前入口
 
 - 当前遍历：**Pass 1 — 初始结构与语言重构**
-- 当前会话检查点：**Checkpoint 03**
-- 最近完成的源文件：`experience/gpu.md`
-- 当前源文件位置：`experience/touch-and-input.md` 尚待本轮检查。
-- 下一步：读取并重构 `experience/touch-and-input.md`，观察触控、按键、键盘配件、手写笔与指纹支持的领域结构，以及它们与显示验收和电源/设备资源的明确联系。
-- 最近检查点：[Pass 1 / Checkpoint 03](checkpoints/pass-1-checkpoint-03.md)。
-- 前一位置：[Pass 1 / Checkpoint 02](checkpoints/pass-1-checkpoint-02.md)。
+- 当前会话检查点：**Checkpoint 04**
+- 最近完成的源文件：`experience/touch-and-input.md`
+- 当前源文件位置：`experience/audio.md` 尚待本轮检查。
+- 下一步：读取并重构 `experience/audio.md`，独立观察音频 DSP、AudioReach、功放、麦克风、UCM、PipeWire 与音量路径的结构、验收方式、故障记录和跨文件关系。
+- 最近检查点：[Pass 1 / Checkpoint 04](checkpoints/pass-1-checkpoint-04.md)。
+- 前一位置：[Pass 1 / Checkpoint 03](checkpoints/pass-1-checkpoint-03.md)。
 
 ## 遍历编号约定
 
@@ -24,8 +24,8 @@
 1. 阅读本文件，确认 Pass、当前文档位置和调查边界。
 2. 阅读 [Pass 1 / Checkpoint 03](checkpoints/pass-1-checkpoint-03.md)，再按需回看 Checkpoint 02 和 Checkpoint 01。
 3. 阅读 `reconstruction/zh/README.md` 和 `translation/INVENTORY.md`。
-4. 按需回看 `experience/patterns.md`、`experience/kernel-and-resources.md`、`experience/display.md` 与 `experience/gpu.md` 的相关源文和重构记录。
-5. 独立检查原始源文件 `experience/touch-and-input.md`，区分其自身陈述与此前显示/GPU 文档形成的预期。
+4. 按需回看 `experience/patterns.md`、`experience/display.md`、`experience/kernel-and-resources.md` 与 `experience/touch-and-input.md` 的相关源文和重构记录。
+5. 独立检查原始源文件 `experience/audio.md`，区分其自身陈述与此前输入/显示材料形成的预期。
 
 ## 当前继续约束
 
