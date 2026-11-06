@@ -97,3 +97,99 @@ For the current structural and linguistic reconstruction purpose, the two recomm
 The unresolved items require additional device, implementation, peer-side or author evidence. They do not prevent moving to the next document. Reopen a specific issue only if a new discriminating source, relevant observer-position change, translation conflict or concrete consequence test becomes available.
 
 No driver, firmware, regulatory, IOMMU, power-sequencing, BlueZ, Bluetooth protocol or real-device claim has been technically validated in this pass.
+
+
+---
+
+## Pass 3 — Technical and semantic translation review
+
+### Review identity and evidence
+
+- Pass: Pass 3 — technical and semantic review of the operational English translation set.
+- Source: `experience/wireless.md`
+- Source branch / blob SHA: `main` / `c8ae92e9d20207fd686398412da8df3e49216768`
+- English target: `translation/en/experience/wireless.md`
+- Target baseline before this review: `b033277ac0b59b81060adc54d2922c191037c27f`
+- Target after the source-justified correction: `8bf6c27e2eb3a88fd0b55c8bd02dd7b10c1ee087`
+- Pass 3 criteria: `0870d3ea261a6354649379b96891cda4ca2a0ba6`
+- Current position: `f28ee4ccac568bb283e13a4c1d40bb65c9076969`
+- Current checkpoint: `55a7fbd7ef2c3ac922282ff6c53e9e31c51a79b0`
+- Glossary: `7cd456b51223fd2cd3cf408cb14bae7f7d167254`
+- Translation instructions: `translation/README.md`, Phase 4; blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`
+- Existing Pass 1 review: retained unchanged as provenance; blob SHA before this append `f0ac2791ea27b600678b2ed5b87f9cefc2eaae1d`.
+
+### Observer position and scope
+
+Compare the complete Chinese source and English target for semantic fidelity, imperative force, conditional scope, decision logic, technical tokens, structure, cross-document references and uncertainty. This is a translation review only. Current upstream behaviour, technical correctness and real-device validation are excluded.
+
+### Observations
+
+**1. Imperative force**
+
+The route instructions preserve the source's requirements and cautions: collect vendor evidence read-only; preserve normal IOMMU isolation and do not enable passthrough; import patches with provenance; use a version-matched firmware set; set device identity before the relevant service; and apply the vendor transmit-power limit. The Bluetooth route retains the requirement not to hard-code the address in the device tree.
+
+The failure remedies retain their original force, including prohibitions against using passthrough to conceal the stream-ID defect, treating fixed 20 dBm as a production solution, copying another device's calibrated board data, reloading the driver within one boot, or changing the regulatory country code at runtime. Recommendations and conditional remedies remain distinct from prohibitions.
+
+**2. Conditional scope**
+
+The translation retains the distinct conditions attached to the cases: 5 GHz versus 2.4 GHz; the 40 MHz observation and its HE confounder; regulatory regions without 6 GHz rules; board-data lookup by full key; firmware needed during initramfs; multiple-PMIC platforms; first-boot address injection; and suspend/resume in s2idle.
+
+The two causes grouped under “5 GHz Scan Returns No Results” remain separate cases. The source's applicability labels are retained where supplied and are not generalised to all Qualcomm devices.
+
+**3. Decision logic**
+
+The Wi-Fi and Bluetooth routes and their completion criteria remain separate. The Wi-Fi progression retains the distinction between PCIe link, firmware board match, interface appearance, scan, association, network reachability, throughput, stability, reconnection and MAC stability. Bluetooth retains cold-boot availability, correct address, discovery, pairing, actual peripheral function, reconnection and suspend/resume. Neither scan visibility nor `hci0 up` is promoted to completion.
+
+The translation preserves the diagnostic branches for the two 5 GHz scan failures, the requirement to separate channel width from HE when testing the 40 MHz workaround, and the two-ended attribution requirement for the Bluetooth peer-side ERTM issue.
+
+**4. Technical tokens**
+
+The complete pair was checked for commands, paths, identifiers, kernel interfaces, configuration names, error strings, units and version references. Tokens remain textually intact, including `qcom,wcnXXXX-pmu`, `ath11k`, `ath12k`, `hci_qca`, `iommu.passthrough=1`, `board-2.bin`, `board.bin`, `bdencoder`, `iommu-map`, `config_sid`, `rmmod`, `insmod`, `regulatory.db`, `btmgmt`, `epoll_ctl`, `EPERM`, `systemctl show`, `strace`, `btmgmt public-addr`, `hci0 up`, `UHID`, `s2idle`, `kprobe`, `l2ping`, `btsnoop`, `WLAN SMMU`, `RTNL`, `802.11d`, `BlueZ 5.8x`, and the approximately 20 dBm and 4.9–5.9 GHz values.
+
+One material omission was found in the SAR-power failure description. The source says the vendor limit means transmit power never reaches the approximately 20 dBm failure threshold, whereas the mainline driver does not apply that limit. The baseline English text stated that the vendor driver applied the limit but omitted this explicit consequence. The target was corrected to state that transmit power therefore never reaches the threshold and that mainline does not apply the limit.
+
+**5. Structure**
+
+The recommended routes, completion criteria, individual failure records and unresolved section remain in their source order and retain their separate roles. The source varies the fields present in each failure record; the translation does not impose a uniform record template or add missing confirmation/prevention sections.
+
+The two 5 GHz scan-result causes are presented as separate cases, preserving their different mechanisms and remedies. The three unresolved items remain grouped under the unresolved heading.
+
+**6. Cross-document references**
+
+The Chinese source contains no Markdown links or named dependencies on other project documents. The English target has not introduced any. No additional pattern or experience documents were needed to assess a source-to-target claim, so the collection-level Pattern C/F/G/H associations noted in the Pass 1 record were not promoted to source-established dependencies or revalidated in this bounded operation.
+
+**7. Uncertainty**
+
+All three source-unresolved matters remain unresolved in the translation: recurring Bluetooth `-84 frame reassembly`; the vendor's approximately eight-second boot-time radio calibration without a mainline counterpart; and the ACL return-path stall after repeated reconnections, whose responsible side is unknown. No cause, remedy or ownership was inferred.
+
+### Decisions
+
+- Corrected the omitted SAR-threshold consequence in the English target. This is a source-justified semantic correction, not an external technical correction.
+- No other target change was justified by the source comparison.
+- Retained the separate Wi-Fi and Bluetooth routes, completion criteria, failure mechanisms and unresolved boundaries.
+- Did not consult external technical documentation or validate any implementation claim.
+- Did not modify the Pass 1 review content; this Pass 3 record is appended.
+
+### Unresolved matters
+
+The three unresolved source matters listed above remain unresolved. The source does not establish a unified wireless architecture or common acceptance model. The current upstream status of cited community patches and all real-device behaviour remain outside this review.
+
+### Validation
+
+- Verified the exact source and target baseline revisions stated in Task 001 before review.
+- Verified the task-specified Pass 3 criteria, current position, checkpoint and glossary revisions.
+- Read the translation README's Phase 4 instructions.
+- Compared the complete source and target across all seven Pass 3 dimensions.
+- Re-read the corrected target passage after the single source-justified change.
+- Source blob remains `c8ae92e9d20207fd686398412da8df3e49216768`; no source write was made.
+- No external technical validation or real-device test was performed.
+
+### Change boundary
+
+- Changed: `translation/en/experience/wireless.md` — one sentence-level semantic correction concerning the SAR limit and threshold.
+- Changed: this review record — appended this Pass 3 section.
+- Deliberately unchanged: Chinese source, Pass 1 review section, Pass 3 criteria, current-position/checkpoint records, glossary, task definitions and all unrelated files.
+
+### Next dependency
+
+No additional document is required to complete this bounded source-to-target review. The orchestrator may independently integrate and evaluate this handoff. The next project-level operation remains an orchestrator decision; this worker does not alter the continuation position.
