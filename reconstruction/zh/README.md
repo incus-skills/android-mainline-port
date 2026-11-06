@@ -69,3 +69,7 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 
 
 - [Pass 1 scope reconciliation](continuation/checkpoints/pass-1-scope-reconciliation.md) records the operational-document scope, classifies the remaining repository-facing/integration/legal/image materials, and establishes the bounded Pass 1 completion claim.
+
+
+- [README.md reconstruction](README.md) records the repository-facing introduction role, its correspondence with the existing English README, one wording correction and the remaining boundaries.
+- [Pass 2 / Checkpoint 01](continuation/checkpoints/pass-2-checkpoint-01.md) records the new observer position and bounded README review.
