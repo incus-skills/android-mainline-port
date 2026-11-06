@@ -192,6 +192,7 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/usb-and-storage.md.md`](reviews/experience/usb-and-storage.md.md) records USB/Type-C and storage routes, active-slot image-set rotation, FILL/DONT_CARE semantics, backup limits, explicit Pattern A/D/I references and the absence of a dedicated unresolved section.
 - [`translation/reviews/experience/ubuntu-userspace.md.md`](reviews/experience/ubuntu-userspace.md.md) records the separation from the Ubuntu architecture reference, package/initramfs lifecycle, snap provider-consumer boundary, GNOME setup contexts, cold-boot/systemd cases, explicit Pattern C/D/G references and the unresolved inhibitor-lock cause.
 - [`translation/reviews/experience/build-and-release.md.md`](reviews/experience/build-and-release.md.md) records the build-environment reference boundary, measurement and execution-context distinctions, cache/artifact identity, reproducibility inputs, release integrity, external-documentation boundary and explicit Pattern D reference.
+- [`translation/reviews/experience/testing-and-process.md.md`](reviews/experience/testing-and-process.md.md) records evidence and acceptance distinctions, test-tool and measurement failure modes, host/device and user boundaries, collaboration constraints, the candidate-kernel safety incident, explicit Pattern E/F/H/I references and the technical-validation boundary.
 
 ### Chinese reconstruction surface
 
