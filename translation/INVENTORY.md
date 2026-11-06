@@ -145,7 +145,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 
 | Source document | Reconstruction / English artifact | Current status | Notes |
 |---|---|---|---|
-| `SKILL.md` | English draft produced in the working conversation; repository artifact not yet committed | `translated` (draft) | Requires source comparison and repository placement. |
+| `SKILL.md` | [`translation/en/SKILL.md`](en/SKILL.md) | `translated` | English translation committed from the supplied draft; source frontmatter description translated. Translation review notes remain separate from the functional skill text. Semantic/technical review remains outstanding. |
 | `references/process.md` | [`translation/en/references/process.md`](en/references/process.md) | `translated` | Document-level structure reconstructed; English draft committed. Semantic/technical review remains outstanding. |
 
 The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
