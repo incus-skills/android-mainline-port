@@ -227,7 +227,7 @@ An independent reconstruction rejected acceptance because this review contained 
 - Removed `LOCALVERSION_AUTO` from the technical-token inventory. It is not present in the Chinese source or English target and therefore must not be reported as compared and retained.
 - Replaced `full-system QEMU/TCG` with `full-system QEMU emulation`. The source/target pair distinguishes full-system QEMU from qemu-user but does not specify TCG; the review must not add that implementation detail.
 
-The corrected review was re-read in full. The technical-token list no longer contains `LOCALVERSION_AUTO`, and the execution-mode description no longer contains `TCG`. The source, target and original Pass 1 review content remain unchanged. No translation correction is introduced.
+The corrected Pass 3 section was re-read in full. Its technical-token inventory no longer lists `LOCALVERSION_AUTO`, and its execution-mode comparison now says `full-system QEMU emulation` without the unsupported `TCG` qualification. The pre-existing Pass 1 record also contains the earlier `full-system QEMU/TCG` wording; it is retained verbatim as historical Pass 1 material under the task's requirement to preserve that record, and is not evidence for the corrected Pass 3 comparison. The source, target and original Pass 1 review content remain unchanged. No translation correction is introduced.
 
 **Correction boundary:** only the two unsupported phrases in this Pass 3 review record were changed. No other review conclusions, scope statements or claims were revised.
 
