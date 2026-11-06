@@ -7,7 +7,7 @@
 - Source blob SHA: `2f87d2512753af379615e05a7d15ea773fbafc0f`
 - English artifact: `translation/en/references/ubuntu.md`
 - Translation branch: `translation/english-reconstruction`
-- Translation commit: `17292e971d8ba97523477b7ae804e2ca9f865582`
+- Translation commit: `a073918b5e008399a075b47ed87886dd46be264d`
 
 ## Translation intent
 
@@ -110,6 +110,29 @@ These links and shared subjects establish relationships, not a complete formal d
 - Representation: source's layered diagram preserved as a text diagram; no new topology introduced.
 - Source ambiguity: storage mechanism, hypervisor-node target and full cross-layer dependencies remain unspecified.
 - Technical correctness and current applicability: **not reviewed or validated**.
-- Current status: **translated**. Semantic review and technical validation remain outstanding.
+## Pass 3 source-based semantic review
 
-The next review should compare the translation against the Chinese source and examine the layer model alongside the experience library. Distribution-specific package behaviour, hook semantics, snap interfaces and current version compatibility require a separate technical review.
+The source and English translation were compared section by section. One narrow fidelity correction was made in the release-attachments list: `软件包包` is rendered as **software-package bundle**, preserving the source's reference to a bundled release artifact rather than flattening it to the plural “software packages”. No other source-driven semantic correction was required.
+
+The review confirmed preservation of:
+- the Ubuntu 26.04 LTS + GNOME baseline and the qualification that layer/package granularity and naming should follow the actual project;
+- the four project-controlled layers and the separate official distribution root-filesystem base;
+- layer-specific change responsibilities and the minimum separation of kernel, firmware and desktop policy;
+- package names, package contents, optional consolidation/removal conditions and ownership/update-frequency rationale;
+- ABI increment/no-reuse rules, ledger contents, version examples and kernel packaging constraints;
+- boot-image hook locations, optional active-slot write/readback, rollback retention, missing-prerequisite exit-0 behaviour and build-chroot protection;
+- dracut configuration, early-boot driver/firmware requirements, hostonly implications and the stated alternative;
+- the six root-filesystem composition steps, kernel-configuration list, snap GPU-provider distinction, GNOME defaults, product debugging-channel conditions and release/upgrade sequence;
+- the cross-distribution adaptation table and the conclusion about which layers remain stable or require rewriting.
+
+Technical identifiers, package names, paths, commands, configuration keys, interface names, version labels and examples were retained. The source's layered ASCII diagram remains a text diagram; no new dependency graph or runtime flow was inferred.
+
+### Pass 3 disposition
+
+- Source-based semantic review: **completed**.
+- Translation correction: **software packages** → **software-package bundle** in the release-attachments list.
+- Technical correctness, current package/hook behaviour, distribution compatibility and real-device behaviour: **not validated**.
+- Whole-skill validation: **outstanding**.
+- Next document in the declared framework-reference sequence: `experience/README.md`.
+
+The source's Ubuntu-specific baseline remains scoped as stated. The cross-distribution table is not treated as a complete porting procedure, and the layered drawing is not treated as a formal dependency graph.
