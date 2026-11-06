@@ -98,3 +98,71 @@ Do not resolve external technical questions or silently expand the task.
 Append the reconstructable handoff to this task record, following the eight fields in `translation/EXECUTION-SEGMENTATION.md`: task identity; observer position; observations; decisions; unresolved matters; validation; change boundary; next dependency.
 
 The handoff must state whether the task was completed, stopped for an adequacy reason, or requires further evidence. Do not move this task to `completed/` until worker execution and handoff are complete. Moving it does not constitute orchestrator acceptance.
+
+
+---
+
+## Worker handoff — Pass 3 execution
+
+### 1. Task identity
+
+- Task: 003 — Pass 3 review of `experience/sensors-camera-media.md`.
+- Pass: Pass 3 — technical and semantic review of the operational English translation set.
+- Current checkpoint observed: Pass 3 / Checkpoint 18; preceding completed document `experience/power-and-time.md`; selected document `experience/sensors-camera-media.md`.
+- Chinese source: `experience/sensors-camera-media.md`, `main`, blob `98f85dbecb4ec3248a31ac337729784788f0423b`.
+- English target: `translation/en/experience/sensors-camera-media.md`, `translation/english-reconstruction`, blob `dbd1f5cef992ccccf1dbba3bc9ddc22342296343`.
+- Pass 1 review baseline: `translation/reviews/experience/sensors-camera-media.md.md`, blob `fb434cf2ac490e8e7968d56049aacbc2f64d0cd5`.
+
+### 2. Observer position
+
+Determine whether the complete English sensors/camera/video-decoding document preserves the Chinese source's meaning and operational force across all seven Pass 3 dimensions. Excluded external technical correctness, current upstream verification, real-device behaviour and project-wide integration.
+
+### 3. Observations
+
+The complete source/target pair preserves three separate routes rather than implying a unified multimedia architecture:
+
+- Qualcomm SSC sensors and automatic rotation, including device-local registry/calibration handling, layered rotation acceptance, remote-processor/configuration timing and fresh-boot sensor testing.
+- Qualcomm Iris/Venus hardware video decoding, including upstream driver, signed firmware, module, device-tree and GStreamer prerequisites; V4L2 versus firmware-message sequencing; and fast versus slow consumption validation.
+- Camera support, including CAMSS/clock-controller prerequisites, real-scene acceptance, application-level availability, autofocus voltage evidence and unresolved support/recording boundaries.
+
+Requirements, prohibitions, conditional applicability, decision branches, structure and technical tokens are preserved. The persistent `-EPIPE` cause remains a possible cause and is not promoted to a confirmed diagnosis. No material translation discrepancy requiring correction was found.
+
+The Chinese source body contains no direct Markdown links or named domain-document dependencies. Pattern D/F/I relationships in the existing Pass 1 review remain review-record observations, not source-explicit links. The source and English experience indexes corroborate document ordering only.
+
+### 4. Decisions
+
+- Completed the source-to-English comparison across all seven Pass 3 dimensions.
+- Made no change to `translation/en/experience/sensors-camera-media.md`; its baseline blob remains `dbd1f5cef992ccccf1dbba3bc9ddc22342296343`.
+- Appended a clearly labelled Pass 3 review section to `translation/reviews/experience/sensors-camera-media.md.md`, retaining the Pass 1 record.
+- Did not load adjacent domain documents because no concrete translation claim required them.
+- Did not perform external technical validation or add a shared multimedia model.
+
+### 5. Unresolved matters
+
+The source's unresolved new-SoC camera-subsystem support, autofocus and video recording remain open. The persistent camera `-EPIPE` condition remains not located, with only a possible cause recorded. Current upstream status of the Iris unload patch was not checked. These matters do not prevent completion of this bounded translation review.
+
+### 6. Validation
+
+- Verified exact blob revisions for all twelve task-specified evidence files: source, target, Pass 1 review, Pass 3 criteria, current position, Checkpoint 18, completed Task 002, glossary, translation instructions, segmentation arrangement, source experience index and English experience index. All matched the task's stated baselines.
+- Re-read the complete Chinese source and English target and compared all seven dimensions.
+- Confirmed source and English indexes place sensors/camera/media after power-and-time; this was treated as ordering evidence only.
+- Confirmed no target edit was needed; source remains on `main` and was not modified.
+- Appended the Pass 3 review while preserving the Pass 1 record.
+- External technical correctness and real-device validation were not performed.
+
+### 7. Change boundary
+
+Changed only:
+- `translation/reviews/experience/sensors-camera-media.md.md` — appended the Pass 3 review.
+- This task record — appended this worker handoff.
+
+Left unchanged:
+- `experience/sensors-camera-media.md` and all other Chinese source files.
+- `translation/en/experience/sensors-camera-media.md` — no correction justified.
+- Pass 3 criteria, current-position/checkpoint records, glossary, inventory, indexes, segmentation instructions and unrelated files.
+
+### 8. Next dependency
+
+No additional evidence or document is required for this bounded translation review. Worker execution and handoff are complete. The orchestrator must independently reconstruct and evaluate this handoff, integrate or reject the result, and determine the next operation. No project-level continuation position was changed.
+
+**Worker disposition: COMPLETED.** This records worker execution completion only, not orchestrator acceptance.
