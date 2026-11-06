@@ -66,3 +66,6 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 - [Pass 1 / Checkpoint 10](continuation/checkpoints/pass-1-checkpoint-10.md) 记录 Ubuntu 用户态故障记录的重构，以及向构建与发布的过渡。
 - [Pass 1 / Checkpoint 11](continuation/checkpoints/pass-1-checkpoint-11.md) 记录构建流水线与发布经验的重构，以及向测试与协作流程的过渡。
 - [Pass 1 / Checkpoint 12](continuation/checkpoints/pass-1-checkpoint-12.md) 记录测试判断、自动化、协作与流程经验的重构，以及经验库文档遍历完成后的范围核对位置。
+
+
+- [Pass 1 scope reconciliation](continuation/checkpoints/pass-1-scope-reconciliation.md) records the operational-document scope, classifies the remaining repository-facing/integration/legal/image materials, and establishes the bounded Pass 1 completion claim.
