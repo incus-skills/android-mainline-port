@@ -153,3 +153,67 @@ Pass 1 remains the same declared traversal. The document position advances from 
 The next source should be determined from the current `experience/README.md` ordering. It is `experience/ubuntu-userspace.md`.
 
 Pass number, document position and session checkpoint number remain separate coordinates.
+
+
+---
+
+## Pass 3 — Technical and semantic translation review
+
+### Review position and evidence
+
+- Pass: Pass 3 — technical and semantic review of the operational English translation set.
+- Source: `experience/usb-and-storage.md`, `main`, blob `1737f41450dcbe6ebd6880790a4b4e8c072bc9c7`.
+- English target before review: `translation/en/experience/usb-and-storage.md`, blob `e756e98882ece48f879aad7434098d0a7706a07d`.
+- English target after review: `translation/en/experience/usb-and-storage.md`, blob `7c3225d7a7f8650ce27a345922937cdadcf0cc59`.
+- Existing review: Pass 1 record preserved; this section is appended rather than replacing it.
+- Governing review dimensions: Pass 3 / Checkpoint 01, blob `0870d3ea261a6354649379b96891cda4ca2a0ba6`.
+- Current position and checkpoint: Pass 3 / Checkpoint 19, blobs `712e223a974efe17097cbc6d7e15454e90b3b766` and `025bf5d3fbdca8c47a7baa5797eccbd6f5f7f7b2`.
+- Translation instructions: `translation/README.md`, blob `f9bf34ae28e838ae881f9e207797f26c1b327baa`.
+- Glossary: `translation/GLOSSARY.md`, blob `7cd456b51223fd2cd3cf408cb14bae7f7d167254`.
+- Segmentation arrangement: `translation/EXECUTION-SEGMENTATION.md`, blob `412268a0c065a628d65c0c2c1799830f718e92d1`.
+- Source and English experience indexes: blobs `b8b4b9110215280c35316df33d540e292c09356a` and `a7a28190615253246749909b380ddcba17268769`.
+
+### Seven-dimension review
+
+1. **Imperative force:** The recommended routes, completion criteria, prohibitions and safety instructions are preserved. This includes device mode as the initial debugging channel; PARTLABEL/GUID-based partition identification; active-slot image-set rotation; device-side formatting and tar extraction; maintenance-image requirements; read-back checks; and the prohibition on state-changing slot diagnostics before the mechanism is understood. The distinct cautions to restore original images and not reboot after a failed image-set write, to ignore interruption signals while writing, and to verify a timed rollback before switching a single Type-C port are retained.
+
+2. **Conditional scope:** Applicability boundaries remain attached to the individual pitfalls (General, UFS, NCM, Qualcomm ABL/A/B/UCSI/DWC3+QMP/DP AltMode and active-slot rotation). Four omitted source year qualifiers were restored: Qualcomm slot-B/recovery, Qualcomm A/B host Fastboot writes, Qualcomm Android first-boot failure, and Qualcomm DWC3 + QMP host-mode instability. The maintenance-image timeout sentence was clarified to express return to Fastboot when no session is active at timeout, rather than the ambiguous “without requiring a session”.
+
+3. **Decision logic:** Distinct branches and mechanisms remain separate: FILL writes zeros while DONT_CARE skips writes and can leave old data; bootloader slot state includes GUID/LUN state beyond attribute bits; active-slot rotation identifies actual contents before writing and verifies by read-back; per-partition backup state is not an atomic snapshot; and device-local provisioning remains separate from public image contents. No generalized lifecycle or transaction model was introduced.
+
+4. **Technical tokens:** Commands, paths, identifiers, formats, interfaces, partition labels, error strings, units and named components were checked, including `fastboot flash`, `fastboot boot`, `fastboot oem fbreason`, `getvar all`, `--set-active`, `dd`, `KernelSU`, `mkfs.ext4`, `img2simg -s`, `RAW`, `FILL`, `DONT_CARE`, `PARTLABEL`, `GUID`, `LUN`, `GPT`, `UFS`, `UCSI`, `VBUS`, `NCM`, `EPROBE_DEFER`, `allow_userspace_control`, `maximum-speed`, `configfs`, `.link`, `sgdisk --verify` and `e2fsck`. No external technical correctness claim was tested.
+
+5. **Structure:** The five recommended-route groupings, completion criteria and individual pitfall entries remain distinct and in source order. Source markers and applicability labels remain represented. The source's lack of a dedicated Unresolved section is not converted into a claim that all questions are resolved.
+
+6. **Cross-document references:** The Chinese source body contains no direct Markdown links or named domain-document dependencies. The source and English experience indexes identify this document's domain and ordering. The Pass 1 review's Pattern A/D/I correspondences remain review-record observations, not source-explicit links or dependencies. No adjacent domain documents were loaded because no concrete translation claim required them.
+
+7. **Uncertainty:** The source's unspecified partition geometry, active-slot implementation details, quantitative USB/display acceptance thresholds, compact external-display coverage, unspecified UFS attribute effects, non-atomic backup semantics and maintenance-image implementation/test details remain unspecified. No external validation or resolution was inferred.
+
+### Decisions and changes
+
+- Completed the complete source-to-target comparison across all seven Pass 3 dimensions.
+- Made five narrowly scoped target corrections: clarified the no-session timeout condition and restored four omitted `2026` applicability qualifiers.
+- No stylistic rewrite or technical correction was made.
+- The Chinese source and all governing records remain unchanged.
+- The existing Pass 1 review content is retained above this appended section.
+
+### Unresolved matters
+
+The source does not provide exact partition geometry, full active-slot rotation implementation, quantitative USB 3/NCM/display thresholds, a full external-display bring-up procedure, a list of UFS attributes written at driver load, or implementation/test evidence for the maintenance image's timeout behaviour. These are source evidence limits, not reasons to expand this translation review. External technical correctness, current upstream behaviour and real-device validation remain out of scope.
+
+### Validation and change boundary
+
+- Verified all twelve task-specified evidence baselines against their stated blob SHAs before relying on them.
+- Compared the complete Chinese source and complete English target.
+- Re-read the complete updated target after the five corrections.
+- Confirmed the Chinese source remains at blob `1737f41450dcbe6ebd6880790a4b4e8c072bc9c7` and was not modified.
+- Confirmed the Pass 1 review content remains intact; only this Pass 3 section is appended.
+- Changed only `translation/en/experience/usb-and-storage.md` and this review record, in addition to the required worker handoff in the task record.
+- Did not modify indexes, glossary, inventory, source, continuation records or unrelated files.
+- No external technical validation or real-device testing was performed.
+
+### Next dependency
+
+No additional document evidence is required to complete this bounded translation review. Worker execution and handoff are complete; the orchestrator must independently reconstruct and evaluate the handoff and decide acceptance and the next operation.
+
+**Worker disposition: COMPLETED.** This is worker execution status only, not orchestrator acceptance.
