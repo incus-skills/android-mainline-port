@@ -106,3 +106,31 @@ These are relationships indicated by source references and shared operational su
 - Current status: **translated**. Semantic review and technical validation remain outstanding.
 
 The next review should compare the English text with the Chinese source and assess its relationship to the other framework references. Build-time claims, ccache behaviour, toolchain compatibility and command correctness require a separate technical review.
+
+
+## Pass 3 — technical and semantic review
+
+Source/translation pair rechecked against `references/build-environment.md` at blob `7cc91c8beda502217a4b43a5ca60550eaa608a1e`.
+
+### Review results
+
+- The ten-section organisation, tables, code blocks, examples and ordering are retained.
+- Host requirements, toolchain, ccache sizing/configuration, kernel OUT identity, root-filesystem build methods, large components, reference repositories, cleanup, parallelism and avoidable overhead are represented.
+- Numerical examples and thresholds were checked, including 8 cores/16 GB, 300 GB free, the approximately 30 GB low-space threshold, ccache sizes and component estimates, build-time comparisons, and five-minute timing trigger.
+- Commands, compiler flags, environment variables, paths, tool names and configuration keys are retained.
+- The distinctions between incremental routine work and release-time clean builds, native ARM64/qemu-user/full-system TCG, disposable outputs and protected artifacts, and shared cache versus isolated worktrees are preserved.
+- The approximate expression `十几分钟` remains "around a dozen minutes"; the translation does not turn it into an exact benchmark.
+- The undefined `收据` ("receipt") reference remains without an invented schema.
+
+### Corrections
+
+No source-driven semantic correction was required. The existing translation was retained unchanged.
+
+### Boundaries
+
+The review does not validate ccache behaviour, build-time figures, toolchain compatibility, package availability, commands or current distribution practices. These remain external technical questions.
+
+- Source-based semantic review: completed for this document.
+- Translation changes: none.
+- Technical correctness validation: not performed.
+- Whole-skill validation: outstanding.
