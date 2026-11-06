@@ -3,11 +3,11 @@
 ## 当前入口
 
 - 当前遍历：**Pass 1 — 初始结构与语言重构**
-- 当前会话检查点：**Checkpoint 06**
-- 最近完成的源文件：`experience/wireless.md`
+- 当前会话检查点：**Checkpoint 07**
+- 最近完成的源文件：`experience/sensors-camera-media.md`
 - 当前源文件位置：`experience/wireless.md` 已完成本轮检查。
-- 下一步：读取并重构 `experience/power-and-time.md`，独立观察电量、充电、休眠、RTC/系统时间、看门狗和温控的结构及跨文件关系。
-- 最近检查点：[Pass 1 / Checkpoint 06](checkpoints/pass-1-checkpoint-06.md)。
+- 下一步：读取并重构 `experience/sensors-camera-media.md`，独立观察传感器、自动旋转、相机和视频硬解的结构及跨文件关系。
+- 最近检查点：[Pass 1 / Checkpoint 07](checkpoints/pass-1-checkpoint-06.md)。
 - 前一位置：[Pass 1 / Checkpoint 05](checkpoints/pass-1-checkpoint-05.md)。
 
 ## 遍历编号约定
@@ -22,10 +22,10 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass、当前文档位置和调查边界。
-2. 阅读 [Pass 1 / Checkpoint 06](checkpoints/pass-1-checkpoint-06.md)，再按需回看 Checkpoint 05、Checkpoint 04 和更早检查点。
+2. 阅读 [Pass 1 / Checkpoint 06](checkpoints/pass-1-checkpoint-06.md)，再按需回看 Checkpoint 06、Checkpoint 05 和更早检查点。
 3. 阅读 `reconstruction/zh/README.md` 和 `translation/INVENTORY.md`。
-4. 按需回看 `experience/patterns.md`、`experience/kernel-and-resources.md`、`experience/audio.md`、`experience/wireless.md` 与 `experience/touch-and-input.md` 的相关源文和重构记录。
-5. 独立检查原始源文件 `experience/power-and-time.md`，区分其自身陈述与此前无线/音频/输入材料形成的预期。
+4. 按需回看 `experience/patterns.md`、`experience/kernel-and-resources.md`、`experience/display.md` 与 `experience/wireless.md` 的相关源文和重构记录。
+5. 独立检查原始源文件 `experience/power-and-time.md`，区分其自身陈述与此前文档形成的预期。
 
 ## 当前继续约束
 
