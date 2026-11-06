@@ -181,6 +181,7 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/display.md.md`](reviews/experience/display.md.md) records the `experience/display.md` source revision, route distinctions, native-takeover sequence, acceptance model, diagnostic correspondences, cross-document relationships and technical-validation boundary.
 - [`translation/reviews/experience/gpu.md.md`](reviews/experience/gpu.md.md) records the `experience/gpu.md` source revision, layered graphics route, hardware-rendering acceptance criteria, Mesa/GPU failure surfaces, explicit resource relationship, terminology choices and technical-validation boundary.
 - [`translation/reviews/experience/touch-and-input.md.md`](reviews/experience/touch-and-input.md.md) records the touch architecture distinctions, panel/touch lifecycle, input acceptance, keyboard electrical/protocol separation, fingerprint boundary, explicit cross-file relationships and the absence of stylus-specific body content.
+- [`translation/reviews/experience/audio.md.md`](reviews/experience/audio.md.md) records the AudioReach/ADSP route, layered evidence boundaries, topology and amplifier distinctions, PipeWire/UCM and fresh-state issues, explicit collection-level links, unresolved risks and technical-validation boundary.
 
 ### Chinese reconstruction surface
 
