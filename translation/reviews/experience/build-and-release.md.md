@@ -155,3 +155,66 @@ Pass 1 remains the same declared traversal. The document position advances from 
 The next source in `experience/README.md` is `experience/testing-and-process.md`.
 
 Pass number, document position and session checkpoint number remain separate coordinates.
+
+
+---
+
+## Pass 3 — Technical and semantic review
+
+### Evidence baseline
+
+- Chinese source: `experience/build-and-release.md`, `main`, blob SHA `05c40c2b974cd14f229db814bc1ef63b1e657c65`.
+- English target: `translation/en/experience/build-and-release.md`, `translation/english-reconstruction`, blob SHA before review `411a9d962428bff35f6a8c66116ce789290028e2`.
+- Pass 1 review preserved above; its blob SHA before this append was `6d3352f43645d60f4e2329fd53b88e488c935d35`.
+- Governing criteria, current position/checkpoint, completed preceding task, glossary, translation instructions, segmentation record, both experience indexes, and the named build-environment reference/counterpart were fetched at the exact revisions specified in Task 006. All fourteen task evidence-baseline blob SHAs matched.
+- External technical correctness, current upstream behaviour, benchmarking, build-infrastructure inspection and release-operation validation were not performed.
+
+### Observer position and scope
+
+This is the Pass 3 source-to-English semantic and technical translation review of the complete build-pipeline and release experience document. The question is whether the English preserves the Chinese source's operational meaning and force across the seven declared review dimensions. It is not a build audit, reproducibility assessment, release redesign or technical validation.
+
+The source explicitly delegates complete build-environment setup to `../references/build-environment.md` and limits this file to specific pitfalls. The source and English reference files were inspected only to verify the named reference/counterpart and the boundary; their technical contents were not reviewed.
+
+### Observations
+
+- **Imperative force:** requirements, recommendations, prohibitions, cautions and examples remain distinguishable. In particular, measurement precedes optimization; native ARM64 is preferred, root-privileged qemu-user chroot is the next option, and full-system emulation is reserved for tests that need init behaviour. The restrictions on concurrent full-system VMs, writes to identity-recorded OUT directories, cleanup, published tags and release documentation are retained.
+- **Conditional scope:** applicability labels and qualifiers (including General, Kernel builds, Ubuntu 26.04, Mesa, Debian packaging, GitHub and the 2026 qualifiers) are retained. The source's reported performance figures remain presented as observations, not independently verified benchmarks.
+- **Decision logic:** alternatives and their stated conditions are preserved, including native ARM64 / qemu-user / full-system QEMU; real root / native CI; cross-compilation / native ARM64; cleanup checks; release artifact grouping; and version-by-version progression. The progression remains a working sequence, not a formal state machine.
+- **Technical tokens:** commands, paths, identifiers, environment variables, package/tool names, values and units were compared and retained, including `OUT`, `ccache -s`, `ccache --show-compression`, `base_dir`, `unshare -r`, `newuidmap`, `mknod`, `flock`, `KCFLAGS`, `KAFLAGS`, `KBUILD_BUILD_TIMESTAMP/USER/HOST`, `LOCALVERSION_AUTO`, `git describe --match 'v[0-9]*.[0-9]*'`, `gh repo fork`, `~dev`, `--resume` and `tar --sort=name`.
+- **Structure:** the document remains a collection of discrete pitfalls with symptom/cause/resolution/applicability distinctions where supplied. No general pipeline, cache policy, reproducibility guarantee or release lifecycle has been added.
+- **Cross-document references:** the explicit build-environment reference and its English counterpart resolve to the corresponding files. Both experience indexes classify this document as build pipeline, caching, reproducibility and release material, and their order places it after Ubuntu userspace. This is document-order evidence, not a technical dependency. The Pass 1 record's Pattern D reverse-reference and observer-reconstructed correspondences remain provenance observations; they are not presented as source-body links or source-defined universal relationships.
+- **Uncertainty:** the source has no dedicated unresolved section. The translation does not invent one or resolve omissions. Reported timings, tool behaviour, release-platform limits and other technical claims remain source claims whose external correctness is outside this pass.
+
+Particular distinctions were checked: stage measurement versus bottleneck assumptions; stable OUT paths, ccache base directory/manifests and artifact identity; native ARM64 versus root-privileged qemu-user versus full-system QEMU/TCG; UID/GID mapping and device-node privileges; dracut compression and Mesa NIR generation; single-writer OUT discipline and source HEAD/build-input identity; independent reproducibility inputs; manifest/receipt/source-archive/package/hash/cleanup roles; release attachment limits and artifact grouping; fork behaviour, GPL source and trademark wording; package version ordering and `~dev`; immutable published tags; sparse image preparation; Mesa incremental rebuild identity; host saturation; version cadence; and public documentation versus internal investigation.
+
+### Decisions
+
+No material, source-justified translation correction was identified. The English target is left unchanged.
+
+The target's phrasing is sometimes idiomatic rather than structurally literal, but the compared passages preserve the source's distinctions and operational force. No style-only rewrite is warranted. In particular, no claim has been strengthened into a guarantee, no source omission has been silently resolved, and no observer-reconstructed relationship has been promoted to a source-explicit dependency.
+
+### Unresolved matters
+
+The source does not specify exact build scripts, CI definitions, cache-key formats, artifact-manifest/receipt schemas, a complete identity-record protocol, general safe-resume/deletion criteria, or formal entry/exit criteria for version phases. These omissions are preserved, not filled in.
+
+Whether the reported QEMU, dracut, Mesa, ccache, GitHub Release, `gh repo fork`, APT and packaging behaviours remain technically accurate is not established here. Current infrastructure, upstream behaviour, benchmark results, release operations, signatures and reproducibility guarantees remain unvalidated and outside this task.
+
+### Validation and result
+
+- Compared the complete Chinese source and complete English target at the exact stated revisions.
+- Verified all fourteen evidence-baseline revisions specified by Task 006; all blob SHAs matched.
+- Checked the explicit build-environment reference and its English counterpart, plus both experience-library indexes.
+- Confirmed the target requires no correction; therefore its blob remains `411a9d962428bff35f6a8c66116ce789290028e2`.
+- Confirmed the Chinese source remains unchanged at `05c40c2b974cd14f229db814bc1ef63b1e657c65`.
+- This review append preserves the complete Pass 1 record above; no Pass 1 content was intentionally changed.
+- External technical validation and real-device validation were not performed.
+
+### Change boundary
+
+Only this Pass 3 review section is appended to this review record. The English target, Chinese source, build-environment references, criteria, continuation records, glossary, indexes and unrelated files are not modified by the review decision.
+
+### Next dependency
+
+No additional document is required to complete this bounded translation comparison. The explicit build-environment reference boundary and counterpart have been checked. Any external technical question would require a separately scoped operation and must not be inferred from this translation review.
+
+**Worker result: COMPLETED.** The target is unchanged because no material source-supported correction was warranted. This is a translation-review result only, not external technical acceptance.
