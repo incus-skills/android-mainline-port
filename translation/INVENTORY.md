@@ -191,6 +191,7 @@ A separate descriptive reconstruction surface has now been established under `re
 - [`reconstruction/zh/display.md`](../reconstruction/zh/display.md) records the retrospective reconstruction of the display routes, takeover sequence, acceptance evidence, diagnostic correspondences, resource relationships and unresolved boundaries.
 - [`reconstruction/zh/gpu.md`](../reconstruction/zh/gpu.md) records the retrospective reconstruction of the GPU and graphics-stack route, completion criteria, failure surfaces, explicit cross-document links, observer correspondences and unresolved boundaries.
 - [`reconstruction/zh/touch-and-input.md`](../reconstruction/zh/touch-and-input.md) records the touch/input architecture distinctions, user-facing acceptance, panel lifecycle and electrical/protocol failure surfaces, explicit cross-document relationships, unresolved issues and the stylus coverage gap.
+- [`reconstruction/zh/audio.md`](../reconstruction/zh/audio.md) records the AudioReach/ADSP route, hardware topology, layered machine/electrical/human evidence, cross-document correspondences, safety boundary and unresolved issues.
 
 This surface is our descriptive reconstruction, not a duplicate of the original source or a claim about author intent. Its records are retrospective where indicated. Author feedback, if obtained later, must be preserved as a separate source rather than silently merged into the original reconstruction.
 
@@ -206,5 +207,6 @@ The Chinese reconstruction surface includes a session-ingress record so a new se
 - [Pass 1 / Checkpoint 02](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-02.md) records the display reconstruction and the transition to GPU.
 - [Pass 1 / Checkpoint 03](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-03.md) records the GPU reconstruction and the transition to touch and input.
 - [Pass 1 / Checkpoint 04](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-04.md) records the touch-and-input reconstruction and the transition to audio.
+- [Pass 1 / Checkpoint 05](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-05.md) records the audio reconstruction and the transition to wireless.
 
 A **Pass** identifies one complete traversal of a declared scope from beginning to end. A pass may span multiple sessions; session checkpoints record movement within that pass. A later traversal starts a new pass and should preserve a comparison with earlier observations. Pass number must not be conflated with document position or session/checkpoint number.
