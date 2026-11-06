@@ -93,3 +93,71 @@ Do not resolve external technical questions or silently expand the task.
 Append the reconstructable handoff to this task record, following the eight fields in `translation/EXECUTION-SEGMENTATION.md`: task identity; observer position; observations; decisions; unresolved matters; validation; change boundary; next dependency.
 
 The handoff must state whether the task was completed, stopped for an adequacy reason, or requires further evidence. Do not move this task to `completed/` until worker execution and handoff are complete. Moving it does not constitute orchestrator acceptance.
+
+
+---
+
+## Worker handoff — Pass 3 execution
+
+### 1. Task identity
+
+- Task: 002 — Pass 3 review of `experience/power-and-time.md`.
+- Pass: Pass 3 — technical and semantic review of the operational English translation set.
+- Source: `experience/power-and-time.md`, `main`, blob `d74ba3b4bc320f2036f185e7614d8cdc1a703c6b`.
+- English target baseline: `translation/en/experience/power-and-time.md`, blob `5be75ae67a9876c72208a1dce9b7a58c8a130773`.
+- Existing review baseline: `translation/reviews/experience/power-and-time.md.md`, blob `a5c0440ceb361a69403d9057de430f4dbee3642f`.
+- Current position observed: Pass 3 / Checkpoint 17; next document `experience/power-and-time.md`.
+
+### 2. Observer position
+
+Determine whether the complete English power-and-time experience document preserves the Chinese source's meaning and operational force across the seven Pass 3 dimensions. Excluded external technical correctness, current upstream verification, real-device behaviour and project-wide integration.
+
+### 3. Observations
+
+The complete source and target preserve the distinct battery, charging, private fast-charge, PMIC/RTC, time synchronisation, deep suspend, s2idle, clock-measurement, charging-handoff and fuel-gauge-polling mechanisms. The source does not establish a unified power-management state machine.
+
+One material translation discrepancy was found: the source's `每秒十几次` describes write rejections more than ten times per second (in the teens), whereas the target said “dozens per second”. The latter overstates the source.
+
+The target otherwise preserves the source's uneven coverage: watchdog is named in the title but has no dedicated body procedure or acceptance criterion; thermal management is limited to using vendor temperature zones and thresholds. The three unresolved issues remain unresolved.
+
+The source explicitly points to `display.md` for the black-screen-after-wake issue. The target retains that reference, and the English display counterpart exists at the expected relative location.
+
+### 4. Decisions
+
+- Corrected “dozens per second” to “more than ten times per second”.
+- Appended a Pass 3 review section to `translation/reviews/experience/power-and-time.md.md`, retaining the complete Pass 1 review.
+- Made no other target changes; no style-only rewrite was justified.
+- Did not add watchdog or thermal procedures, a unified power state model, or external technical claims.
+
+### 5. Unresolved matters
+
+The source's three unresolved issues remain open:
+- Linux net charging and fast charging require private authentication and negotiation; the first release usually cannot close the gap.
+- The cause of the RTC returning to 1970 after an abnormal reset is unknown.
+- The display remains black after suspend/resume; the source refers to `display.md`.
+
+The source also leaves average-power and remaining-time readings unexplained for some fuel gauges, and provides no dedicated watchdog procedure or thermal acceptance criteria. These are preserved as source-coverage boundaries, not resolved by inference.
+
+### 6. Validation
+
+- All task-specified source, target, review, display dependency, Pass 3 criteria, glossary, translation instructions, completed Task 001, experience indexes and Pass 1 ordering evidence were fetched.
+- All specified revisions matched except the historical current-position SHA. The current-position record has since advanced to Checkpoint 17 and explicitly names power-and-time as next; this agrees with the task's selected document. Checkpoint 17 was read and corroborates Task 001 completion and this next document.
+- Complete Chinese source and English target were compared across all seven Pass 3 dimensions.
+- Complete source and English display dependency were checked; the English reference resolves to the intended counterpart.
+- The changed target and appended review were re-fetched after writing. The Pass 1 review section was retained.
+- The Chinese source and display dependency were re-fetched and confirmed unchanged at their specified revisions.
+- No external technical or real-device validation was performed.
+
+### 7. Change boundary
+
+Changed only:
+- `translation/en/experience/power-and-time.md` — one numerical-language correction.
+- `translation/reviews/experience/power-and-time.md.md` — appended the Pass 3 review.
+
+The Chinese source, display dependency, Pass 3 criteria, current-position/checkpoint records, glossary, inventory and unrelated files were left untouched. The existing Pass 1 review content was preserved.
+
+### 8. Next dependency
+
+No additional evidence or document is required for this bounded translation review. Worker execution and handoff are complete. The orchestrator retains responsibility for independently reconstructing and evaluating the handoff, accepting or rejecting the changes, integrating them, and determining the next operation.
+
+**Worker disposition: COMPLETED.** This records worker execution completion only, not orchestrator acceptance.
