@@ -72,7 +72,7 @@ Tag: **[Time-consuming]**
 
 - **Cause:** the kernel lacks SquashFS XZ/LZO/xattr support; extracting squashfs as an ordinary user loses extended attributes and device nodes; `security.capability` is lost.
 - **Resolution:** enable the required kernel configuration; extract as root with a tool that preserves xattrs; inspect capability bits on the actual files.
-- **Applicability:** Ubuntu.
+- **Applicability:** Ubuntu; 2026.
 
 ### Results from Testing Snap Behaviour in QEMU Do Not Generalize to Real Hardware
 
@@ -130,7 +130,7 @@ Tag: **[Fatal]**
 ### The zram Generator Adds Another 90-Second Boot Delay on a Kernel Without zram
 
 - **Resolution:** enable zram in the kernel before installing the generator configuration, or check for support during the build.
-- **Applicability:** Ubuntu.
+- **Applicability:** Ubuntu; 2026.
 
 ### A Service Is Not Re-enabled on the Upgrade Path
 
