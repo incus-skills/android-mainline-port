@@ -14,6 +14,23 @@ This is an experimental ChatGPT-session arrangement. It does not replace or rede
 4. Read the selected task completely and verify its stated file revisions and governing references before acting.
 5. If the task is missing required evidence, conflicts with repository state or cannot be completed within its stated boundary, stop and report that in the task record.
 
+## Evidence admissibility
+
+For source-grounded translation work, every claim, distinction, technical token, qualification and proposed correction introduced into the review must be traceable to an explicit passage or structural feature in the designated source or target.
+
+- The Chinese source establishes what the source says; the English target establishes what the translation says; a Pass 3 finding may describe only a correspondence demonstrable from those two bodies of evidence.
+- Do not introduce external technical knowledge, inferred qualifications, customary terminology or domain assumptions into a source-grounded comparison. Plausibility or technical correctness does not establish source correspondence.
+- External knowledge may prompt a question for separate investigation, but it cannot establish a Pass 3 finding or justify a translation change.
+- Before changing the target or review, identify the exact source and/or target evidence that necessitates the change and explain the correspondence. If that evidence cannot be identified, do not make the change; record the matter as unresolved or out of scope when useful.
+- Distinguish source claims, target claims, observations about their correspondence and external interpretations. Only the first three belong in the source-grounded Pass 3 review.
+- This evidence standard applies equally to the original review and every corrective pass. A correction inherits the original task's evidence boundary; it does not expand that boundary. An orchestrator's instruction to correct an identified defect does not authorise a new interpretation or evidence base.
+
+## Investigation proposals
+
+During the assigned work, the worker may separately record questions or opportunities that could merit later investigation using evidence outside the current task boundary. Examples include checking current upstream implementation behaviour, testing on physical devices, checking whether advice remains current, or considering a possible improvement or extension to the skill.
+
+These are proposals, not findings or corrections. Keep them distinguishable from the source-grounded review and the required handoff decisions. Do not resolve them as part of the current task unless its stated scope explicitly permits that work. Do not use external investigation proposals as evidence for Pass 3 findings or acceptance. Record enough context to reconstruct what prompted each proposal and what external evidence would be needed; if none arise, do not manufacture any.
+
 ## Execution
 
 - Treat the selected task as the authority for its local scope, permitted changes, validation and stop conditions.
