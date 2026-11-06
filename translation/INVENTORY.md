@@ -97,7 +97,7 @@ The repository indexes describe this as an evolving collection of domain-specifi
 | `experience/touch-and-input.md` | Touch, keys, keyboard accessories, stylus and fingerprint | `uninspected` |
 | `experience/audio.md` | Audio DSP, AudioReach, amplifiers, microphones, UCM and PipeWire | `uninspected` |
 | `experience/wireless.md` | Wi-Fi and Bluetooth | `uninspected` |
-| `experience/power-and-time.md` | Battery, charging, suspend, RTC/system time, watchdog and thermal management | `uninspected` |
+| `experience/power-and-time.md` | Battery, charging, suspend, RTC/system time, watchdog and thermal management | `translated` |
 | `experience/sensors-camera-media.md` | Sensors, rotation, camera and hardware video decoding | `uninspected` |
 | `experience/usb-and-storage.md` | USB/Type-C, external display, storage, partitioning, dual boot, flashing and installation | `uninspected` |
 | `experience/ubuntu-userspace.md` | Ubuntu packaging, dracut, snap and GNOME userspace integration | `uninspected` |
@@ -183,6 +183,7 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/touch-and-input.md.md`](reviews/experience/touch-and-input.md.md) records the touch architecture distinctions, panel/touch lifecycle, input acceptance, keyboard electrical/protocol separation, fingerprint boundary, explicit cross-file relationships and the absence of stylus-specific body content.
 - [`translation/reviews/experience/audio.md.md`](reviews/experience/audio.md.md) records the AudioReach/ADSP route, layered evidence boundaries, topology and amplifier distinctions, PipeWire/UCM and fresh-state issues, explicit collection-level links, unresolved risks and technical-validation boundary.
 - [`translation/reviews/experience/wireless.md.md`](reviews/experience/wireless.md.md) records the separate Wi-Fi/Bluetooth routes and acceptance sequences, firmware/board-data and device-identity distinctions, regulatory/lifecycle cases, explicit pattern references, unresolved issues and technical-validation boundary.
+- [`translation/reviews/experience/power-and-time.md.md`](reviews/experience/power-and-time.md.md) records the power/time route, measurement-versus-status distinction, suspend and clock evidence, explicit pattern references, watchdog/thermal coverage gaps, unresolved issues and technical-validation boundary.
 
 ### Chinese reconstruction surface
 
@@ -195,6 +196,7 @@ A separate descriptive reconstruction surface has now been established under `re
 - [`reconstruction/zh/touch-and-input.md`](../reconstruction/zh/touch-and-input.md) records the touch/input architecture distinctions, user-facing acceptance, panel lifecycle and electrical/protocol failure surfaces, explicit cross-document relationships, unresolved issues and the stylus coverage gap.
 - [`reconstruction/zh/audio.md`](../reconstruction/zh/audio.md) records the AudioReach/ADSP route, hardware topology, layered machine/electrical/human evidence, cross-document correspondences, safety boundary and unresolved issues.
 - [`reconstruction/zh/wireless.md`](../reconstruction/zh/wireless.md) records the separate Wi-Fi and Bluetooth routes, acceptance sequences, failure mechanisms, explicit pattern references, observer-reconstructed correspondences and unresolved boundaries.
+- [`reconstruction/zh/power-and-time.md`](../reconstruction/zh/power-and-time.md) records battery/charging distinctions, RTC and suspend routes, clock-measurement boundaries, explicit pattern references, title/body coverage gaps and unresolved issues.
 
 This surface is our descriptive reconstruction, not a duplicate of the original source or a claim about author intent. Its records are retrospective where indicated. Author feedback, if obtained later, must be preserved as a separate source rather than silently merged into the original reconstruction.
 
