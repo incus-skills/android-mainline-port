@@ -40,7 +40,8 @@ Task 008 is read-only with respect to skill content. It may report defects but m
 - Translation inventory: `translation/INVENTORY.md`, blob SHA `0a8e58e9a6f45fd54c718672dc8d7a3a9056f7ee`.
 - Proposed execution arrangement: `translation/EXECUTION-SEGMENTATION.md`, blob SHA `05ee569421b89366bbc0993afe62cb22a0644913`.
 - English entrypoint: `translation/en/SKILL.md`, blob SHA `f613aa7ef89eb9204c4f9804faf7aebace596a4e`.
-- English tree: `translation/en/`, tree SHA `d8d0db60cb0ef7dafd527f1d5302683bb3fbbb93`; references subtree SHA `41f3799c0dd0caa7bdef8e9b4820f45f21ace473`; experience subtree SHA `d8d0db60cb0ef7dafd527f1d5302683bb3fbbb93`.
+- English tree: `translation/en/`, tree SHA `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`.
+- Supporting subtree SHAs: `translation/en/references/` = `41f3799c0dd0caa7bdef8e9b4820f45f21ace473`; `translation/en/experience/` = `d8d0db60cb0ef7dafd527f1d5302683bb3fbbb93`.
 
 ## Boundaries and exclusions
 
