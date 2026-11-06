@@ -3,10 +3,12 @@
 ## 当前入口
 
 - 当前遍历：**Pass 1 — 初始结构与语言重构**
-- 当前会话检查点：**Checkpoint 01**
-- 当前源文件位置：`experience/display.md` 尚待检查。
-- 下一步：读取并重构 `experience/display.md`，观察资源归属问题如何在显示子系统中展开。
-- 详细的回顾性记录见 [Pass 1 / Checkpoint 01](checkpoints/pass-1-checkpoint-01.md)。
+- 当前会话检查点：**Checkpoint 02**
+- 最近完成的源文件：`experience/display.md`
+- 当前源文件位置：`experience/gpu.md` 尚待本轮检查。
+- 下一步：读取并重构 `experience/gpu.md`，观察 GPU 与显示资源、内核驱动和用户态图形栈之间的关系。
+- 最近检查点：[Pass 1 / Checkpoint 02](checkpoints/pass-1-checkpoint-02.md)。
+- 前一位置：[Pass 1 / Checkpoint 01](checkpoints/pass-1-checkpoint-01.md)。
 
 ## 遍历编号约定
 
@@ -20,10 +22,10 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass、当前文档位置和调查边界。
-2. 阅读 [Pass 1 / Checkpoint 01](checkpoints/pass-1-checkpoint-01.md)。
-3. 阅读 `reconstruction/zh/README.md`，确认中文重构记录的权威边界。
-4. 阅读 `translation/INVENTORY.md`，核对已完成材料和源文件位置。
-5. 阅读 `experience/patterns.md` 与 `experience/kernel-and-resources.md` 的相关记录，再独立检查原始源文件 `experience/display.md`。
+2. 阅读 [Pass 1 / Checkpoint 02](checkpoints/pass-1-checkpoint-02.md)，再按需回看 [Checkpoint 01](checkpoints/pass-1-checkpoint-01.md)。
+3. 阅读 `reconstruction/zh/README.md` 和 `translation/INVENTORY.md`。
+4. 阅读 `experience/patterns.md`、`experience/kernel-and-resources.md` 与 `experience/display.md` 的相关原始材料和重构记录。
+5. 独立检查原始源文件 `experience/gpu.md`，不要预先把显示文档的解释套用到 GPU 文档。
 
 ## 当前继续约束
 
