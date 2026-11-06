@@ -7,7 +7,7 @@
 - Source path: `experience/README.md`
 - Source blob SHA: `b8b4b9110215280c35316df33d540e292c09356a`
 - English artifact: [`translation/en/experience/README.md`](../../en/experience/README.md)
-- Review status: `translated`; semantic and technical review remain outstanding.
+- Review status: `reviewed` in Pass 3; technical validation remains outstanding.
 
 ## Translation intent and boundary
 
@@ -79,4 +79,28 @@ This record reconstructs the README's stated role, structure and relationships. 
 - every domain entry conforms to the described format;
 - the source's empirical claims generalise beyond the stated project context.
 
-Those questions belong to a separate semantic/technical review and whole-library validation. The Chinese source remains authoritative for this translation pass.
+## Pass 3 source-based semantic review
+
+The source and English translation were compared section by section. No source-driven semantic correction was required; the English artifact remains unchanged.
+
+The comparison confirmed preservation of:
+- the library's stated empirical origin, platform/kernel scope and distribution-dependence qualification;
+- the relationship between the relatively stable outer process/method layer and the evolving experience collection;
+- the instruction to start with `patterns.md`, the domain-file index and its stated subject boundaries;
+- the three retrieval routes for new faults, stage/subsystem work and log-based searching;
+- the entry format, its field meanings, applicability boundary and year;
+- the three source-defined markers and their separate qualitative meanings;
+- the maintenance rules for extending similar entries, admitting only confirmed root causes to pitfalls, recording unresolved cases, excluding identifying information, retaining upstream-fixed entries and marking superseded routes.
+
+The source's explicit relationship to `references/decisions.md` remains a shared reasoning pattern, not an identical schema. The README's navigation role is not expanded into a complete dependency graph. No root-cause confirmation threshold, unresolved-entry schema, review cadence, expiry policy or new domain-admission rule was added.
+
+### Pass 3 disposition
+
+- Source-based semantic review: **completed**.
+- Translation changes: **none required**.
+- Technical correctness and generality of the empirical claims: **not validated**.
+- Conformance of every domain entry to the README schema: **not validated here**.
+- Whole-library validation: **outstanding**.
+- Next document: `experience/patterns.md`.
+
+The Chinese source remains authoritative. This review establishes translation fidelity only; it does not establish that the recorded Android experience is current, technically correct or generalisable.
