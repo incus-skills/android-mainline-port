@@ -54,10 +54,14 @@ Keep the worker's evidence boundary as small as adequacy permits. Do not pre-res
 - Do not perform the file-level translation or review assigned to the worker.
 - Do not modify source or target translation files while acting in the orchestrator role.
 - Do not dispatch a worker from this session. The worker must enter independently through its own ingress.
-- Do not create a new jobs directory, task schema, board or other coordination structure merely because one would be convenient. If the repository has no established durable location or convention for a job record, report that as an unresolved implementation requirement rather than inventing one.
+- Use the lightweight task sequence described below; do not expand it into a scheduler, formal task schema, board or assignment system.
 - Do not treat the proposed segmentation arrangement as validated because this ingress or its supporting documentation exists.
 - Do not equate successful reconstruction of the orchestrator position with successful worker execution or end-to-end delegation.
 - Do not adjudicate overall completeness from the orchestrator position. Preserve the evidence and unresolved matters needed for independent assessment.
+
+## Task sequence
+
+Pending tasks are plain, numbered Markdown records in `translation/tasks/`. Assign the next unused sequence number and keep the number as provenance; it does not encode priority, ownership or execution order. A worker discovers pending work from this directory, selects an available task, and follows its own ingress. The worker appends its reconstructable handoff to the task record. Once execution is complete, move the record unchanged except for the appended handoff to `translation/tasks/completed/`. Completion records execution, not orchestrator acceptance. The orchestrator independently evaluates the handoff and determines subsequent work. Do not introduce locking, status fields or other machinery unless actual use exposes a need.
 
 ## Expected result of this ingress
 
