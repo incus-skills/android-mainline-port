@@ -3,12 +3,12 @@
 ## 当前入口
 
 - 当前遍历：**Pass 1 — 初始结构与语言重构**
-- 当前会话检查点：**Checkpoint 09**
-- 最近完成的源文件：`experience/usb-and-storage.md`
-- 当前源文件位置：`experience/usb-and-storage.md` 已完成本轮检查。
-- 下一步：读取并重构 `experience/ubuntu-userspace.md)，独立观察 Ubuntu 打包、dracut、snap、GNOME 首次设置和桌面默认值的结构及跨文件关系。
-- 最近检查点：[Pass 1 / Checkpoint 09](checkpoints/pass-1-checkpoint-09.md)。
-- 前一位置：[Pass 1 / Checkpoint 08](checkpoints/pass-1-checkpoint-08.md)。
+- 当前会话检查点：**Checkpoint 10**
+- 最近完成的源文件：`experience/ubuntu-userspace.md`
+- 当前源文件位置：`experience/ubuntu-userspace.md` 已完成本轮检查。
+- 下一步：读取并重构 `experience/build-and-release.md`，独立观察构建流水线、缓存、可复现性、发布及其跨文件关系。
+- 最近检查点：[Pass 1 / Checkpoint 10](checkpoints/pass-1-checkpoint-10.md)。
+- 前一位置：[Pass 1 / Checkpoint 09](checkpoints/pass-1-checkpoint-09.md)。
 
 ## 遍历编号约定
 
@@ -22,10 +22,10 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass、当前文档位置和调查边界。
-2. 阅读 [Pass 1 / Checkpoint 09](checkpoints/pass-1-checkpoint-09.md)，再按需回看 Checkpoint 08、Checkpoint 07 和更早检查点。
+2. 阅读 [Pass 1 / Checkpoint 10](checkpoints/pass-1-checkpoint-10.md)，再按需回看 Checkpoint 09、Checkpoint 08 和更早检查点。
 3. 阅读 `reconstruction/zh/README.md` 和 `translation/INVENTORY.md`。
-4. 按需回看 `experience/patterns.md`、`experience/kernel-and-resources.md`、`experience/display.md`、`experience/wireless.md`、`experience/power-and-time.md`、`experience/sensors-camera-media.md` 与 `experience/usb-and-storage.md` 的相关源文和重构记录。
-5. 独立检查原始源文件 `experience/ubuntu-userspace.md`，区分其自身陈述与此前文档形成的预期。
+4. 按需回看 `references/ubuntu.md`、`experience/patterns.md`、`experience/usb-and-storage.md`、`experience/power-and-time.md`、`experience/audio.md` 及相关源文与重构记录。
+5. 独立检查原始源文件 `experience/build-and-release.md`，区分其自身陈述与此前文档形成的预期。
 
 ## 当前继续约束
 
