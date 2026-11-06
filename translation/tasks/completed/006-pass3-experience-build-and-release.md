@@ -158,3 +158,59 @@ Modified only `translation/reviews/experience/build-and-release.md.md` by append
 No additional document is required for this translation review. The bounded operation is complete and ready for independent orchestrator reconstruction and acceptance. Any external technical validation requires a separate task and explicit scope.
 
 **Worker execution status: COMPLETED.** Moving this task to `completed/` records worker execution and handoff only; it does not constitute orchestrator acceptance.
+
+
+---
+
+## Corrective handoff — review-record accuracy repair
+
+### 1. Task identity
+
+- Original operation: Task 006 — Pass 3 review of `experience/build-and-release.md`, at Pass 3 / Checkpoint 21.
+- This is a narrowly bounded repair following independent rejection of acceptance; it does not reopen the source-to-target comparison or alter the original worker execution result.
+- Source: `experience/build-and-release.md`, `main`, blob SHA `05c40c2b974cd14f229db814bc1ef63b1e657c65`.
+- English target: `translation/en/experience/build-and-release.md`, `translation/english-reconstruction`, blob SHA `411a9d962428bff35f6a8c66116ce789290028e2`.
+- Review record before repair: `b62be013dd34096c20a0aff249345779e8362e27`.
+- Corrected review record: `53744954319a6789a43d9769102f816181df3158`.
+
+### 2. Observer position
+
+Correct two unsupported technical details in the Pass 3 review's account of the source/target comparison. The translation itself was not found defective. No broader re-review, technical audit or continuation-position update is within this repair.
+
+### 3. Observations
+
+The independent adjudication identified:
+- `LOCALVERSION_AUTO` was listed as a retained technical token despite appearing in neither source nor target.
+- `TCG` was added to the full-system QEMU description despite not being specified by either source or target.
+
+### 4. Decisions
+
+Both defects were corrected in the Pass 3 review record:
+- Removed `LOCALVERSION_AUTO` from the token list.
+- Replaced `full-system QEMU/TCG` with `full-system QEMU emulation`, retaining the source-grounded distinction from qemu-user without adding an implementation detail.
+
+No changes were made to the English translation or Chinese source. The original worker completion statement remains historically intact; the correction is recorded separately and does not claim orchestrator acceptance.
+
+### 5. Unresolved matters
+
+None within this narrow repair. Independent orchestrator acceptance remains for the orchestrator to determine. Checkpoint 21 and the inventory/continuation position remain unchanged.
+
+### 6. Validation
+
+- Re-read the corrected Pass 3 review record after the update.
+- Confirmed the corrected technical-token list does not contain `LOCALVERSION_AUTO`.
+- Confirmed the corrected execution-mode description does not contain `TCG`.
+- Confirmed the review's corrective record describes both repairs.
+- Confirmed source SHA remains `05c40c2b974cd14f229db814bc1ef63b1e657c65`.
+- Confirmed target SHA remains `411a9d962428bff35f6a8c66116ce789290028e2`.
+- The original Pass 1 review material was not edited; the repair was confined to the appended Pass 3 section.
+
+### 7. Change boundary
+
+Only `translation/reviews/experience/build-and-release.md.md` was changed, by two phrase-level corrections and an appended corrective record. This completed task record was updated only to append this corrective handoff. No source, target, checkpoint, current-position, inventory, glossary, index or other task file was changed.
+
+### 8. Next dependency
+
+The corrected review and this handoff are ready for independent orchestrator reconstruction. No next document task is prepared or selected. The orchestrator retains Checkpoint 21 and decides whether the corrected evidence is sufficient for acceptance.
+
+**Corrective worker status: COMPLETED. Original Task 006 worker status remains COMPLETED. Orchestrator acceptance: pending.**
