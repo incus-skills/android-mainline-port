@@ -52,6 +52,21 @@ Acceptance is scoped to the assigned operation and its stated validation boundar
 
 Acceptance is also distinct from overall pass or project completeness. Do not infer either from a sequence of accepted file operations. Whole-pass and receiving-state readiness require their own appropriately scoped reconstruction and assessment.
 
+## Evidence boundary and investigation proposals
+
+The orchestrator must preserve the same evidence-admissibility boundary as the worker. For source-grounded Pass 3 work, claims, distinctions, technical tokens, qualifications and proposed corrections must be traceable to explicit source or target evidence. External knowledge, inferred qualifications and plausible domain explanations cannot establish translation findings. Before requesting or accepting a correction, identify the exact source/target evidence that necessitates it. This requirement applies to corrective work as well as the original review; correction does not expand the original evidence boundary.
+
+The orchestrator may separately record investigation proposals arising from its wider observer position, including questions noticed across documents, accepted handoffs or integration. These may concern current upstream behaviour, real-device validation, time-sensitive advice, possible improvements or possible extensions to the skill.
+
+Keep these proposals distinct from:
+- source-grounded Pass 3 findings and translation corrections;
+- worker completion and orchestrator acceptance;
+- accepted project continuity and checkpoint advancement.
+
+A proposal is not a finding, instruction to change the translation, or evidence for acceptance. It identifies a question or opportunity for a later, separately bounded investigation. Preserve its origin and the observation that prompted it, the question to investigate, the external evidence or test needed, and the possible consequence if resolved. Do not perform that investigation implicitly while adjudicating a translation task. If no proposal arises, do not manufacture one.
+
+Worker-originated proposals should remain identifiable as such when integrated; orchestrator-originated proposals should likewise retain their provenance. Do not collapse either into accepted translation conclusions.
+
 ## Reconcile continuity records
 
 Only after an operation has been independently **ACCEPTED**, compare the resulting accepted project position against all durable position-bearing records before preparing the next task:
