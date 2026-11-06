@@ -16,10 +16,10 @@ The Chinese operational documents remain the source of authority for this recons
 | Source branch | `main` |
 | Source commit | `5aa6297f40166bec966194d46795c4fd16b533db` |
 | Source commit date | 2026-10-23 14:39:59 UTC |
-| Source tree SHA | `5aa6297f40166bec966194d46795c4fd16b533db` |
+| Source tree SHA | `58a97a59ded09e79c15e2e1a081907ef96581a34` |
 | Reconstruction branch | `translation/english-reconstruction` |
 | Reconstruction branch head at inventory | `ed9aaab9c553400ba03ffdda4c28f7c0598b580e` |
-| Reconstruction branch tree SHA | `ed9aaab9c553400ba03ffdda4c28f7c0598b580e` |
+| Reconstruction branch tree SHA | `7e6913899c3e1034f40fe449f9bd34618baa4ed6` |
 | Branch relationship | 2 commits ahead of `main`, 0 behind |
 | Source changes on reconstruction branch | None observed; comparison reports only two added files under `translation/` |
 
