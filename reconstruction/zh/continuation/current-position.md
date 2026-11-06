@@ -5,7 +5,7 @@
 - 当前遍历：**Pass 3 — 操作性英文翻译的技术与语义审查**
 - 当前会话检查点：**Pass 3 / Checkpoint 22**
 - 最近完成文档：`experience/build-and-release.md`
-- 下一文档：`experience/build-and-release.md`
+- 下一文档：`experience/testing-and-process.md`
 - 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`、`references/decisions.md`、`references/build-environment.md`、`references/verification.md`、`references/ubuntu.md`、`experience/README.md`、`experience/patterns.md`、`experience/bootloader-and-boot.md`、`experience/kernel-and-resources.md`、`experience/display.md`、`experience/gpu.md`、`experience/touch-and-input.md`、`experience/audio.md`、`experience/wireless.md`、`experience/power-and-time.md`、`experience/sensors-camera-media.md`、`experience/usb-and-storage.md`、`experience/ubuntu-userspace.md`、`experience/build-and-release.md`。
 - Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档。
 - 当前观察位置：检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
