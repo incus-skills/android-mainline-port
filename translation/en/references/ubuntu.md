@@ -124,7 +124,7 @@ See the detailed entries in `../experience/ubuntu-userspace.md`. Key points:
 
 ## 11. Release and Upgrade
 
-- Release attachments: boot-image package, tools package (switching, recovery and installation), software packages, root-filesystem volumes, checksums and manifest.
+- Release attachments: boot-image package, tools package (switching, recovery and installation), software-package bundle, root-filesystem volumes, checksums and manifest.
 - User upgrade: download the new packages and run `apt install ./*.deb`; hooks automatically rebuild the boot-image set and retain the rollback set. An APT repository can be provided later.
 - Installation documentation must explain importing local data, first-run setup, toggling the debugging channel, returning to Android and the risks.
 
