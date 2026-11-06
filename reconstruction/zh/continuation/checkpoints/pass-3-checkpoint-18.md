@@ -12,7 +12,7 @@
 - 译文审查记录 blob SHA：`43c5209fc80ef19b1c611bc51fea77f2e2d20435`
 - 前一文档：`experience/wireless.md`
 - 前一检查点：[Checkpoint 17 — experience/wireless.md](pass-3-checkpoint-17.md)
-- 对应执行记录：[Task 002 — Pass 3 review of experience/power-and-time.md](../../../../translation/tasks/completed/002-pass3-experience-power-and-time.md)
+- 对应执行记录：[Task 002 — Pass 3 review of experience/power-and-time.md](../../../translation/tasks/completed/002-pass3-experience-power-and-time.md)
 - 下一文档：`experience/sensors-camera-media.md`
 - 外部技术正确性验证：未进行。
 
