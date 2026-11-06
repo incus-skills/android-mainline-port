@@ -3,15 +3,15 @@
 ## 当前入口
 
 - 当前遍历：**Pass 3 — 操作性英文翻译的技术与语义审查**
-- 当前会话检查点：**Pass 3 / Checkpoint 13**
-- 最近完成文档：`experience/display.md`
-- 下一文档：`experience/gpu.md`
-- 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`、`references/decisions.md`、`references/build-environment.md`、`references/verification.md`、`references/ubuntu.md`、`experience/README.md`、`experience/patterns.md`、`experience/bootloader-and-boot.md`、`experience/kernel-and-resources.md`、`experience/display.md`。
+- 当前会话检查点：**Pass 3 / Checkpoint 14**
+- 最近完成文档：`experience/gpu.md`
+- 下一文档：`experience/touch-and-input.md`
+- 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`、`references/decisions.md`、`references/build-environment.md`、`references/verification.md`、`references/ubuntu.md`、`experience/README.md`、`experience/patterns.md`、`experience/bootloader-and-boot.md`、`experience/kernel-and-resources.md`、`experience/display.md`、`experience/gpu.md`。
 - Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档。
 - 当前观察位置：检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
 - 明确排除：不以此轮证明技术主张在当前上游或真实设备上正确；不进行真机验证。
-- 最近检查点：[Pass 3 / Checkpoint 13 — experience/display.md](checkpoints/pass-3-checkpoint-13.md)。
-- 前一检查点：[Pass 3 / Checkpoint 11 — experience/bootloader-and-boot.md](checkpoints/pass-3-checkpoint-11.md)。
+- 最近检查点：[Pass 3 / Checkpoint 14 — experience/gpu.md](checkpoints/pass-3-checkpoint-14.md)。
+- 前一检查点：[Pass 3 / Checkpoint 13 — experience/display.md](checkpoints/pass-3-checkpoint-13.md)。
 - Pass 3 范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)。
 
 ## 遍历编号约定
@@ -26,9 +26,9 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass 3 的目的、范围和当前文档位置。
-2. 阅读 [Pass 3 / Checkpoint 12](checkpoints/pass-3-checkpoint-12.md)，再按需回看前序检查点。
+2. 阅读 [Pass 3 / Checkpoint 14](checkpoints/pass-3-checkpoint-14.md)，必要时回看 [Checkpoint 13](checkpoints/pass-3-checkpoint-13.md) 及更早检查点。
 3. 阅读 `translation/README.md` Phase 4 和 `translation/GLOSSARY.md`。
-4. 对照 `experience/gpu.md` 的中文源文、英文译文和既有审查记录。
+4. 对照 `experience/touch-and-input.md` 的中文源文、英文译文和既有审查记录。
 5. 区分翻译语义审查与外部技术正确性验证；不要把后者默认为本轮任务。
 
 ## 后续工作约束
