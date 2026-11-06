@@ -73,3 +73,7 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 
 - [README.md reconstruction](README.md) records the repository-facing introduction role, its correspondence with the existing English README, one wording correction and the remaining boundaries.
 - [Pass 2 / Checkpoint 01](continuation/checkpoints/pass-2-checkpoint-01.md) records the new observer position and bounded README review.
+
+
+- [Pass 2 scope closure](continuation/checkpoints/pass-2-scope-closure.md) closes the bounded README/README.en review scope.
+- [Pass 3 / Checkpoint 01](continuation/checkpoints/pass-3-checkpoint-01.md) declares the source-based technical and semantic review of the 22 operational English documents.
