@@ -10,8 +10,8 @@
 - Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档。
 - 当前观察位置：检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
 - 明确排除：不以此轮证明技术主张在当前上游或真实设备上正确；不进行真机验证。
-- 最近检查点：[Pass 3 / Checkpoint 15 — experience/touch-and-input.md](checkpoints/pass-3-checkpoint-15.md)。
-- 前一检查点：[Pass 3 / Checkpoint 14 — experience/gpu.md](checkpoints/pass-3-checkpoint-14.md)。
+- 最近检查点：[Pass 3 / Checkpoint 16 — experience/audio.md](checkpoints/pass-3-checkpoint-16.md)。
+- 前一检查点：[Pass 3 / Checkpoint 15 — experience/touch-and-input.md](checkpoints/pass-3-checkpoint-15.md)。
 - Pass 3 范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)。
 
 ## 遍历编号约定
