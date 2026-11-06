@@ -150,6 +150,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 | `references/discipline.md` | [`translation/en/references/discipline.md`](en/references/discipline.md) | `translated` | Record responsibilities, privacy boundaries, attribution, estimation and sub-agent constraints translated; semantic/technical review remains outstanding. [Review record](reviews/references/discipline.md.md). |
 | `references/decisions.md` | [`translation/en/references/decisions.md`](en/references/decisions.md) | `translated` | Nine-section conditional decision catalogue translated; technical claims deliberately not validated in this pass. [Review record](reviews/references/decisions.md.md). |
 | `references/verification.md` | [`translation/en/references/verification.md`](en/references/verification.md) | `translated` | Seven evidence/status labels, subsystem evidence, test methods, automation and release threshold translated; technical claims deliberately not validated in this pass. [Review record](reviews/references/verification.md.md). |
+| `references/build-environment.md` | [`translation/en/references/build-environment.md`](en/references/build-environment.md) | `translated` | Host/toolchain, caching, OUT directories, root-filesystem builds, cleanup and parallelism translated; technical claims deliberately not validated in this pass. [Review record](reviews/references/build-environment.md.md). |
 
 The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
 
@@ -163,5 +164,6 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/references/discipline.md.md`](reviews/references/discipline.md.md) records the `references/discipline.md` source revision, status-vocabulary mapping, structural observations, ambiguities and review boundary.
 - [`translation/reviews/references/decisions.md.md`](reviews/references/decisions.md.md) records the `references/decisions.md` source revision, decision-entry structure, terminology choices, structural observations, ambiguities and the explicit separation between translation and technical validation.
 - [`translation/reviews/references/verification.md.md`](reviews/references/verification.md.md) records the `references/verification.md` source revision, seven-label evidence structure, cross-document vocabulary distinctions, structural observations and review boundary.
+- [`translation/reviews/references/build-environment.md.md`](reviews/references/build-environment.md.md) records the `references/build-environment.md` source revision, build-infrastructure structure, terminology choices, cross-document relationships and review boundary.
 
 Future document translations should retain equivalent decision records rather than leaving them only in conversation. Each translation record is a separate reconstruction artifact; it is not part of the functional skill text.
