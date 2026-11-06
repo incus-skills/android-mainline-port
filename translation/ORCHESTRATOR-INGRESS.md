@@ -32,6 +32,17 @@ Reconstruct and report, with provenance where available:
 - exact evidence a bounded worker will need, and what can remain unloaded unless requested;
 - any conflict between the repository records or any state that cannot be reconstructed.
 
+## Reconcile continuity records
+
+After independently evaluating a completed worker handoff, compare the resulting accepted project position against all durable position-bearing records before preparing the next task:
+
+- preserve prior checkpoints as historical records; create the next checkpoint for the newly established position;
+- advance `current-position.md` to identify the latest completed document, next document and current reading sequence;
+- update the corresponding Pass 3 entries in `translation/INVENTORY.md` so review status does not lag completed work;
+- verify that the pending/completed task sequence agrees with those records.
+
+A worker moving its task record to `completed/` records execution, not orchestrator acceptance. The orchestrator must evaluate the handoff first, then reconcile these records as a separate integration action. Do this before preparing or handing off the next worker task. Do not rewrite historical checkpoints or infer review completion from task creation alone.
+
 Distinguish recorded facts, observer-reconstructed relationships and unresolved questions. Repository evidence is the continuity source for this clean session; do not rely on inherited conversation context or silently repair gaps through inference.
 
 ## Prepare bounded work
