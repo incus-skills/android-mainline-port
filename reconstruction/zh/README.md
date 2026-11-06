@@ -41,3 +41,6 @@
 - 检查点记录同一 Pass 内的位置变化。后续从头开始的新一轮完整遍历应使用新的 Pass 编号，并与先前观察进行比较。
 
 Pass 编号、文档位置和会话检查点编号是三个不同维度，不应混用。
+
+
+- [`display.md`](display.md) records the retrospective reconstruction of the display experience document and its relationships with the general problem patterns and kernel/resource material.
