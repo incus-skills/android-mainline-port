@@ -122,3 +122,47 @@ These correspondences are observations made during reconstruction. The source do
 ## Review boundary
 
 This record assesses whether the English text preserves the source's structure and operational distinctions. It does not validate the technical correctness or current upstream status of the kernel, firmware, Mesa, Turnip, GNOME, QEMU or device-specific claims. Those require a separate technical evidence pass.
+
+
+## Pass 3 — technical and semantic review
+
+- Source revision reviewed: `experience/gpu.md` on `main`, blob SHA `64079b8f8e5913de51114f4459bc1bc628e14791`.
+- English artifact reviewed: `translation/en/experience/gpu.md`.
+- Review scope: all five recommended-route steps, four completion criteria, all nine pitfall entries, the unresolved-work section, technical tokens, structure and explicit cross-document references.
+
+### Review findings and translation refinements
+
+Four wording refinements were made to restore the source's stated force and scope:
+
+1. The firmware-signing constraint now states that **only the device's original factory-signed file can be used** on the described retail-device path. The previous “may be required” weakened the source's explicit exclusivity.
+2. The GMU HFI timeout/hangcheck symptom is stated as unrelated to GPU code, without the additional hedge “apparently”.
+3. The alternative causes in that entry now retain the source's direct statements: the MX dependency vote uses the wrong OPP table, or the power domain is placed in the retention level. The previous modal “may” weakened the cause statements.
+4. The shared-context race now states that it reproduces every time under the described freedreno/threaded-context conditions, preserving the force of “必现”.
+
+No other source-driven semantic correction was identified.
+
+### Confirmed preservation
+
+- The five-step route retains the kernel, firmware, Mesa, sandbox-library and immature-new-GPU/backport layers without turning the recommendation into a universal dependency graph.
+- The zap-free rendering route remains conditional on platform support; it is not generalised.
+- All four completion dimensions remain distinct: hardware renderer identity, pixel-correct output, sustained rendering through power transitions, and compositor/application rendering including GTK GL and Vulkan.
+- All nine pitfalls retain their differing field structures, symptoms, causes, confirmation steps where supplied, resolutions, applicability and time markers. No absent fields were invented.
+- Full chip IDs, `drm/msm`, sqe, GMU, SMMU, OPP, zap, Mesa, Turnip, NV12, BGRx, NEON, `GALLIUM_THREAD=0`, `FD_MESA_DEBUG=sysmem`, `LD_PRELOAD`, `vkcube`, `gnome-shell --headless --virtual-monitor`, error/function identifiers and version/applicability references remain represented.
+- The explicit references to `kernel-and-resources.md` and `ubuntu-userspace.md` are retained. The source does not explicitly link this GPU document to `touch-and-input.md`; no such link was added.
+- The unresolved scope remains new-GPU Vulkan stability, sustained load, frequency scaling and power management.
+
+### Structural and observer boundaries
+
+The display-resource reclamation relationship is explicitly connected to the kernel/resource document, with GPU power-vote alternatives and diagnostic ordering preserved. It does not imply that every GMU timeout has one cause. The relationship between renderer identity and test validity, and between capture-path limitations and actual rendering, remains an observer-level correspondence rather than a source-defined taxonomy.
+
+The source does not define a universal firmware-signing procedure, GPU power-state model, complete test matrix, or general maturity threshold for retiring Mesa backports. Those absences remain visible rather than being filled by inference.
+
+### Pass 3 disposition
+
+- Source-based technical and semantic translation review: **completed**.
+- Translation changes: **four wording refinements**; no source document modified.
+- External technical correctness, current upstream status, cross-device generality, firmware validity and real-device behaviour: **not validated**.
+- Whole-skill validation: **outstanding**.
+- Next document: `experience/touch-and-input.md`.
+
+This review establishes source fidelity only; it does not validate the GPU, firmware, Mesa, Turnip or device-specific technical claims.
