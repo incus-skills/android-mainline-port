@@ -107,3 +107,57 @@ For the initial structural and linguistic reconstruction, the recommended route,
 The remaining questions require device evidence, implementation evidence, author input or a separate technical-validation pass. They do not prevent moving to the next source document. Reopen an issue only when a new discriminating source, relevant observer-position change, translation conflict or concrete interpretive consequence becomes available.
 
 No charging, PMIC, RTC, chrony, suspend, clock, watchdog, thermal or real-device claim has been technically validated in this pass.
+
+
+---
+
+## Pass 3 — Technical and semantic review
+
+### Review position and evidence
+
+- Pass: Pass 3 — technical and semantic review of the operational English translation set.
+- Source: `experience/power-and-time.md`, `main`, blob `d74ba3b4bc320f2036f185e7614d8cdc1a703c6b`.
+- English target baseline: `translation/en/experience/power-and-time.md`, `translation/english-reconstruction`, blob `5be75ae67a9876c72208a1dce9b7a58c8a130773`.
+- Existing review baseline: `translation/reviews/experience/power-and-time.md.md`, blob `a5c0440ceb361a69403d9057de430f4dbee3642f`.
+- Pass 3 criteria: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-01.md`, blob `0870d3ea261a6354649379b96891cda4ca2a0ba6`.
+- Direct display dependency: source `experience/display.md`, blob `6cd5016457d4cbab87fae56a4dd5e3c1204bbbdd`; English `translation/en/experience/display.md`, blob `ed9ec9b19090dd5907e132569545082b94c43d27`.
+- Governing translation instructions: `translation/README.md`, blob `f9bf34ae28e838ae881f9e207797f26c1b327baa`.
+- Glossary: `translation/GLOSSARY.md`, blob `7cd456b51223fd2cd3cf408cb14bae7f7d167254`.
+- Current position at execution: Pass 3 / Checkpoint 17; next document `experience/power-and-time.md`. The position record had advanced beyond the historical SHA stated in the task packet, but its current document position agrees with this task. Checkpoint 17 records wireless completion and the same next document.
+- External technical validation and real-device testing: not performed.
+
+### 1. Imperative force
+
+The target preserves the source's recommendations, restrictions and required sequencing: read-only fuel-gauge inspection before writes; read-only charging client before control; defer suspend until the named prerequisites are complete; use vendor temperature zones and thresholds; and refuse suspend when charging-control handoff fails. The first release may disable suspend provided it is recorded as technical debt. The target preserves that permission and condition.
+
+### 2. Conditional scope
+
+Applicability qualifications are retained, including Qualcomm, particular vendor charging implementations, some fuel gauges, some vendor Android systems, and the stated 2026 context. Examples remain examples rather than universal thresholds. The title's watchdog coverage gap and the limited thermal-management treatment remain explicit; no missing procedure or acceptance criterion has been invented.
+
+### 3. Decision logic
+
+The separate routes and evidence requirements remain distinct. In particular, a charging flag or charger classification does not establish net charging; current, voltage, bus voltage and battery-level trend remain the evidence. PMIC RTC read-only behaviour, SDAM offset storage and boot-time saved-time restoration plus NTP are not collapsed into one mechanism. Deep suspend and s2idle retain different wake behaviours and measurement implications. Charging-client handoff and fuel-gauge polling remain separate suspend concerns.
+
+### 4. Technical tokens
+
+Commands, paths, kernel interfaces, configuration properties, clock identifiers, units, driver names and error strings were compared. The target retains the relevant tokens, including `bq27xxx`, `qcom_battmgr`, `pmic_glink`, `CLOCK_BOOTTIME`, `CLOCK_MONOTONIC`, `IRQF_NO_SUSPEND`, `pm_wakeup_irq`, `OnCalendar`, `WakeSystem=yes`, `OnBootSec`, `mem_sleep_default=s2idle`, `SuspendState=freeze`, `prepare/complete`, and the chrony options.
+
+One material numerical-language discrepancy was corrected. The source says SPMI arbitration rejects writes `每秒十几次` (more than ten times per second / in the teens per second); the baseline translation said “dozens per second”, which overstates the frequency. The target now says “more than ten times per second”.
+
+### 5. Structure
+
+The recommended route, completion criteria, pitfall sequence, applicability statements and unresolved section remain in the source's order. The target does not add missing diagnostic or prevention fields to entries that do not contain them in the source. The watchdog and thermal asymmetry is preserved.
+
+### 6. Cross-document references
+
+The source's unresolved black-screen-after-wake item refers to `display.md`. The English target retains “see display.md”; within the English experience directory this identifies `translation/en/experience/display.md`, the intended counterpart. The source and English display dependency were both fetched at the task-specified revisions. No additional document was needed to assess this direct reference.
+
+### 7. Uncertainty
+
+The target retains the three unresolved source issues: Linux net charging and fast charging requiring private authentication and negotiation; the unexplained RTC return to 1970 after abnormal reset; and black display after suspend/resume. It also retains the underspecified average-power/remaining-time issue and the lack of detailed watchdog and thermal procedures. No external technical knowledge was used to fill these gaps.
+
+### Disposition
+
+One source-justified correction was made to the English target: “dozens per second” was corrected to “more than ten times per second”. No other material source-to-target discrepancy requiring a change was identified. The existing Pass 1 review above is preserved unchanged.
+
+No PMIC, charging, RTC, chrony, suspend, clock, watchdog, thermal or real-device claim has been externally validated.
