@@ -43,6 +43,12 @@ Task 008 is read-only with respect to skill content. It may report defects but m
 - English tree: `translation/en/`, tree SHA `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`.
 - Supporting subtree SHAs: `translation/en/references/` = `41f3799c0dd0caa7bdef8e9b4820f45f21ace473`; `translation/en/experience/` = `d8d0db60cb0ef7dafd527f1d5302683bb3fbbb93`.
 
+## Unresolved project-level record discrepancy
+
+The pinned `translation/EXECUTION-SEGMENTATION.md` still contains an “Application to the current position” paragraph that names Pass 3 / Checkpoint 16 / `experience/wireless.md`. This is stale: the canonical current-position record and this checkpoint establish Pass 4 / Checkpoint 01, while Pass 3 closed at Checkpoint 23. The stale paragraph was already present in the older segmentation revision used by Task 007; the newer revision added evidence-boundary and separate-investigation-proposal guidance but did not update that paragraph.
+
+For position, the current-position record and the active checkpoint take precedence. This discrepancy does not change Phase 5 criteria and does not block Task 008, whose task record explicitly establishes its position. It remains an unresolved documentation issue; do not silently treat the segmentation paragraph as current or repair it within Task 008.
+
 ## Boundaries and exclusions
 
 - Pass 3 source-based translation review is closed; do not reopen it merely because Phase 5 finds a usability or technical concern.
