@@ -107,3 +107,54 @@ Do not resolve external technical questions or silently expand the task.
 Append the reconstructable handoff to this task record, following the eight fields in `translation/EXECUTION-SEGMENTATION.md`: task identity; observer position; observations; decisions; unresolved matters; validation; change boundary; next dependency.
 
 The handoff must state whether the task was completed, stopped for an adequacy reason, or requires further evidence. Do not move this task to `completed/` until worker execution and handoff are complete. Moving it does not constitute orchestrator acceptance.
+
+
+---
+
+## Worker handoff — Task 006
+
+### 1. Task identity
+
+- Pass 3 — technical and semantic review; current position Pass 3 / Checkpoint 21.
+- Source: `experience/build-and-release.md`, `main`, blob SHA `05c40c2b974cd14f229db814bc1ef63b1e657c65`.
+- Target: `translation/en/experience/build-and-release.md`, `translation/english-reconstruction`, blob SHA `411a9d962428bff35f6a8c66116ce789290028e2` (unchanged).
+- Review record: `translation/reviews/experience/build-and-release.md.md`, Pass 1 baseline SHA `6d3352f43645d60f4e2329fd53b88e488c935d35`; Pass 3 appended, resulting blob SHA `b62be013dd34096c20a0aff249345779e8362e27`.
+- Task: `translation/tasks/006-pass3-experience-build-and-release.md`, original blob SHA `ce7529ae8d2405b8df98fee7077f0545d3c1604b`.
+
+### 2. Observer position
+
+Determine whether the complete English build-and-release experience document preserves the Chinese source's meaning and operational force across the seven Pass 3 dimensions. External technical correctness, current upstream behaviour, benchmarking, build infrastructure and real-device/release-operation validation were excluded.
+
+### 3. Observations
+
+The source/target pair preserves the specific-pitfall role and explicit delegation of complete build-environment setup; reported measurements versus assumptions; execution-mode distinctions; cache and artifact identity; UID/GID and privilege constraints; reproducibility inputs; release integrity and distribution; version cadence; and the boundary between public documentation and internal investigation.
+
+Commands, paths, environment variables, identifiers, package/tool names, numeric values and applicability qualifiers were retained. Structure remains a set of discrete pitfalls rather than a generalized pipeline or state machine. The explicit build-environment reference and English counterpart resolve. The source and English experience indexes corroborate document category and order, not a technical dependency. Pass 1's reverse Pattern D reference and observer-reconstructed correspondences remain separately identified as review provenance.
+
+### 4. Decisions
+
+No material, source-justified correction was found. The English target was deliberately left unchanged at SHA `411a9d962428bff35f6a8c66116ce789290028e2`. A Pass 3 section was appended to the review record; the prior Pass 1 content was retained.
+
+### 5. Unresolved matters
+
+The source does not specify exact build scripts, CI definitions, cache-key formats, manifest/receipt schemas, a complete identity-record protocol, general safe-resume/deletion criteria or formal version-phase entry/exit criteria. External correctness and currency of the source's technical claims remain unvalidated and out of scope. No additional evidence was needed to complete the bounded translation comparison.
+
+### 6. Validation
+
+- All fourteen exact evidence-baseline blob SHAs listed in this task matched.
+- Complete source and target were read and compared.
+- Both experience indexes and the explicit build-environment source/reference counterpart were checked.
+- The Chinese source remains at its stated SHA; the English target remains at its stated SHA.
+- The complete Pass 1 review record was retained and the Pass 3 section appended. The updated review blob SHA is `b62be013dd34096c20a0aff249345779e8362e27`.
+- External technical, benchmark, infrastructure and real-device validation were not performed.
+- Result: **COMPLETED** — no target correction required.
+
+### 7. Change boundary
+
+Modified only `translation/reviews/experience/build-and-release.md.md` by appending the Pass 3 review section. The English target, Chinese source, build-environment reference files, criteria, continuation records, glossary, indexes and unrelated files were left untouched.
+
+### 8. Next dependency
+
+No additional document is required for this translation review. The bounded operation is complete and ready for independent orchestrator reconstruction and acceptance. Any external technical validation requires a separate task and explicit scope.
+
+**Worker execution status: COMPLETED.** Moving this task to `completed/` records worker execution and handoff only; it does not constitute orchestrator acceptance.
