@@ -48,3 +48,5 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 - [`gpu.md`](gpu.md) 记录 GPU 与图形栈的推荐路线、验收标准、故障表面、显式跨文件关系及未解决边界。
 - [`touch-and-input.md`](touch-and-input.md) 记录触控形态、面板生命周期、按键与键盘配件、指纹、用户侧验收、跨文件关系及手写笔正文覆盖缺口。
 - [`audio.md`](audio.md) 记录 AudioReach/ADSP 路线、硬件拓扑、分层验收证据、功放增益安全、UCM/PipeWire 故障、跨文件对应关系和未解决事项。
+
+- [`wireless.md`](wireless.md) 记录 Wi-Fi 与蓝牙的独立路线、验收序列、故障机制、显式模式引用、观察者对应关系和未解决边界。
