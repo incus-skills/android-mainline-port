@@ -92,7 +92,7 @@ A translation is not technically validated merely because its English reads natu
 - Check for contradictions, duplicated rules, missing dependencies, and accidental source-language leakage.
 - Review installation and skill-discovery metadata for compatibility.
 
-**Exit condition:** the English tree is coherent and usable as a skill, not merely a collection of translated files.
+**Exit condition:** the English tree is coherent and usable as a skill, not merely a collection of translated documents.
 
 ## File mapping and status
 
@@ -114,6 +114,12 @@ Do not mark a file complete based on partial excerpts or the README summary.
 - When a source file changes upstream, re-check the corresponding English file.
 - Keep the original Chinese files unchanged on this branch unless a separate, explicit reason requires otherwise.
 - Before proposing a merge, summarize coverage, known deviations, unresolved questions, and validation results.
+
+## Execution context segmentation
+
+The translation work now has a proposed context-segmented execution arrangement: a thin orchestrator retains the pass position and project-wide constraints; bounded file workers receive only the source/target pair and directly relevant dependencies; an integration check examines the wider constraints implicated by each result.
+
+See [Context-segmented execution](EXECUTION-SEGMENTATION.md). This is an execution arrangement under evaluation, not a change to the translation phases, source authority, or review scope. The next file operation remains governed by the current continuation record.
 
 ## Initial scope
 
