@@ -182,6 +182,7 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/gpu.md.md`](reviews/experience/gpu.md.md) records the `experience/gpu.md` source revision, layered graphics route, hardware-rendering acceptance criteria, Mesa/GPU failure surfaces, explicit resource relationship, terminology choices and technical-validation boundary.
 - [`translation/reviews/experience/touch-and-input.md.md`](reviews/experience/touch-and-input.md.md) records the touch architecture distinctions, panel/touch lifecycle, input acceptance, keyboard electrical/protocol separation, fingerprint boundary, explicit cross-file relationships and the absence of stylus-specific body content.
 - [`translation/reviews/experience/audio.md.md`](reviews/experience/audio.md.md) records the AudioReach/ADSP route, layered evidence boundaries, topology and amplifier distinctions, PipeWire/UCM and fresh-state issues, explicit collection-level links, unresolved risks and technical-validation boundary.
+- [`translation/reviews/experience/wireless.md.md`](reviews/experience/wireless.md.md) records the separate Wi-Fi/Bluetooth routes and acceptance sequences, firmware/board-data and device-identity distinctions, regulatory/lifecycle cases, explicit pattern references, unresolved issues and technical-validation boundary.
 
 ### Chinese reconstruction surface
 
@@ -193,6 +194,7 @@ A separate descriptive reconstruction surface has now been established under `re
 - [`reconstruction/zh/gpu.md`](../reconstruction/zh/gpu.md) records the retrospective reconstruction of the GPU and graphics-stack route, completion criteria, failure surfaces, explicit cross-document links, observer correspondences and unresolved boundaries.
 - [`reconstruction/zh/touch-and-input.md`](../reconstruction/zh/touch-and-input.md) records the touch/input architecture distinctions, user-facing acceptance, panel lifecycle and electrical/protocol failure surfaces, explicit cross-document relationships, unresolved issues and the stylus coverage gap.
 - [`reconstruction/zh/audio.md`](../reconstruction/zh/audio.md) records the AudioReach/ADSP route, hardware topology, layered machine/electrical/human evidence, cross-document correspondences, safety boundary and unresolved issues.
+- [`reconstruction/zh/wireless.md`](../reconstruction/zh/wireless.md) records the separate Wi-Fi and Bluetooth routes, acceptance sequences, failure mechanisms, explicit pattern references, observer-reconstructed correspondences and unresolved boundaries.
 
 This surface is our descriptive reconstruction, not a duplicate of the original source or a claim about author intent. Its records are retrospective where indicated. Author feedback, if obtained later, must be preserved as a separate source rather than silently merged into the original reconstruction.
 
@@ -209,5 +211,6 @@ The Chinese reconstruction surface includes a session-ingress record so a new se
 - [Pass 1 / Checkpoint 03](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-03.md) records the GPU reconstruction and the transition to touch and input.
 - [Pass 1 / Checkpoint 04](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-04.md) records the touch-and-input reconstruction and the transition to audio.
 - [Pass 1 / Checkpoint 05](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-05.md) records the audio reconstruction and the transition to wireless.
+- [Pass 1 / Checkpoint 06](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-06.md) records the wireless reconstruction and the transition to power and time.
 
 A **Pass** identifies one complete traversal of a declared scope from beginning to end. A pass may span multiple sessions; session checkpoints record movement within that pass. A later traversal starts a new pass and should preserve a comparison with earlier observations. Pass number must not be conflated with document position or session/checkpoint number.
