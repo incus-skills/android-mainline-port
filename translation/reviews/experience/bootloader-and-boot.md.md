@@ -7,7 +7,7 @@
 - Source path: `experience/bootloader-and-boot.md`
 - Source blob SHA: `3b1283ff22c393ca53f02c1b10edc5547389c2b6`
 - English artifact: [`translation/en/experience/bootloader-and-boot.md`](../../en/experience/bootloader-and-boot.md)
-- Review status: `translated`; semantic and technical review remain outstanding.
+- Review status: `reviewed` in Pass 3; technical validation remains outstanding.
 
 ## Translation intent and boundary
 
@@ -51,7 +51,7 @@ The first-boot checklist adds platform identity, virtualization detection, chass
 
 ### Pitfall records
 
-The document contains 19 individual pitfall entries, followed by two unresolved questions. The entries are not all identical in field coverage: some include markers, explicit confirmation or prevention steps, while others give only symptoms, cause, fix and applicability. The translation preserves those source-level differences rather than filling missing fields.
+The document contains 21 individual pitfall entries, followed by two unresolved questions. The entries are not all identical in field coverage: some include markers, explicit confirmation or prevention steps, while others give only symptoms, cause, fix and applicability. The translation preserves those source-level differences rather than filling missing fields.
 
 The examples cluster around several recurring concerns:
 
@@ -131,4 +131,31 @@ This record reconstructs the source's recommended route, acceptance criteria, fi
 - the stated upstream status remains current;
 - the unresolved recovery problems have a satisfactory solution.
 
-Those questions require separate semantic/technical review and, where appropriate, controlled real-device validation. The Chinese source remains authoritative for this translation pass.
+## Pass 3 source-based semantic review
+
+The source and English translation were compared across the recommended route, completion criteria, first-boot checklist, all 21 pitfall entries and the two unresolved questions. No source-driven translation correction was required; the English artifact remains unchanged.
+
+During this pass, the first-pass review record's pitfall count was corrected from 19 to **21** after counting the source's `###` entries. This corrects the reconstruction record, not the translated content.
+
+The comparison confirmed preservation of:
+- the seven-step recommended route from read-only evidence acquisition through persistent boot;
+- the per-device image-format test requirement, including the same-SoC warning;
+- RAM and persistent completion criteria and the first-boot checklist;
+- all 21 pitfall entries, their source-specific marker presence, symptoms, causes, confirmation steps, fixes, prevention notes and applicability statements;
+- the distinction between reversible RAM testing and persistent installation;
+- bootloader transformations, device-tree identity/symbol handling, boot-image formats, serial-number sources, Fastboot responsiveness, debug-channel ordering, initramfs handoff and recovery behaviour;
+- the two unresolved questions without supplying speculative solutions;
+- commands, kernel symbols, device-tree properties, paths, service names, image formats, configuration identifiers, numeric values and version labels.
+
+The translation preserves source-level variation in pitfall-entry fields; it does not fill missing confirmation or prevention sections. Technical recommendations remain source claims.
+
+### Pass 3 disposition
+
+- Source-based semantic review: **completed**.
+- Translation changes: **none required**.
+- Reconstruction-record correction: pitfall-entry count **19 → 21**.
+- Technical correctness, device-specific safety, current upstream status and real-device behaviour: **not validated**.
+- Whole-library validation: **outstanding**.
+- Next document: `experience/kernel-and-resources.md`.
+
+The recommended route remains device-tested rather than universal. The unresolved early-hard-hang recovery and long-idle Fastboot mechanism remain open.
