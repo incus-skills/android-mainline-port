@@ -63,7 +63,7 @@ Most pitfalls in the domain files can be abstracted into the following categorie
 
 **General handling**:
 
-1. List every possible source of residual state: saved ALSA state, user configuration, previously installed packages and kernels, old sets of boot images, old partition data, old `OUT` directories, old local-data copies on the device, and moved labels.
+1. List every possible source of residual state: saved ALSA state, user configuration, previously installed packages and kernels, old sets of boot images, old partition data, old `OUT` directories, old local-data copies on the device, and moved tags.
 2. Reproduce on a clean system, with a fresh boot and empty directories.
 3. Accept the fix only under conditions where no residual state is present.
 
