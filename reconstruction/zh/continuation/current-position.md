@@ -3,12 +3,12 @@
 ## 当前入口
 
 - 当前遍历：**Pass 1 — 初始结构与语言重构**
-- 当前会话检查点：**Checkpoint 11**
-- 最近完成的源文件：`experience/build-and-release.md`
-- 当前源文件位置：`experience/build-and-release.md` 已完成本轮检查。
-- 下一步：读取并重构 `experience/testing-and-process.md)，独立观察测试判据、主机脚本、自动化测试、并行协作、子 agent 和用户协作。
-- 最近检查点：[Pass 1 / Checkpoint 11](checkpoints/pass-1-checkpoint-11.md)。
-- 前一位置：[Pass 1 / Checkpoint 10](checkpoints/pass-1-checkpoint-10.md)。
+- 当前会话检查点：**Checkpoint 12**
+- 最近完成的源文件：`experience/testing-and-process.md`
+- 当前源文件位置：`experience/testing-and-process.md` 已完成本轮检查。
+- 下一步：核对 Pass 1 的完整声明范围与 `translation/INVENTORY.md`，确认经验库遍历完成后仍有哪些源文件或集成材料属于本轮范围；不要仅因经验库索引已到末项就宣告整个 Pass 1 完成。
+- 最近检查点：[Pass 1 / Checkpoint 12](checkpoints/pass-1-checkpoint-12.md)。
+- 前一位置：[Pass 1 / Checkpoint 11](checkpoints/pass-1-checkpoint-11.md)。
 
 ## 遍历编号约定
 
@@ -22,10 +22,10 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass、当前文档位置和调查边界。
-2. 阅读 [Pass 1 / Checkpoint 11](checkpoints/pass-1-checkpoint-11.md)，再按需回看 Checkpoint 10、Checkpoint 09 和更早检查点。
+2. 阅读 [Pass 1 / Checkpoint 12](checkpoints/pass-1-checkpoint-12.md)，再按需回看 Checkpoint 11、Checkpoint 10 和更早检查点。
 3. 阅读 `reconstruction/zh/README.md` 和 `translation/INVENTORY.md`。
-4. 按需回看 `references/build-environment.md`、`experience/patterns.md`（Pattern D）、`experience/ubuntu-userspace.md`、`experience/usb-and-storage.md` 及相关源文与重构记录。
-5. 独立检查原始源文件 `experience/testing-and-process.md`，区分其自身陈述与此前文档形成的预期。
+4. 按需回看 `experience/README.md`、`experience/patterns.md`（Pattern E/F/H/I）、`experience/verification.md`、`experience/discipline.md` 和相关经验源文与重构记录。
+5. 核对 `translation/INVENTORY.md` 中 Pass 1 的剩余范围；区分已完成的经验库遍历与整个源库范围，不预设两者相同。
 
 ## 当前继续约束
 
