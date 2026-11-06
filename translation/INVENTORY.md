@@ -187,3 +187,13 @@ A separate descriptive reconstruction surface has now been established under `re
 This surface is our descriptive reconstruction, not a duplicate of the original source or a claim about author intent. Its records are retrospective where indicated. Author feedback, if obtained later, must be preserved as a separate source rather than silently merged into the original reconstruction.
 
 Future document translations should retain equivalent decision records rather than leaving them only in conversation. Each translation record is a separate reconstruction artifact; it is not part of the functional skill text.
+
+
+### Session ingress and traversal checkpoints
+
+The Chinese reconstruction surface includes a session-ingress record so a new session can re-establish the active observer position without relying on conversation history.
+
+- [Current position](../reconstruction/zh/continuation/current-position.md) is the active entry point. It identifies the current traversal pass, document position, next source and re-entry reading sequence.
+- [Pass 1 / Checkpoint 01](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-01.md) preserves the retrospective observer position, evidence boundaries, continuation rationale and cold-start success criteria.
+
+A **Pass** identifies one complete traversal of a declared scope from beginning to end. A pass may span multiple sessions; session checkpoints record movement within that pass. A later traversal starts a new pass and should preserve a comparison with earlier observations. Pass number must not be conflated with document position or session/checkpoint number.
