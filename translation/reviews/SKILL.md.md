@@ -47,3 +47,29 @@ These are working translation choices, not a general-purpose glossary mandate. R
 `translated` — committed to the English reconstruction branch.
 
 Semantic and technical review remain outstanding. This record documents translation decisions and review boundaries; it does not certify the underlying porting procedures.
+
+
+## Pass 3 — technical and semantic review
+
+Source/translation pair rechecked against `SKILL.md` at blob `9d9ea8aca4afde6ced79154958864196cc3da433`.
+
+### Corrections made
+
+1. The source says the experience comes from the process of porting Qualcomm tablets to Ubuntu 26.04 + GNOME. The translation's singular "on a Qualcomm tablet" unnecessarily narrowed the source's plural/general wording. It now reads "porting Qualcomm tablets to Ubuntu 26.04 + GNOME".
+2. The source says the hardware and kernel sections are "基本通用" (broadly applicable/general). "Broadly reusable" could imply reuse of concrete components rather than applicability across devices. It now reads "broadly applicable".
+
+### Review findings
+
+- Frontmatter name and trigger description are preserved in meaning; technical tokens and product name remain unchanged.
+- The five task-entry routes remain distinct: new project, takeover, technical decision, troubleshooting and assessment only.
+- The nine-stage table preserves its stated completion criteria and per-stage references, including the blank Stage 8 completion criterion.
+- The eight sequencing warnings, thirteen mandatory discipline rules, technical selection principles and eight user decision categories are present in the same order.
+- File-index links remain relative to the translated skill location and point to the English `references/` and `experience/` trees.
+- No source-defined stage, state machine or additional completion criterion has been introduced.
+
+### Boundaries
+
+- Source-based semantic/structural review: completed for this document.
+- Current technical correctness of kernel, boot, hardware, distribution and agent behaviour: not assessed.
+- External compatibility of the frontmatter trigger description: not assessed.
+- This document's review does not close Pass 3; the remaining 21 operational documents are still in scope.
