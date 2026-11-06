@@ -54,6 +54,7 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 - [`sensors-camera-media.md`](sensors-camera-media.md) 记录 SSC 传感器与自动旋转、Iris/Venus 视频硬解、相机用户入口、显式模式引用、观察者重构出的跨层对应及未解决边界。
 - [`usb-and-storage.md`](usb-and-storage.md) 记录 USB 角色与 Type-C、UFS/分区身份、活动槽镜像集轮换、稀疏镜像写入语义、备份一致性、恢复通道和安装边界。
 - [`ubuntu-userspace.md`](ubuntu-userspace.md) 记录 Ubuntu 包生命周期、initramfs 钩子、dracut、snap/GPU 提供者与消费者、GNOME 首次设置、systemd 冷启动故障，以及与架构参考和问题模式的显式关系。
+- [`build-and-release.md`](build-and-release.md) 记录构建耗时测量、执行环境、缓存与产物身份、可复现性、清理、发布完整性、版本节奏及对外文档边界。
 
 
 - [Pass 1 / Checkpoint 07](continuation/checkpoints/pass-1-checkpoint-07.md) 记录电量、充电、休眠与系统时间的重构，以及向传感器、相机和视频硬解的过渡。
@@ -62,3 +63,4 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 - [Pass 1 / Checkpoint 09](continuation/checkpoints/pass-1-checkpoint-09.md) 记录 USB、Type-C、存储、双系统与安装的重构，以及向 Ubuntu 用户态的过渡。
 
 - [Pass 1 / Checkpoint 10](continuation/checkpoints/pass-1-checkpoint-10.md) 记录 Ubuntu 用户态故障记录的重构，以及向构建与发布的过渡。
+- [Pass 1 / Checkpoint 11](continuation/checkpoints/pass-1-checkpoint-11.md) 记录构建流水线与发布经验的重构，以及向测试与协作流程的过渡。
