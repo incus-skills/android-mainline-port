@@ -19,12 +19,12 @@ This document specifies **what must be done and what must be recorded**. The exa
 
 Use only these status terms:
 
-- 待调研 — Research pending
-- 有源码线索 — Source-code lead available
-- 离线通过 — Passed offline
-- 真机启动 — Boots on a real device
-- 真机通过 — Passed on a real device
-- 真机失败 — Failed on a real device
+- Research pending
+- Source-code lead available
+- Passed offline
+- Boots on a real device
+- Passed on a real device
+- Failed on a real device
 
 ## 2. Technical Debt: Register Shortcuts
 
