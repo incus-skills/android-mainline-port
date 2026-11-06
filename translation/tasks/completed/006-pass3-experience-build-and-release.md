@@ -171,7 +171,7 @@ No additional document is required for this translation review. The bounded oper
 - Source: `experience/build-and-release.md`, `main`, blob SHA `05c40c2b974cd14f229db814bc1ef63b1e657c65`.
 - English target: `translation/en/experience/build-and-release.md`, `translation/english-reconstruction`, blob SHA `411a9d962428bff35f6a8c66116ce789290028e2`.
 - Review record before repair: `b62be013dd34096c20a0aff249345779e8362e27`.
-- Corrected review record: `53744954319a6789a43d9769102f816181df3158`.
+- Corrected review record after phrase repair: `53744954319a6789a43d9769102f816181df3158`; after clarifying the historical Pass 1 wording boundary: `b1d0c71907a8c6a6ddfbd586c4118f6229b71855`.
 
 ### 2. Observer position
 
@@ -181,13 +181,13 @@ Correct two unsupported technical details in the Pass 3 review's account of the 
 
 The independent adjudication identified:
 - `LOCALVERSION_AUTO` was listed as a retained technical token despite appearing in neither source nor target.
-- `TCG` was added to the full-system QEMU description despite not being specified by either source or target.
+- The appended Pass 3 review described the execution-mode distinction as `full-system QEMU/TCG`, although neither source nor target specifies TCG. The earlier Pass 1 record also contains that wording and is retained verbatim as historical provenance.
 
 ### 4. Decisions
 
 Both defects were corrected in the Pass 3 review record:
 - Removed `LOCALVERSION_AUTO` from the token list.
-- Replaced `full-system QEMU/TCG` with `full-system QEMU emulation`, retaining the source-grounded distinction from qemu-user without adding an implementation detail.
+- In the appended Pass 3 section, replaced `full-system QEMU/TCG` with `full-system QEMU emulation`, retaining the source-grounded distinction from qemu-user without adding an implementation detail. The pre-existing Pass 1 wording remains unchanged and is explicitly identified in the review's corrective record as historical, not as evidence for the corrected Pass 3 comparison.
 
 No changes were made to the English translation or Chinese source. The original worker completion statement remains historically intact; the correction is recorded separately and does not claim orchestrator acceptance.
 
@@ -198,12 +198,12 @@ None within this narrow repair. Independent orchestrator acceptance remains for 
 ### 6. Validation
 
 - Re-read the corrected Pass 3 review record after the update.
-- Confirmed the corrected technical-token list does not contain `LOCALVERSION_AUTO`.
-- Confirmed the corrected execution-mode description does not contain `TCG`.
-- Confirmed the review's corrective record describes both repairs.
+- Confirmed the Pass 3 technical-token inventory no longer lists `LOCALVERSION_AUTO`; the term appears only in the corrective explanation of what was removed.
+- Confirmed the Pass 3 execution-mode comparison says `full-system QEMU emulation` and does not qualify it with TCG. The earlier Pass 1 record's historical `QEMU/TCG` wording remains verbatim, as required to preserve the original Pass 1 record; the corrective record explicitly marks it as superseded for the Pass 3 comparison.
+- Re-read the corrected review and its corrective explanation.
 - Confirmed source SHA remains `05c40c2b974cd14f229db814bc1ef63b1e657c65`.
 - Confirmed target SHA remains `411a9d962428bff35f6a8c66116ce789290028e2`.
-- The original Pass 1 review material was not edited; the repair was confined to the appended Pass 3 section.
+- The original Pass 1 review material was not edited. The two phrase corrections and clarification were confined to the appended Pass 3 review/corrective material.
 
 ### 7. Change boundary
 
