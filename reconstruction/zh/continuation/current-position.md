@@ -3,15 +3,15 @@
 ## 当前入口
 
 - 当前遍历：**Pass 3 — 操作性英文翻译的技术与语义审查**
-- 当前会话检查点：**Pass 3 / Checkpoint 16**
+- 当前会话检查点：**Pass 3 / Checkpoint 17**
 - 最近完成文档：`experience/wireless.md`
 - 下一文档：`experience/power-and-time.md`
 - 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`、`references/decisions.md`、`references/build-environment.md`、`references/verification.md`、`references/ubuntu.md`、`experience/README.md`、`experience/patterns.md`、`experience/bootloader-and-boot.md`、`experience/kernel-and-resources.md`、`experience/display.md`、`experience/gpu.md`、`experience/touch-and-input.md`、`experience/audio.md`、`experience/wireless.md`。
 - Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档。
 - 当前观察位置：检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
 - 明确排除：不以此轮证明技术主张在当前上游或真实设备上正确；不进行真机验证。
-- 最近检查点：[Pass 3 / Checkpoint 16 — experience/audio.md](checkpoints/pass-3-checkpoint-16.md)。
-- 前一检查点：[Pass 3 / Checkpoint 15 — experience/touch-and-input.md](checkpoints/pass-3-checkpoint-15.md)。
+- 最近检查点：[Pass 3 / Checkpoint 17 — experience/wireless.md](checkpoints/pass-3-checkpoint-17.md)。
+- 前一检查点：[Pass 3 / Checkpoint 16 — experience/audio.md](checkpoints/pass-3-checkpoint-16.md)。
 - Pass 3 范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)。
 - 执行上下文分段：[Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)。该安排是执行层面的候选方案，不改变 Pass 3 的范围、标准或观察位置。
 
