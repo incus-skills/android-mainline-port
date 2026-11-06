@@ -151,3 +151,42 @@ These absences are not filled from external audio documentation.
 ## Review boundary
 
 This review assesses translation fidelity and reconstructability of the source's route, evidence boundaries, failure mechanisms and unresolved issues. It does not validate AudioReach APIs, DSP topology, amplifier register values, firmware/tuning compatibility, PipeWire/UCM behaviour, kernel configuration or safe gain limits. Those require a separate technical evidence pass.
+
+
+## Pass 3 — technical and semantic review
+
+- Source revision reviewed: `experience/audio.md` on `main`, blob SHA `46e576b39a1d724e2b9d422373a05ea60409dcfc`.
+- English artifact reviewed: `translation/en/experience/audio.md` (blob SHA `7764597a750a7cc4c22873feddcb5005fef2537d`).
+- Review scope: all six recommended-route steps, five completion criteria, all eighteen pitfall entries, the three unresolved issues, technical tokens, imperative force, conditional scope, structure and cross-document relationships.
+
+### Review findings
+
+**No source-driven translation correction was required.** The English text preserves the source's instructions, conditions, distinctions and evidence limits without requiring stylistic rewriting.
+
+### Confirmed preservation
+
+- The six-step route retains the ADSP/PAS, QRTR, PD mapper and GPR prerequisites; target-device topology recovery; same-SoC reuse; fixed-version topology compilation; the PCM-to-human-listening progression; fresh-system UCM/PipeWire acceptance; and the separation between safe first-sound gain and product gain.
+- The five completion criteria remain distinct: playback/DSP/amplifier state, machine-observed signal, human listening, microphone stimulus/control, and fresh-installation state. A successful earlier layer is not substituted for later evidence.
+- All eighteen pitfalls retain their separate mechanisms and uneven source fields. These include TDM clock polarity, rewritten root `compatible`, asynchronous errors, remote-processor crash reporting, frontend/backend format intersection, DAPM/trigger timing and PRM clock identity, topology port numbering, device-tree tuning-file naming, gain and speaker-protection safety, PipeWire upmix, UCM route/control placement, profile-wide failure from an external-display output, fixed DMA-channel assumptions, microphone stimulus, ALSA sequencer dependency, MMAP pre-fill deadlock, vendor telemetry limits, placeholder supply debt, and the gain-limit trade-off.
+- Source-specific instructions and force remain represented: check the root `compatible` first when PD mapper reports the stated platform error; test the only configuration difference first with one variable changed; repair crash-reason reporting before disassembly; treat any amplifier/APM/ADSP error during the boot as acceptance failure; treat firmware-version or algorithm mismatch warnings as real problems; do not increase gain in repeated 6 dB steps; and do not include unverified external-display outputs in the default verb.
+- Numerical and technical details remain intact, including S32/S16/S24, the four-channel frontend limit, `Invalid channels (8)`, `mute_unmute_on_trigger`, `ControlExists`, `/var/lib/alsa/asound.state`, `arecord`, EIO, `SND_SEQUENCER=m`, PREPARED/START, `dvdd-supply`, `regulator-fixed`, approximately −24 dB and −4.5 dB, and the named AudioReach, ADSP, APM, PRM, LPASS, ACDB, q6apm, wm_adsp, UCM, PipeWire and WirePlumber identifiers.
+- The three unresolved issues remain: absence of a mainline ADSP speaker-protection module and its volume consequence; uncertainty about an occasional amplifier power-on error during boot; and APM/PRM requests becoming unresponsive after a WirePlumber crash, with reboot as the stated recovery.
+- The source contains no Markdown links to other experience documents. The translation does not invent any. The review retains the collection-level relationship to Pattern D, the correspondence with Pattern F, and the shared `SND_SEQUENCER` dependency with `kernel-and-resources.md` as relationships observed across the source collection, not direct links authored in audio.md.
+
+### Structural and observer boundaries
+
+The layered route is not converted into a universal hardware topology or state machine. Same-SoC reuse remains a starting point, while target-device vendor runtime device-tree and mixer evidence ground the actual topology. The separate playback, electrical, human-listening and microphone evidence surfaces remain distinct.
+
+The relationship between PCM/DSP/amplifier signals and audible output, the role of fresh ALSA state, and the safety implications of gain without equivalent speaker protection are preserved as source-grounded distinctions or explicitly labelled observer correspondences. They are not expanded into a universal audio architecture.
+
+The source does not establish a topology for every Qualcomm audio device, a complete mapping of microphone/amplifier/backend variants, a general recovery procedure for the WirePlumber/APM/PRM failure, or a device-independent safe gain limit. These absences remain explicit.
+
+### Pass 3 disposition
+
+- Source-based technical and semantic translation review: **completed**.
+- Translation changes: **none required**.
+- External technical correctness, current AudioReach/API behaviour, DSP topology, firmware and tuning compatibility, PipeWire/UCM behaviour, amplifier register values, safe gain limits and real-device behaviour: **not validated**.
+- Whole-skill validation: **outstanding**.
+- Next document: `experience/wireless.md`.
+
+This review establishes source fidelity only; it does not validate the audio subsystem or the device-specific technical claims.
