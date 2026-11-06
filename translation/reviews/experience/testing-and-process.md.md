@@ -130,3 +130,57 @@ Remaining questions do not prevent this translation/reconstruction from proceedi
 - Technical validation: not performed.
 - Operational validation in an Android porting environment: not performed.
 - Whole-skill English validation: not performed.
+
+
+---
+
+## Pass 3 — Technical and semantic review
+
+### 1. Review position and evidence
+
+- Purpose: compare the complete Chinese source and English target for semantic fidelity and operational force across the seven Pass 3 dimensions.
+- Chinese source: `experience/testing-and-process.md`, `main`, blob SHA `ff1dbea0833dc9e9eb2f668000855f73ec0a9599`.
+- English target before correction: `translation/en/experience/testing-and-process.md`, `translation/english-reconstruction`, blob SHA `391f94ab1508b02cd4b1acc8942ccef1e4600372`.
+- English target after correction: same path and ref, blob SHA `b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca`.
+- Pass 1 review retained verbatim as the prefix of this record; its baseline blob SHA was `7e1d78eee519a7caef00fb5a837bc7b8c5c83c3c`.
+- Pass 3 criteria: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-01.md`, blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`.
+- Current position: `reconstruction/zh/continuation/current-position.md`, blob SHA `2e3f467ae1b04ed9ca8fd98cd4a6463c037fb022`; Pass 3 / Checkpoint 22.
+- Current checkpoint: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-22.md`, blob SHA `4713edd899ad76d828121da96b5d620e26bd4983`.
+- Previous checkpoint: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-21.md`, blob SHA `55694ab10197f62e80f2e7532df1a98993054e59`.
+- Translation instructions: `translation/README.md`, blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`.
+- Glossary: `translation/GLOSSARY.md`, blob SHA `7cd456b51223fd2cd3cf408cb14bae7f7d167254`.
+- Source and English experience indexes: `experience/README.md` (`main`, `b8b4b9110215280c35316df33d540e292c09356a`) and `translation/en/experience/README.md` (`a7a28190615253246749909b380ddcba17268769`).
+- Source and English pattern indexes: `experience/patterns.md` (`main`, `c485e34f6fb06808d7c2678b5a2280494e5f71c0`) and `translation/en/experience/patterns.md` (`7309618ad08085bb514b6800a580774f829fe312`).
+
+### 2. Observations across the seven review dimensions
+
+- **Imperative force:** Requirements, prohibitions, recommendations, examples and cautions remain distinct. The translation preserves the requirements to separate offline from real-device evidence, test new features individually on RAM images before merging, use cold-boot evidence after boot-path changes, provide advance notice for user actions, serialize device operation, and stop after the first hardware failure.
+- **Conditional scope:** General applicability and the explicit GNOME/2026 qualifications remain present. The source's conditions around unattended driver operations, D-state tasks, hung GPU/driver states, debug builds and user-facing acceptance have not been generalized beyond their stated scope.
+- **Decision logic:** The translation retains the source's alternatives and ordering: clean-boot controls; negative test inputs; offline re-evaluation rather than rerunning the device after a tool fix; tracing the earliest failing layer; RAM-boot validation before restoring a fallback; and the distinct recovery alternatives in the candidate-kernel incident.
+- **Technical tokens:** Commands, paths, identifiers, numeric values, kernel parameters, configuration symbols, quoted error text and examples were compared. This includes `fastboot boot | tee`, `e3b0c442…`, `\\x1b[6n`, `systemctl --user show-environment`, `systemctl reboot -ff`, the panic parameters and the two kernel configuration symbols. One source-grounded wording correction is recorded below.
+- **Structure:** The English document retains the source's ordered sequence of discrete pitfalls, including entries without severity markers. It does not introduce the four subject areas in the title as new sections or turn the sequence into a formal workflow.
+- **Cross-document references:** The source and English experience indexes both identify the document's subject scope. The source and English pattern indexes both cite it under Patterns E, F, H and I. These are index-established relationships; the source document body does not contain inline links to the indexes or patterns. The Pass 1 review's observer-reconstructed correspondences remain distinct from source-body claims.
+- **Uncertainty:** The translation does not fill the source's omissions with a formal evidence schema, test state machine, concurrency/locking protocol, sub-agent lifecycle, universal diagnostic algorithm or technical safety endorsement. Technical correctness and current applicability remain unvalidated and outside this task.
+
+### 3. Translation correction
+
+In the host-side script pitfalls, the source says `解绑重绑 USB 端口可恢复`. The previous translation said “releasing and rebinding the USB port can recover it.” “Unbinding and rebinding” more directly preserves the source's stated pair of operations. The target was changed only from “releasing” to “unbinding”; no other target wording was changed.
+
+### 4. Decisions and unresolved matters
+
+The source/target comparison supports one material, source-grounded wording correction. No other material translation correction was identified. The target's existing structure, imperative force, conditional scope, decision branches, technical examples and uncertainty are otherwise retained.
+
+The task's specified segmentation-document blob SHA (`412268a0c065a628d65c0c2c1799830f718e92d1`) differs from the current branch revision (`05ee569421b89366bbc0993afe62cb22a0644913`). The current document retains the required worker/orchestrator boundary, evidence-admissibility rule, separate-investigation-proposal distinction and eight handoff fields. Its embedded “Application to the current position” paragraph still says Checkpoint 16 / `experience/wireless.md`, which conflicts with the task and the separately verified current-position record at Checkpoint 22 / `experience/testing-and-process.md`. The task and current-position record explicitly establish this operation's position; the segmentation document is used here for execution boundary and handoff structure, not to override that position. The stale embedded paragraph was not changed because it is outside the permitted change boundary. This discrepancy is retained for independent orchestrator consideration.
+
+No current upstream behaviour, physical-device behaviour, operational safety, or technical correctness claim was investigated. No separate external-investigation proposal was necessary to explain the translation correction.
+
+### 5. Validation and change boundary
+
+- All task-specified evidence-baseline revisions were checked. The source, target, Pass 1 review, Pass 3 criteria, current position, current and previous checkpoints, preceding completed task, inventory, glossary, translation instructions, source/English experience indexes and source/English pattern indexes matched their stated blob SHAs.
+- The segmentation-document SHA did not match; see the discrepancy recorded above.
+- The complete Chinese source and English target were compared. The target was updated only for the source-grounded “unbinding and rebinding” correction.
+- The Pass 1 review content remains an exact prefix; this Pass 3 section is appended after it.
+- The Chinese source and all excluded files remain unchanged.
+- External technical validation and real-device testing were not performed.
+
+**Pass 3 worker review result:** one source-justified translation correction made; review record appended. Independent orchestrator acceptance remains separate.
