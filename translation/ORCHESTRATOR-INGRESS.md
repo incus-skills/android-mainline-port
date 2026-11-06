@@ -36,7 +36,7 @@ Distinguish recorded facts, observer-reconstructed relationships and unresolved 
 
 ## Prepare bounded work
 
-After reconstructing the position, prepare the next supportable worker task using the fields in [Context-segmented execution](EXECUTION-SEGMENTATION.md):
+After reconstructing the position, prepare and persist the next supportable worker task in the numbered task sequence below, using the fields in [Context-segmented execution](EXECUTION-SEGMENTATION.md):
 
 - task identity and purpose;
 - exact input files and revisions;
@@ -61,7 +61,7 @@ Keep the worker's evidence boundary as small as adequacy permits. Do not pre-res
 
 ## Task sequence
 
-Pending tasks are plain, numbered Markdown records in `translation/tasks/`. Assign the next unused sequence number and keep the number as provenance; it does not encode priority, ownership or execution order. A worker discovers pending work from this directory, selects an available task, and follows its own ingress. The worker appends its reconstructable handoff to the task record. Once execution is complete, move the record unchanged except for the appended handoff to `translation/tasks/completed/`. Completion records execution, not orchestrator acceptance. The orchestrator independently evaluates the handoff and determines subsequent work. Do not introduce locking, status fields or other machinery unless actual use exposes a need.
+Pending tasks are plain, numbered Markdown records in `translation/tasks/`. Assign the next unused sequence number and keep the number as provenance; it does not encode priority, ownership or execution order. A worker enters through [Worker session ingress](WORKER-INGRESS.md), discovers pending work in this directory and selects an available task. The worker appends its reconstructable handoff to the task record. Once execution is complete, move the record unchanged except for the appended handoff to `translation/tasks/completed/`. Completion records execution, not orchestrator acceptance. The orchestrator independently evaluates the handoff and determines subsequent work. Do not introduce locking, status fields or other machinery unless actual use exposes a need.
 
 ## Expected result of this ingress
 
