@@ -99,7 +99,7 @@ The repository indexes describe this as an evolving collection of domain-specifi
 | `experience/wireless.md` | Wi-Fi and Bluetooth | `uninspected` |
 | `experience/power-and-time.md` | Battery, charging, suspend, RTC/system time, watchdog and thermal management | `translated` |
 | `experience/sensors-camera-media.md` | Sensors, rotation, camera and hardware video decoding | `uninspected` |
-| `experience/usb-and-storage.md` | USB/Type-C, external display, storage, partitioning, dual boot, flashing and installation | `uninspected` |
+| `experience/usb-and-storage.md` | USB/Type-C, external display, storage, partitioning, dual boot, flashing and installation | `translated` |
 | `experience/ubuntu-userspace.md` | Ubuntu packaging, dracut, snap and GNOME userspace integration | `uninspected` |
 | `experience/build-and-release.md` | Build pipeline, caching, reproducibility and release | `uninspected` |
 | `experience/testing-and-process.md` | Test judgement, automation, collaboration and process experience | `uninspected` |
@@ -159,6 +159,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 | `experience/display.md` | [`translation/en/experience/display.md`](en/experience/display.md) | `translated` | Firmware-display borrowing, native takeover, acceptance criteria, lifecycle and display-specific failure records translated; technical claims remain unvalidated. [Review record](reviews/experience/display.md.md). |
 | `experience/gpu.md` | [`translation/en/experience/gpu.md`](en/experience/gpu.md) | `translated` | Kernel/firmware/Mesa route, hardware-rendering acceptance, GPU and Mesa failure records, explicit resource relationship and unresolved new-GPU issues translated; technical claims remain unvalidated. [Review record](reviews/experience/gpu.md.md). |
 | `experience/sensors-camera-media.md` | [`translation/en/experience/sensors-camera-media.md`](en/experience/sensors-camera-media.md) | `translated` | Sensor/automatic-rotation, camera and hardware-video routes, layered acceptance evidence, fresh-boot state, application-level availability, explicit pattern references and unresolved boundaries translated; technical claims remain unvalidated. [Review record](reviews/experience/sensors-camera-media.md.md). |
+| `experience/usb-and-storage.md` | [`translation/en/experience/usb-and-storage.md`](en/experience/usb-and-storage.md) | `translated` | USB role and Type-C route, storage identity, active-slot rotation, sparse-image write semantics, backup consistency, recovery channel and installation boundaries translated; technical claims remain unvalidated. [Review record](reviews/experience/usb-and-storage.md.md). |
 
 The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
 
@@ -186,6 +187,7 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/wireless.md.md`](reviews/experience/wireless.md.md) records the separate Wi-Fi/Bluetooth routes and acceptance sequences, firmware/board-data and device-identity distinctions, regulatory/lifecycle cases, explicit pattern references, unresolved issues and technical-validation boundary.
 - [`translation/reviews/experience/power-and-time.md.md`](reviews/experience/power-and-time.md.md) records the power/time route, measurement-versus-status distinction, suspend and clock evidence, explicit pattern references, watchdog/thermal coverage gaps, unresolved issues and technical-validation boundary.
 - [`translation/reviews/experience/sensors-camera-media.md.md`](reviews/experience/sensors-camera-media.md.md) records the sensor/rotation, hardware-video and camera routes, layered acceptance evidence, explicit Pattern D/F/I references, unresolved camera boundaries and technical-validation boundary.
+- [`translation/reviews/experience/usb-and-storage.md.md`](reviews/experience/usb-and-storage.md.md) records USB/Type-C and storage routes, active-slot image-set rotation, FILL/DONT_CARE semantics, backup limits, explicit Pattern A/D/I references and the absence of a dedicated unresolved section.
 
 ### Chinese reconstruction surface
 
