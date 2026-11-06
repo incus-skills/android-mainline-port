@@ -151,3 +151,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
 
 The process translation preserves the source's stated stage overlaps, Stage 5/6 relationship, per-peripheral cycle, version rhythm, and the absence of a Stage 8 completion criterion. This is a translation record, not evidence that the underlying Android procedures have been technically validated.
+
+### Translation record
+
+The translation commentary and first-pass review for `SKILL.md` are preserved separately from the functional skill file in [`translation/reviews/SKILL.md.md`](reviews/SKILL.md.md). This record captures the source revision, translation intent, terminology decisions, review observations and current validation boundary. Future document translations should retain equivalent decision records rather than leaving them only in conversation.
