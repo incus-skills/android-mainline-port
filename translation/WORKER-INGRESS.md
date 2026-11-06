@@ -10,7 +10,7 @@ This is an experimental ChatGPT-session arrangement. It does not replace or rede
 
 1. Read [Context-segmented execution](EXECUTION-SEGMENTATION.md) for the worker boundary and required handoff.
 2. Inspect the pending task records in [the task sequence](tasks/). Each record is an independently bounded operation.
-3. Select one available task. Do not assume that the lowest number is highest priority or that tasks must execute strictly in sequence.
+3. Select one available task. For this initial trial, only one worker should select and execute work at a time; do not add a claim or locking mechanism. Do not assume that the lowest number is highest priority or that tasks must execute strictly in sequence. If concurrent selection occurs, record the collision as an observed limitation rather than inventing a protocol.
 4. Read the selected task completely and verify its stated file revisions and governing references before acting.
 5. If the task is missing required evidence, conflicts with repository state or cannot be completed within its stated boundary, stop and report that in the task record.
 
