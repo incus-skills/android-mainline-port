@@ -115,3 +115,32 @@ The source uses direct links and shared concepts to connect these documents; it 
 - Current status: **translated**. Semantic review and technical validation remain outstanding.
 
 This retrospective record preserves the reconstruction rationale for the already committed process translation. The next review should compare the English text against the Chinese source and assess its fit in the whole-skill context; technical procedure validation remains a separate pass.
+
+
+## Pass 3 — technical and semantic review
+
+Source/translation pair rechecked against `references/process.md` at blob `799e94e94a591e6d16caf68a5a30686c6b35171a`.
+
+### Review results
+
+- The nine stages retain their order, stage-specific goals, activities, completion criteria and experience references.
+- The three explicit parallelism rules remain distinct: Stage 1/Stage 0 overlap, native display takeover from Stage 4, and parallel offline preparation versus one-at-a-time real-device testing in Stage 6.
+- The Stage 5 entry condition remains the RAM desktop working; it is not deferred until all peripherals are complete.
+- Stage 6 preserves the isolated per-peripheral test cycle, real-device evidence, integration, ABI packaging, cold-boot regression and technical-debt registration.
+- Stage 7 preserves clean installation as a test of the public documentation, first-hour user audit, real-device-only support claims, explicit unsupported status for excluded first-release features, and user confirmation before publication.
+- The Stage 6/7 version loop and Stage 8 maintenance activities are retained.
+- Commands, paths, filenames, identifiers and technical tokens were checked in the stage instructions.
+- No Stage 8 completion criterion was invented; no formal state machine or exact overlap boundary was added.
+
+### Corrections
+
+No source-driven semantic correction was required. The existing translation was retained unchanged.
+
+### Boundaries
+
+This review confirms source-based translation correspondence only. It does not validate the safety or current correctness of device procedures, kernel interfaces, flashing operations, acceptance budgets, or release instructions.
+
+- Source-based semantic review: completed for this document.
+- Translation changes: none.
+- Technical correctness validation: not performed.
+- Whole-skill validation: outstanding.
