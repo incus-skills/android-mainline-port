@@ -225,3 +225,23 @@ The Chinese reconstruction surface includes a session-ingress record so a new se
 - [Pass 1 / Checkpoint 06](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-06.md) records the wireless reconstruction and the transition to power and time.
 
 A **Pass** identifies one complete traversal of a declared scope from beginning to end. A pass may span multiple sessions; session checkpoints record movement within that pass. A later traversal starts a new pass and should preserve a comparison with earlier observations. Pass number must not be conflated with document position or session/checkpoint number.
+
+
+## 10. Pass 1 scope reconciliation and closure
+
+Pass 1 is complete for the operational skill core defined by the Phase 1 exit condition in `translation/README.md): `SKILL.md`, the six framework references and the fifteen experience-library documents. Each has an English counterpart and a separate translation review record. The final experience document, `experience/testing-and-process.md`, was completed at Pass 1 / Checkpoint 12.
+
+The remaining six files in the original 28-file baseline were classified separately:
+
+| Material | Pass 1 treatment | Deferred work |
+|---|---|---|
+| `README.md` | Read as repository-facing overview, installation guide, examples and high-level content map; not an operational procedure document | Detailed user-facing translation/localisation and consistency review |
+| `README.en.md` | Read as existing English orientation aid, not source authority | Whole-document consistency and current installation compatibility review |
+| `.claude-plugin/marketplace.json` | Inspected as plugin registration metadata | Localisation and integration compatibility decision |
+| `LICENSE` | Preserve unchanged | Confirm preservation in later distribution work |
+| `docs/assets/gzh-qr.png` | Non-text community reference image | Retain/exclude decision for English distribution |
+| `docs/assets/xhs-qr.jpg` | Non-text community reference image | Retain/exclude decision for English distribution |
+
+This is consistent with the translation workflow's later phases for supporting examples/user-facing material and whole-skill integration validation. Pass 1 completion does not imply these deferred tasks, technical validation or whole-skill operational validation are complete.
+
+See [Pass 1 scope reconciliation](../reconstruction/zh/continuation/checkpoints/pass-1-scope-reconciliation.md) for the evidence boundary and closure rationale.
