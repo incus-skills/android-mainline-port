@@ -3,7 +3,7 @@
 ## 当前入口
 
 - 当前遍历：**Pass 3 — 操作性英文翻译的技术与语义审查**
-- 当前会话检查点：**Pass 3 / Checkpoint 14**
+- 当前会话检查点：**Pass 3 / Checkpoint 15**
 - 最近完成文档：`experience/gpu.md`
 - 下一文档：`experience/touch-and-input.md`
 - 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`、`references/decisions.md`、`references/build-environment.md`、`references/verification.md`、`references/ubuntu.md`、`experience/README.md`、`experience/patterns.md`、`experience/bootloader-and-boot.md`、`experience/kernel-and-resources.md`、`experience/display.md`、`experience/gpu.md`。
