@@ -10,7 +10,7 @@ description: A guide and experience library for porting mainline Linux and deskt
 - **Outer framework** (`SKILL.md` and `references/`): what to do first and what to do next, working discipline, technical selection, and how to determine whether something has passed. Relatively stable.
 - **Experience library** (`experience/`): recommended approaches, completion criteria, and specific pitfalls organised by domain (symptoms, causes, how to confirm, how to resolve, and how to prevent). Continuously extended as projects progress.
 
-The experience comes from porting to Ubuntu 26.04 + GNOME on a Qualcomm tablet. The hardware and kernel sections are broadly reusable. When changing distributions, adjust the Ubuntu-specific sections according to the final section of `references/ubuntu.md`. Version numbers and interface names are time-sensitive; check their current upstream status before use. Where upstream has already solved a problem, use the simpler upstream solution directly.
+The experience comes from porting Qualcomm tablets to Ubuntu 26.04 + GNOME. The hardware and kernel sections are broadly applicable. When changing distributions, adjust the Ubuntu-specific sections according to the final section of `references/ubuntu.md`. Version numbers and interface names are time-sensitive; check their current upstream status before use. Where upstream has already solved a problem, use the simpler upstream solution directly.
 
 ## How to use this skill
 
