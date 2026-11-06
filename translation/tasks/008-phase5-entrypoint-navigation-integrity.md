@@ -12,7 +12,7 @@ This is a read-only structural validation. It is not another Pass 3 translation 
 - Project phase: **Phase 5 — Whole-skill validation**, as defined in `translation/README.md`.
 - Current position: Pass 4 / Checkpoint 01.
 - Previous traversal: Pass 3, closed at Checkpoint 23. Pass 3 source-based review completion does not establish Phase 5 usability.
-- Pass 4 declaration: `reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-01.md`, blob SHA `38b0da9b0aabf42846434042694768eaa7b7f064`.
+- Pass 4 declaration: `reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-01.md`, blob SHA `598722e61e115068af5c90d90dbdf8224dd7c764`.
 - Current-position record before this task was prepared: `reconstruction/zh/continuation/current-position.md`, blob SHA `2f02b450881f5b0a4381eb56132a404ef024fb52`.
 - Pass 3 closure: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-23.md`, blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`.
 - Phase definitions and Phase 5 criteria: `translation/README.md`, blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`.
@@ -21,6 +21,12 @@ This is a read-only structural validation. It is not another Pass 3 translation 
 - English entrypoint: `translation/en/SKILL.md`, blob SHA `f613aa7ef89eb9204c4f9804faf7aebace596a4e`.
 - Pinned English tree: `translation/en/`, tree SHA `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`.
 - Supporting subtree SHAs: `translation/en/references/` = `41f3799c0dd0caa7bdef8e9b4820f45f21ace473`; `translation/en/experience/` = `d8d0db60cb0ef7dafd527f1d5302683bb3fbbb93`.
+
+## Known position discrepancy in the execution-arrangement document
+
+The pinned `translation/EXECUTION-SEGMENTATION.md` contains an “Application to the current position” paragraph naming Pass 3 / Checkpoint 16 / `experience/wireless.md`. That paragraph is stale and conflicts with the canonical current-position record and Pass 4 / Checkpoint 01. The stale paragraph predates the current segmentation revision; the newer revision added evidence-boundary and separate-investigation-proposal guidance but did not update the embedded position.
+
+Use the current-position record and the active checkpoint to establish position. Do not use the stale paragraph to override this task's observer position. This discrepancy is outside Task 008's skill-entrypoint scope; do not edit the segmentation document. Report only if it materially prevents execution of this task.
 
 ## Exact evidence boundary
 
