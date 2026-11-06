@@ -8,7 +8,7 @@
 - 当前源文件位置：`experience/touch-and-input.md` 尚待本轮检查。
 - 下一步：读取并重构 `experience/touch-and-input.md`，观察触控、按键、键盘配件、手写笔与指纹支持的领域结构，以及它们与显示验收和电源/设备资源的明确联系。
 - 最近检查点：[Pass 1 / Checkpoint 03](checkpoints/pass-1-checkpoint-03.md)。
-- 前一位置：[Pass 1 / Checkpoint 01](checkpoints/pass-1-checkpoint-01.md)。
+- 前一位置：[Pass 1 / Checkpoint 02](checkpoints/pass-1-checkpoint-02.md)。
 
 ## 遍历编号约定
 
