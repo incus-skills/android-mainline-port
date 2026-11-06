@@ -28,7 +28,7 @@ Use only these status terms:
 
 ## 2. Technical Debt: Register Shortcuts
 
-To get the display working or establish a working path quickly, temporary approaches may be used. Examples include borrowing the firmware display, fixing transmit power, using conservative gain settings, debugging parameters, global ignore switches, application-level workarounds, and manual steps.
+To get the display working or establish a working path quickly, temporary approaches may be used. Examples include borrowing the firmware display, using a fixed transmit-power setting, using conservative gain settings, debugging parameters, global ignore switches, application-level workarounds, and manual steps.
 
 This is acceptable, but **every temporary approach must be registered in one shared technical-debt table** and paid down later.
 
