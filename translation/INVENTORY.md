@@ -56,7 +56,7 @@ Status meanings are defined in [README.md](README.md):
 
 | Source path | Initial role | English/reconstruction position | Status |
 |---|---|---|---|
-| `SKILL.md` | Agent Skill entry point; activation, navigation, workflow overview, discipline, decision principles and file index | Operational English counterpart not yet created | `uninspected` |
+| `SKILL.md` | Agent Skill entry point; activation, navigation, workflow overview, discipline, decision principles and file index | [`translation/en/SKILL.md`](en/SKILL.md); source-based technical/semantic review completed in Pass 3 / Checkpoint 02 | `reviewed` |
 | `README.md` | Chinese repository-level description, installation, examples, scope, risks and contribution guidance | [`README.en.md`](../README.en.md) is the English counterpart; source comparison and translation review completed in Pass 2 | `reviewed` |
 | `README.en.md` | Existing English repository orientation and installation guide | Compared against `README.md`; one wording correction recorded in Pass 2 | `reviewed` |
 | `LICENSE` | Repository licence and attribution conditions | Preserve applicable copyright and MIT licence notice in derived distribution | Preserve; no translation assumed |
@@ -145,7 +145,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 
 | Source document | Reconstruction / English artifact | Current status | Notes |
 |---|---|---|---|
-| `SKILL.md` | [`translation/en/SKILL.md`](en/SKILL.md) | `translated` | English translation committed from the supplied draft; source frontmatter description translated. Translation review notes remain separate from the functional skill text. Semantic/technical review remains outstanding. [Review record](reviews/SKILL.md.md). |
+| `SKILL.md` | [`translation/en/SKILL.md`](en/SKILL.md) | `reviewed` | Source-based semantic review completed in Pass 3 / Checkpoint 02; two scope/meaning refinements recorded. External technical and activation validation remain outstanding. [Review record](reviews/SKILL.md.md). |
 | `references/process.md` | [`translation/en/references/process.md`](en/references/process.md) | `translated` | Document-level structure reconstructed; English draft committed. Semantic/technical review remains outstanding. [Review record](reviews/references/process.md.md). |
 | `references/discipline.md` | [`translation/en/references/discipline.md`](en/references/discipline.md) | `translated` | Record responsibilities, privacy boundaries, attribution, estimation and sub-agent constraints translated; semantic/technical review remains outstanding. [Review record](reviews/references/discipline.md.md). |
 | `references/decisions.md` | [`translation/en/references/decisions.md`](en/references/decisions.md) | `translated` | Nine-section conditional decision catalogue translated; technical claims deliberately not validated in this pass. [Review record](reviews/references/decisions.md.md). |
