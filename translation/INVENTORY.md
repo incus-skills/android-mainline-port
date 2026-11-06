@@ -176,6 +176,7 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/patterns.md.md`](reviews/experience/patterns.md.md) records the `experience/patterns.md` source revision, nine-category diagnostic structure, cross-document relationships, terminology choices, overlapping-category ambiguity and review boundary.
 - [`translation/reviews/experience/bootloader-and-boot.md.md`](reviews/experience/bootloader-and-boot.md.md) records the `experience/bootloader-and-boot.md` source revision, boot route, acceptance criteria, pitfall structure, terminology choices, unresolved recovery questions and review boundary.
 - [`translation/reviews/experience/kernel-and-resources.md.md`](reviews/experience/kernel-and-resources.md.md) records the `experience/kernel-and-resources.md` source revision, Category B development, provider/consumer and timing distinctions, cross-document relationships, terminology choices and technical-validation boundary.\n- [`translation/reviews/experience/display.md.md`](reviews/experience/display.md.md) records the `experience/display.md` source revision, route distinctions, native-takeover sequence, acceptance model, diagnostic correspondences, cross-document relationships and technical-validation boundary.
+- [`translation/reviews/experience/gpu.md.md`](reviews/experience/gpu.md.md) records the `experience/gpu.md` source revision, layered graphics route, hardware-rendering acceptance criteria, Mesa/GPU failure surfaces, explicit resource relationship, terminology choices and technical-validation boundary.
 
 ### Chinese reconstruction surface
 
@@ -183,6 +184,7 @@ A separate descriptive reconstruction surface has now been established under `re
 
 - [`reconstruction/zh/README.md`](../reconstruction/zh/README.md) defines its purpose, authority boundary and relationship to the original Chinese source, English reconstruction and functional translation.
 - [`reconstruction/zh/kernel-and-resources.md`](../reconstruction/zh/kernel-and-resources.md) records the retrospective Chinese reconstruction of the kernel/resource document, including observer position, source provenance, its relationship to problem pattern B and `display.md`, recovered mechanisms, unresolved questions and the current sufficiency boundary.\n- [`reconstruction/zh/display.md`](../reconstruction/zh/display.md) records the retrospective reconstruction of the display routes, takeover sequence, acceptance evidence, diagnostic correspondences, resource relationships and unresolved boundaries.
+- [`reconstruction/zh/gpu.md`](../reconstruction/zh/gpu.md) records the retrospective reconstruction of the GPU and graphics-stack route, completion criteria, failure surfaces, explicit cross-document links, observer correspondences and unresolved boundaries.
 
 This surface is our descriptive reconstruction, not a duplicate of the original source or a claim about author intent. Its records are retrospective where indicated. Author feedback, if obtained later, must be preserved as a separate source rather than silently merged into the original reconstruction.
 
@@ -195,5 +197,7 @@ The Chinese reconstruction surface includes a session-ingress record so a new se
 
 - [Current position](../reconstruction/zh/continuation/current-position.md) is the active entry point. It identifies the current traversal pass, document position, next source and re-entry reading sequence.
 - [Pass 1 / Checkpoint 01](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-01.md) preserves the retrospective observer position, evidence boundaries, continuation rationale and cold-start success criteria.
+- [Pass 1 / Checkpoint 02](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-02.md) records the display reconstruction and the transition to GPU.
+- [Pass 1 / Checkpoint 03](../reconstruction/zh/continuation/checkpoints/pass-1-checkpoint-03.md) records the GPU reconstruction and the transition to touch and input.
 
 A **Pass** identifies one complete traversal of a declared scope from beginning to end. A pass may span multiple sessions; session checkpoints record movement within that pass. A later traversal starts a new pass and should preserve a comparison with earlier observations. Pass number must not be conflated with document position or session/checkpoint number.
