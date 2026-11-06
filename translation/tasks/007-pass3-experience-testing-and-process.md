@@ -33,7 +33,7 @@ Fetch and verify these exact files before relying on them:
 | English target | `translation/en/experience/testing-and-process.md` | `translation/english-reconstruction` | `391f94ab1508b02cd4b1acc8942ccef1e4600372` |
 | Existing review (Pass 1) | `translation/reviews/experience/testing-and-process.md.md` | `translation/english-reconstruction` | `7e1d78eee519a7caef00fb5a837bc7b8c5c83c3c` |
 | Pass 3 criteria | `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-01.md` | `translation/english-reconstruction` | `0870d3ea261a6354649379b96891cda4ca2a0ba6` |
-| Current position | `reconstruction/zh/continuation/current-position.md` | `translation/english-reconstruction` | `92858d4c038e0b0f85bff3f03fb05da8503f3dcf` |
+| Current position | `reconstruction/zh/continuation/current-position.md` | `translation/english-reconstruction` | `2e3f467ae1b04ed9ca8fd98cd4a6463c037fb022` |
 | Current checkpoint | `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-22.md` | `translation/english-reconstruction` | `4713edd899ad76d828121da96b5d620e26bd4983` |
 | Previous checkpoint | `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-21.md` | `translation/english-reconstruction` | `55694ab10197f62e80f2e7532df1a98993054e59` |
 | Completed preceding task | `translation/tasks/completed/006-pass3-experience-build-and-release.md` | `translation/english-reconstruction` | `8bc62329aab109f927accd1e9aac6b2307176403` |
