@@ -8,7 +8,7 @@ There are two ways to light the screen. Understand the difference before choosin
 |---|---|---|
 | Principle | The bootloader has already lit the panel and is continuously scanning out a memory buffer through the display controller. Linux only draws into that buffer. | The kernel display driver reinitializes the controller and interface, and the panel driver sends the power-on commands again. |
 | First image | Fast (one or two days) | A few days if an existing panel driver is available; one or two weeks if a panel driver must be written. |
-| Capabilities | No brightness control, genuine display-off, refresh-rate switching, external display, or prerequisites for suspend; GNOME sees the connector type as Unknown. | All of these capabilities are available. |
+| Capabilities | No brightness control, genuine display-off, refresh-rate switching, external display, or suspend support; GNOME sees the connector type as Unknown. | All of these capabilities are available. |
 | Main risk | Resource reclamation (see `kernel-and-resources.md`). | Incorrect parameters causing corrupted output; display-off/display-on lifecycle. |
 
 **Recommendation:** If the upstream display driver supports the SoC and a panel driver can be obtained from community or vendor code, go directly to native takeover. Otherwise, first borrow the display to establish the installation path and desktop, while **starting native takeover in parallel**. Do not attempt product-level fixes such as brightness control or display-off on top of the borrowed display.
