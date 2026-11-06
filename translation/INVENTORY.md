@@ -147,6 +147,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 |---|---|---|---|
 | `SKILL.md` | [`translation/en/SKILL.md`](en/SKILL.md) | `translated` | English translation committed from the supplied draft; source frontmatter description translated. Translation review notes remain separate from the functional skill text. Semantic/technical review remains outstanding. |
 | `references/process.md` | [`translation/en/references/process.md`](en/references/process.md) | `translated` | Document-level structure reconstructed; English draft committed. Semantic/technical review remains outstanding. |
+| `references/discipline.md` | [`translation/en/references/discipline.md`](en/references/discipline.md) | `translated` | Record responsibilities, privacy boundaries, attribution, estimation and sub-agent constraints translated; semantic/technical review remains outstanding. |
 
 The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
 
@@ -154,4 +155,9 @@ The process translation preserves the source's stated stage overlaps, Stage 5/6 
 
 ### Translation record
 
-The translation commentary and first-pass review for `SKILL.md` are preserved separately from the functional skill file in [`translation/reviews/SKILL.md.md`](reviews/SKILL.md.md). This record captures the source revision, translation intent, terminology decisions, review observations and current validation boundary. Future document translations should retain equivalent decision records rather than leaving them only in conversation.
+Translation commentary, reconstruction decisions and first-pass review are preserved separately from functional skill files under `translation/reviews/`.
+
+- [`translation/reviews/SKILL.md.md`](reviews/SKILL.md.md) records the `SKILL.md` source revision, translation intent, terminology decisions, review observations and current validation boundary.
+- [`translation/reviews/references/discipline.md.md`](reviews/references/discipline.md.md) records the `references/discipline.md` source revision, status-vocabulary mapping, structural observations, ambiguities and review boundary.
+
+Future document translations should retain equivalent decision records rather than leaving them only in conversation. Each translation record is a separate reconstruction artifact; it is not part of the functional skill text.
