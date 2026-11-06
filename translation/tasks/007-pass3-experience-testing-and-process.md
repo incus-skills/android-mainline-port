@@ -125,3 +125,68 @@ Append the reconstructable handoff to this task record, following the eight fiel
 The handoff must state whether the task was completed, stopped for an adequacy reason, or requires further evidence. Do not move this task to `completed/` until worker execution and handoff are complete. Moving it does not constitute orchestrator acceptance.
 
 For the initial trial, only one worker should select and execute a task at a time; no locking or claim mechanism is assumed.
+
+
+---
+
+## Worker handoff — Task 007
+
+### 1. Task identity
+
+- Pass 3 — technical and semantic review; current position Pass 3 / Checkpoint 22.
+- Source: `experience/testing-and-process.md`, `main`, blob SHA `ff1dbea0833dc9e9eb2f668000855f73ec0a9599` (unchanged).
+- English target: `translation/en/experience/testing-and-process.md`, `translation/english-reconstruction`, original blob SHA `391f94ab1508b02cd4b1acc8942ccef1e4600372`; updated blob SHA `b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca`.
+- Review record: `translation/reviews/experience/testing-and-process.md.md`, Pass 1 baseline SHA `7e1d78eee519a7caef00fb5a837bc7b8c5c83c3c`; Pass 3 appended, resulting blob SHA `be2e323e070c75c77f54baa77e579b234b760b20`.
+- Task record: `translation/tasks/007-pass3-experience-testing-and-process.md`, original blob SHA `e8bfb287f07256beb8239def3b88f2930479ef5c`; this handoff appended.
+- Commit containing target correction: `a7f3f1647632c6fcca3a9705974b07b4a0142e4a`.
+- Commit containing Pass 3 review: `f2c55fd33d68cdcc828912f4006ee2d65e4cbbc1`.
+
+### 2. Observer position
+
+Determine whether the complete English translation preserves the Chinese source's meaning and operational force across imperative force, conditional scope, decision logic, technical tokens, structure, cross-document references and uncertainty. Current upstream correctness, actual Android-device behaviour, operational safety validation and redesign of test/collaboration systems were excluded.
+
+### 3. Observations
+
+The source/target pair preserves the ordered pitfall collection and its distinct cases concerning evidence quality, offline versus real-device testing, cold boot, host-side scripts, test-tool validity, user participation, desktop automation, device concurrency, diagnostic direction, clean-state experiments, sub-agent boundaries, reuse of community work, documentation, candidate-kernel recovery and community contributions.
+
+The translation retains the source's requirements, prohibitions, alternatives, numeric values, technical identifiers, commands and applicability qualifiers. One wording issue was found: “releasing and rebinding the USB port” did not preserve the source's explicit “unbind and rebind” operation as directly as “unbinding and rebinding.” The source and English indexes list the document's subject scope. Both pattern indexes cite it under E/F/H/I; these are index relationships, not inline links in the source body.
+
+### 4. Decisions
+
+Changed only the target phrase from “releasing and rebinding the USB port” to “unbinding and rebinding the USB port,” directly corresponding to `解绑重绑 USB 端口`.
+
+Appended a Pass 3 review section to the existing review record, preserving the Pass 1 record as its prefix. No other translation correction was identified. The review explicitly distinguishes source-body evidence, index-established relationships, and observer-reconstructed correspondences.
+
+### 5. Unresolved matters
+
+- The task specifies segmentation-document SHA `412268a0c065a628d65c0c2c1799830f718e92d1`, while the current branch revision is `05ee569421b89366bbc0993afe62cb22a0644913`. The current revision retains the worker/orchestrator boundary, evidence-admissibility rules, separate investigation-proposal boundary and eight handoff fields. Its embedded application-position paragraph is stale (Checkpoint 16 / `experience/wireless.md`) and conflicts with the task and canonical current-position record (Checkpoint 22 / `experience/testing-and-process.md`). The task and current-position record were used to establish this task's position; the segmentation document was used for its execution-boundary and handoff provisions. No out-of-scope file was changed. This discrepancy is referred to the orchestrator for independent assessment.
+- External technical correctness, current upstream behaviour, real-device behaviour and operational safety remain unvalidated and outside scope.
+- No separate external investigation proposal was necessary.
+
+### 6. Validation
+
+- All task-specified evidence-baseline revisions were fetched and checked. Every listed baseline matched except the segmentation-document SHA, as recorded above.
+- Complete Chinese source and English target were compared.
+- The target was re-fetched after update: the correction is present and the previous phrase is absent.
+- The source was re-fetched after changes and remains at SHA `ff1dbea0833dc9e9eb2f668000855f73ec0a9599`.
+- The review record was re-fetched after update; the Pass 3 section is appended and the original Pass 1 record remains its prefix.
+- Source and English collection indexes and pattern indexes were checked; Pattern E/F/H/I references are index-established, not source-body inline links.
+- The review and task handoff record the exact revisions and change boundary.
+- No external technical or real-device validation was performed.
+
+**Result: COMPLETED — one source-justified translation correction made; Pass 3 review and worker handoff recorded.**
+
+### 7. Change boundary
+
+Changed only:
+- `translation/en/experience/testing-and-process.md` — one phrase-level correction.
+- `translation/reviews/experience/testing-and-process.md.md` — appended Pass 3 review section.
+- This task record — appended this worker handoff.
+
+The Chinese source, indexes, patterns, checkpoints, current-position record, glossary, inventory, translation instructions, segmentation document and all unrelated files were left untouched.
+
+### 8. Next dependency
+
+Ready for independent orchestrator reconstruction and acceptance. The orchestrator should assess the stale embedded position and revision discrepancy in `translation/EXECUTION-SEGMENTATION.md`, then determine whether the Task 007 evidence and changes satisfy the task boundary. No next document task is selected by this worker.
+
+**Worker execution status: COMPLETED. Orchestrator acceptance: pending.**
