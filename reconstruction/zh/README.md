@@ -55,6 +55,7 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 - [`usb-and-storage.md`](usb-and-storage.md) 记录 USB 角色与 Type-C、UFS/分区身份、活动槽镜像集轮换、稀疏镜像写入语义、备份一致性、恢复通道和安装边界。
 - [`ubuntu-userspace.md`](ubuntu-userspace.md) 记录 Ubuntu 包生命周期、initramfs 钩子、dracut、snap/GPU 提供者与消费者、GNOME 首次设置、systemd 冷启动故障，以及与架构参考和问题模式的显式关系。
 - [`build-and-release.md`](build-and-release.md) 记录构建耗时测量、执行环境、缓存与产物身份、可复现性、清理、发布完整性、版本节奏及对外文档边界。
+- [`testing-and-process.md`](testing-and-process.md) 记录功能可用与运行成功、离线与真机证据、测试工具有效性、主机/设备/用户边界、协作与设备安全，以及与 Pattern E/F/H/I 的明确关系。
 
 
 - [Pass 1 / Checkpoint 07](continuation/checkpoints/pass-1-checkpoint-07.md) 记录电量、充电、休眠与系统时间的重构，以及向传感器、相机和视频硬解的过渡。
@@ -64,3 +65,4 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 
 - [Pass 1 / Checkpoint 10](continuation/checkpoints/pass-1-checkpoint-10.md) 记录 Ubuntu 用户态故障记录的重构，以及向构建与发布的过渡。
 - [Pass 1 / Checkpoint 11](continuation/checkpoints/pass-1-checkpoint-11.md) 记录构建流水线与发布经验的重构，以及向测试与协作流程的过渡。
+- [Pass 1 / Checkpoint 12](continuation/checkpoints/pass-1-checkpoint-12.md) 记录测试判断、自动化、协作与流程经验的重构，以及经验库文档遍历完成后的范围核对位置。
