@@ -57,8 +57,8 @@ Status meanings are defined in [README.md](README.md):
 | Source path | Initial role | English/reconstruction position | Status |
 |---|---|---|---|
 | `SKILL.md` | Agent Skill entry point; activation, navigation, workflow overview, discipline, decision principles and file index | Operational English counterpart not yet created | `uninspected` |
-| `README.md` | Chinese repository-level description, installation, examples, scope, risks and contribution guidance | `README.en.md` is the existing English orientation counterpart; consistency review remains necessary | `uninspected` |
-| `README.en.md` | Existing English repository orientation and installation guide | Existing English material; not evidence that operational references and experience records are translated | Review required |
+| `README.md` | Chinese repository-level description, installation, examples, scope, risks and contribution guidance | [`README.en.md`](../README.en.md) is the English counterpart; source comparison and translation review completed in Pass 2 | `reviewed` |
+| `README.en.md` | Existing English repository orientation and installation guide | Compared against `README.md`; one wording correction recorded in Pass 2 | `reviewed` |
 | `LICENSE` | Repository licence and attribution conditions | Preserve applicable copyright and MIT licence notice in derived distribution | Preserve; no translation assumed |
 | `.claude-plugin/marketplace.json` | Claude plugin marketplace and skill registration metadata | Integration artifact; Chinese descriptions may need a later compatibility/localisation decision | `uninspected` |
 
@@ -245,3 +245,11 @@ The remaining six files in the original 28-file baseline were classified separat
 This is consistent with the translation workflow's later phases for supporting examples/user-facing material and whole-skill integration validation. Pass 1 completion does not imply these deferred tasks, technical validation or whole-skill operational validation are complete.
 
 See [Pass 1 scope reconciliation](../reconstruction/zh/continuation/checkpoints/pass-1-scope-reconciliation.md) for the evidence boundary and closure rationale.
+
+
+## 11. Pass 2 — repository README review
+
+- `README.md` is mapped to the existing root-level `README.en.md`; the latter was reviewed against the complete Chinese source and one wording correction was made.
+- Review record: [`translation/reviews/README.md.md`](reviews/README.md.md).
+- Descriptive reconstruction: [`reconstruction/zh/README.md`](../reconstruction/zh/README.md).
+- This does not establish current technical accuracy or external installation compatibility. QR asset treatment and marketplace metadata remain separate decisions.
