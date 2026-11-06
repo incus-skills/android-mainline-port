@@ -137,3 +137,17 @@ These are observations from the repository tree and its indexes, not final concl
 **Baseline and file scope are explicit.** The repository tree, source revision, existing English material, source-document set and initial document roles have been recorded.
 
 **Phase 0 is complete as an inventory.** This does not complete Phase 1 structural reconstruction, establish technical correctness, or validate an English skill. Those remain separate tasks.
+
+
+## 9. Reconstruction progress checkpoint
+
+This section records work completed after the Phase 0 baseline above; it does not rewrite the historical baseline.
+
+| Source document | Reconstruction / English artifact | Current status | Notes |
+|---|---|---|---|
+| `SKILL.md` | English draft produced in the working conversation; repository artifact not yet committed | `translated` (draft) | Requires source comparison and repository placement. |
+| `references/process.md` | [`translation/en/references/process.md`](en/references/process.md) | `translated` | Document-level structure reconstructed; English draft committed. Semantic/technical review remains outstanding. |
+
+The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
+
+The process translation preserves the source's stated stage overlaps, Stage 5/6 relationship, per-peripheral cycle, version rhythm, and the absence of a Stage 8 completion criterion. This is a translation record, not evidence that the underlying Android procedures have been technically validated.
