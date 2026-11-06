@@ -51,3 +51,8 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 
 - [`wireless.md`](wireless.md) 记录 Wi-Fi 与蓝牙的独立路线、验收序列、故障机制、显式模式引用、观察者对应关系和未解决边界。
 - [`power-and-time.md`](power-and-time.md) 记录电量与充电证据、RTC/系统时间、休眠与时钟测量、跨文件模式关系、看门狗/温控覆盖缺口和未解决边界。
+- [`sensors-camera-media.md`](sensors-camera-media.md) 记录 SSC 传感器与自动旋转、Iris/Venus 视频硬解、相机用户入口、显式模式引用、观察者重构出的跨层对应及未解决边界。
+
+
+- [Pass 1 / Checkpoint 07](continuation/checkpoints/pass-1-checkpoint-07.md) 记录电量、充电、休眠与系统时间的重构，以及向传感器、相机和视频硬解的过渡。
+- [Pass 1 / Checkpoint 08](continuation/checkpoints/pass-1-checkpoint-08.md) 记录传感器、相机和视频硬解的重构，以及向 USB 与存储的过渡。
