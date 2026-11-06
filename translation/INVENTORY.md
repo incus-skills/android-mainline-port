@@ -75,10 +75,10 @@ These documents are described by `SKILL.md` as the relatively stable outer frame
 
 | Source path | Initial role from repository indexes | Status |
 |---|---|---|
-| `references/process.md` | Detailed actions, outputs and completion criteria for the nine project stages | `uninspected` |
-| `references/discipline.md` | Required project records, technical-debt handling, workspace structure, attribution, estimation and sub-agent work | `uninspected` |
-| `references/decisions.md` | Technical decision defaults, conditional rules, mechanisms and limits | `uninspected` |
-| `references/build-environment.md` | Host, toolchain, ccache, output directories, root-filesystem builds and build efficiency | `uninspected` |
+| `references/process.md` | Detailed actions, outputs and completion criteria for the nine project stages | `reviewed` |
+| `references/discipline.md` | Required project records, technical-debt handling, workspace structure, attribution, estimation and sub-agent work | `reviewed` |
+| `references/decisions.md` | Technical decision defaults, conditional rules, mechanisms and limits | `reviewed` |
+| `references/build-environment.md` | Host, toolchain, ccache, output directories, root-filesystem builds and build efficiency | `reviewed` |
 | `references/verification.md` | Status vocabulary, evidence, cold-boot checks, automation and performance budgets | `uninspected` |
 | `references/ubuntu.md` | Ubuntu layering, package boundaries, boot integration and distribution decoupling | `uninspected` |
 
@@ -150,7 +150,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 | `references/discipline.md` | [`translation/en/references/discipline.md`](en/references/discipline.md) | `reviewed` | Pass 3 source-based semantic review completed; no correction required. External technical validation remains outstanding. [Review record](reviews/references/discipline.md.md). |
 | `references/decisions.md` | [`translation/en/references/decisions.md`](en/references/decisions.md) | `reviewed` | Pass 3 source-based semantic review completed; no correction required. Domain-specific ambiguities and external technical validation remain open. [Review record](reviews/references/decisions.md.md). |
 | `references/verification.md` | [`translation/en/references/verification.md`](en/references/verification.md) | `translated` | Seven evidence/status labels, subsystem evidence, test methods, automation and release threshold translated; technical claims deliberately not validated in this pass. [Review record](reviews/references/verification.md.md). |
-| `references/build-environment.md` | [`translation/en/references/build-environment.md`](en/references/build-environment.md) | `translated` | Host/toolchain, caching, OUT directories, root-filesystem builds, cleanup and parallelism translated; technical claims deliberately not validated in this pass. [Review record](reviews/references/build-environment.md.md). |
+| `references/build-environment.md` | [`translation/en/references/build-environment.md`](en/references/build-environment.md) | `reviewed` | Pass 3 source-based semantic review completed; no correction required. Build-time claims and tool compatibility remain unvalidated. [Review record](reviews/references/build-environment.md.md). |
 | `references/ubuntu.md` | [`translation/en/references/ubuntu.md`](en/references/ubuntu.md) | `translated` | Distribution decoupling, layer model, package boundaries, boot integration, rootfs composition and cross-distribution adaptations translated; technical claims deliberately not validated in this pass. [Review record](reviews/references/ubuntu.md.md). |
 | `experience/README.md` | [`translation/en/experience/README.md`](en/experience/README.md) | `translated` | Experience-library scope, navigation, entry format, markers, confirmed/unresolved knowledge boundary and maintenance rules translated; technical claims remain unvalidated. [Review record](reviews/experience/README.md.md). |
 | `experience/patterns.md` | [`translation/en/experience/patterns.md`](en/experience/patterns.md) | `translated` | Nine cross-domain diagnostic categories, recognition symptoms, general handling routes and domain references translated; category overlap and technical-validation boundary preserved. [Review record](reviews/experience/patterns.md.md). |
