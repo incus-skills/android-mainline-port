@@ -12,7 +12,7 @@ This is a read-only structural validation. It is not another Pass 3 translation 
 - Project phase: **Phase 5 — Whole-skill validation**, as defined in `translation/README.md`.
 - Current position: Pass 4 / Checkpoint 01.
 - Previous traversal: Pass 3, closed at Checkpoint 23. Pass 3 source-based review completion does not establish Phase 5 usability.
-- Pass 4 declaration: `reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-01.md`, blob SHA to be verified from the branch.
+- Pass 4 declaration: `reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-01.md`, blob SHA `38b0da9b0aabf42846434042694768eaa7b7f064`.
 - Current-position record before this task was prepared: `reconstruction/zh/continuation/current-position.md`, blob SHA `2f02b450881f5b0a4381eb56132a404ef024fb52`.
 - Pass 3 closure: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-23.md`, blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`.
 - Phase definitions and Phase 5 criteria: `translation/README.md`, blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`.
