@@ -10,8 +10,8 @@
 - Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档。
 - 当前观察位置：检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
 - 明确排除：不以此轮证明技术主张在当前上游或真实设备上正确；不进行真机验证。
-- 最近检查点：[Pass 3 / Checkpoint 20 — experience/usb-and-storage.md](checkpoints/pass-3-checkpoint-20.md)。
-- 前一检查点：[Pass 3 / Checkpoint 19 — experience/sensors-camera-media.md](checkpoints/pass-3-checkpoint-19.md)。
+- 最近检查点：[Pass 3 / Checkpoint 21 — experience/ubuntu-userspace.md](checkpoints/pass-3-checkpoint-21.md)。
+- 前一检查点：[Pass 3 / Checkpoint 20 — experience/usb-and-storage.md](checkpoints/pass-3-checkpoint-20.md)。
 - Pass 3 范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)。
 - 执行上下文分段：[Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)。该安排是执行层面的候选方案，不改变 Pass 3 的范围、标准或观察位置。
 
@@ -27,10 +27,10 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass 3 的目的、范围和当前文档位置。
-2. 阅读 [Pass 3 / Checkpoint 21](checkpoints/pass-3-checkpoint-21.md)，必要时回看 [Checkpoint 17](checkpoints/pass-3-checkpoint-17.md) 及更早检查点。
+2. 阅读 [Pass 3 / Checkpoint 21](checkpoints/pass-3-checkpoint-21.md)，必要时回看 [Checkpoint 20](checkpoints/pass-3-checkpoint-20.md) 及更早检查点。
 3. 阅读 `translation/README.md` Phase 4 和 `translation/GLOSSARY.md`。
 4. 阅读 [Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)，仅用于建立任务边界和上下文加载策略；不得将其误作新的翻译审查标准。
-5. 对照 `experience/ubuntu-userspace.md` 的中文源文、英文译文和既有审查记录。
+5. 对照 `experience/build-and-release.md` 的中文源文、英文译文和既有审查记录。
 6. 区分翻译语义审查与外部技术正确性验证；不要把后者默认为本轮任务。
 
 ## 后续工作约束
