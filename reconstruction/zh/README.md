@@ -50,3 +50,4 @@ Pass 编号、文档位置和会话检查点编号是三个不同维度，不应
 - [`audio.md`](audio.md) 记录 AudioReach/ADSP 路线、硬件拓扑、分层验收证据、功放增益安全、UCM/PipeWire 故障、跨文件对应关系和未解决事项。
 
 - [`wireless.md`](wireless.md) 记录 Wi-Fi 与蓝牙的独立路线、验收序列、故障机制、显式模式引用、观察者对应关系和未解决边界。
+- [`power-and-time.md`](power-and-time.md) 记录电量与充电证据、RTC/系统时间、休眠与时钟测量、跨文件模式关系、看门狗/温控覆盖缺口和未解决边界。
