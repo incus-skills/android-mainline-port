@@ -13,6 +13,7 @@
 - 最近检查点：[Pass 3 / Checkpoint 16 — experience/audio.md](checkpoints/pass-3-checkpoint-16.md)。
 - 前一检查点：[Pass 3 / Checkpoint 15 — experience/touch-and-input.md](checkpoints/pass-3-checkpoint-15.md)。
 - Pass 3 范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)。
+- 执行上下文分段：[Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)。该安排是执行层面的候选方案，不改变 Pass 3 的范围、标准或观察位置。
 
 ## 遍历编号约定
 
@@ -28,8 +29,9 @@
 1. 阅读本文件，确认 Pass 3 的目的、范围和当前文档位置。
 2. 阅读 [Pass 3 / Checkpoint 16](checkpoints/pass-3-checkpoint-16.md)，必要时回看 [Checkpoint 15](checkpoints/pass-3-checkpoint-15.md) 及更早检查点。
 3. 阅读 `translation/README.md` Phase 4 和 `translation/GLOSSARY.md`。
-4. 对照 `experience/wireless.md` 的中文源文、英文译文和既有审查记录。
-5. 区分翻译语义审查与外部技术正确性验证；不要把后者默认为本轮任务。
+4. 阅读 [Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)，仅用于建立任务边界和上下文加载策略；不得将其误作新的翻译审查标准。
+5. 对照 `experience/wireless.md` 的中文源文、英文译文和既有审查记录。
+6. 区分翻译语义审查与外部技术正确性验证；不要把后者默认为本轮任务。
 
 ## 后续工作约束
 
@@ -39,3 +41,4 @@
 - 不把源文未建立的关系补入译文。
 - 外部正确性、时效性和真机行为问题单独记录，不在此轮臆断。
 - 对未解决问题应用有界重构充分性：只有在存在新判别证据来源、相关观察位置变化或具体后果检验时，才继续追查。
+- 文件级 worker 若发现缺失依赖或无法支持下一跳的证据，应报告并停止，不得自行扩大范围；由协调位置决定是否加载额外材料或改变任务边界。
