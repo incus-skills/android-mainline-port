@@ -10,7 +10,7 @@
 - Related resource source: `experience/kernel-and-resources.md`, blob SHA `df43365853a42d05ed2d3824c4fae759c28aa985`
 - English artifact: [`translation/en/experience/display.md`](../../en/experience/display.md)
 - Chinese reconstruction: [`reconstruction/zh/display.md`](../../../reconstruction/zh/display.md)
-- Review status: `translated`; semantic and technical review remain outstanding.
+- Review status: `reviewed` in Pass 3; external technical validation remains outstanding.
 
 ## Translation intent and boundary
 
@@ -96,3 +96,30 @@ The source establishes several specific links and shared mechanisms:
 The document is sufficiently reconstructed for the current purpose when its route distinction, operational sequence, acceptance model, diagnostic categories, cross-document relationships and unresolved boundaries can be carried into the next source document without treating the display-specific cases as a universal architecture.
 
 Technical validation, current upstream comparison and device-specific reproduction remain separate work.
+
+
+## Pass 3 source-based semantic review
+
+The complete Chinese source and English translation were compared section by section against the Phase 4 review dimensions.
+
+One wording correction was made in the borrowed-display capability table: "prerequisites for suspend" was changed to "suspend support". The source lists this alongside missing display capabilities; the former English phrase could be read as saying that prerequisites are absent rather than that suspend capability is unavailable.
+
+The comparison confirmed preservation of:
+- the distinction between borrowed firmware scanout and native DPU/DSI/panel takeover, including the conditional route recommendation and parallel start of native work when borrowing is necessary;
+- all six native-takeover steps, their ordering, diagnostic rationale and technical identifiers;
+- human-visible first light, mode-specific hardware indicators, cold-boot repetition, lifecycle recovery and explicit non-acceptance indicators;
+- the distinct pitfall cases, their symptoms, causes, confirmation methods, remedies, prevention notes, tags and applicability labels;
+- the distinction between SMMU identity mapping for firmware scanout continuity and Linux resource-consumer declaration/resource reclamation;
+- the distinction between static output and lifecycle correctness, and between harmless accounting warnings and actual functional failures;
+- the device-specific 144 Hz result alongside the broader unresolved clock-calculation issue;
+- the explicit high-refresh touch-testing reference and related resource/pattern relationships.
+
+The source's uneven pitfall-entry structure remains uneven. No formal display state machine, complete dependency graph, universal architecture or technical validation claim has been added. The unresolved same-SoC `dsi_err_worker status=4` issue and high-refresh display-core clock calculation remain open.
+
+### Pass 3 disposition
+
+- Source-based semantic review: **completed**.
+- Translation changes: **one wording clarification** ("suspend support").
+- External technical correctness, current upstream behaviour, vendor implementation accuracy and real-device behaviour: **not validated**.
+- Whole-skill validation: **outstanding**.
+- Next document: `experience/gpu.md`.
