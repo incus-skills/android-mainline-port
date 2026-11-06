@@ -27,7 +27,7 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass 3 的目的、范围和当前文档位置。
-2. 阅读 [Pass 3 / Checkpoint 18](checkpoints/pass-3-checkpoint-18.md)，必要时回看 [Checkpoint 16](checkpoints/pass-3-checkpoint-16.md) 及更早检查点。
+2. 阅读 [Pass 3 / Checkpoint 18](checkpoints/pass-3-checkpoint-18.md)，必要时回看 [Checkpoint 17](checkpoints/pass-3-checkpoint-17.md) 及更早检查点。
 3. 阅读 `translation/README.md` Phase 4 和 `translation/GLOSSARY.md`。
 4. 阅读 [Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)，仅用于建立任务边界和上下文加载策略；不得将其误作新的翻译审查标准。
 5. 对照 `experience/sensors-camera-media.md` 的中文源文、英文译文和既有审查记录。
