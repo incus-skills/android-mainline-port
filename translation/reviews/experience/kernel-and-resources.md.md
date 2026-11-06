@@ -10,7 +10,7 @@
 - Related domain source: `experience/display.md`, blob SHA `6cd5016457d4cbab87fae56a4dd5e3c1204bbbdd`
 - English artifact: [`translation/en/experience/kernel-and-resources.md`](../../en/experience/kernel-and-resources.md)
 - Chinese reconstruction: [`reconstruction/zh/kernel-and-resources.md`](../../../reconstruction/zh/kernel-and-resources.md)
-- Review status: `translated`; semantic and technical review remain outstanding.
+- Review status: `reviewed` in Pass 3; technical validation remains outstanding.
 
 ## Translation intent and boundary
 
@@ -96,6 +96,43 @@ These are related dimensions, not one interchangeable failure mechanism.
 - “Slow-start state” is a quoted descriptive phrase, not an independently established kernel state.
 - The cause of the early-debug-parameter timing effect remains unresolved.
 - Version-sensitive references (for example, mainline 7.x and 2026 Qualcomm symbols) are translated as source claims and have not been checked against current upstream state.
+
+## Pass 3 source-based semantic review
+
+The source and English translation were compared across the five recommended-route steps, four completion criteria, all 15 pitfall entries and the unresolved timing question. **No source-driven semantic correction was required.** The English artifact remains unchanged.
+
+The comparison confirmed preservation of:
+- the stable-kernel and provenance-bearing patch route, device-derived device-tree values, built-in/module/initramfs boundaries, firmware-retained resource requirements and distribution-configuration comparison;
+- the completion conditions for actual `.config` values, delivered and loaded modules, explainable deferred devices, completed `sync_state`, absence of global bypasses and repeated cold boots;
+- all 15 pitfalls, their source-specific markers and the fields actually present in each entry;
+- the distinction between provider availability, genuine consumer declaration, provider binding before reclamation, invalid regulator/OPP representation, dependency propagation and observation side effects;
+- the different timing points represented by `late_initcall`, `clk_disable_unused`, `sync_state`, provider binding and runtime resume;
+- the stated diagnostic-only role of temporary ignore parameters and module pruning, and the instruction to remove such workarounds after diagnosis;
+- the unresolved effect of `keep_bootcon`, `initcall_debug` and `ignore_loglevel` on panel bring-up timing, without assigning an unsupported cause;
+- cross-document references to `patterns.md`, `display.md`, `verification.md` and `ubuntu-userspace.md`.
+
+Technical identifiers, configuration symbols, commands, paths, interface names, numeric values, voltage examples, time intervals, kernel versions and applicability labels were retained. The source's varying pitfall-entry structure remains varying; no absent confirmation, prevention or cause field was supplied.
+
+### Pass 3 distinctions and boundaries
+
+- “Resource ownership” remains the source's diagnostic language, not a newly formalised ownership model or invariant.
+- A resource lacking a genuine consumer is distinct from a consumer/provider relationship that exists but requests an unrepresentable voltage or unsupported operating point.
+- Eventual provider binding is distinct from binding before resource reclamation; the modular display-clock example depends on that timing distinction.
+- A provider being built in is not treated as a substitute for declaring the resource on its actual consumer.
+- Temporary diagnostic bypasses are not elevated into accepted final configuration.
+- Debug-interface reads are not assumed to be passive observations; the source explicitly identifies possible state-changing side effects.
+- The 15 entries do not establish a complete taxonomy of kernel/resource failures.
+- The unresolved early-debug-parameter timing question remains open.
+
+### Pass 3 disposition
+
+- Source-based semantic review: **completed**.
+- Translation changes: **none required**.
+- Technical correctness, current upstream status, cross-device generality, safety and real-device behaviour: **not validated**.
+- Whole-library validation: **outstanding**.
+- Next document: `experience/display.md`.
+
+This review establishes translation fidelity only. It does not validate the kernel and hardware recommendations or turn the source's diagnostic model into a formal specification.
 
 ## Chinese reconstruction surface
 
