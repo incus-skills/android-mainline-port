@@ -155,6 +155,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 | `experience/README.md` | [`translation/en/experience/README.md`](en/experience/README.md) | `translated` | Experience-library scope, navigation, entry format, markers, confirmed/unresolved knowledge boundary and maintenance rules translated; technical claims remain unvalidated. [Review record](reviews/experience/README.md.md). |
 | `experience/patterns.md` | [`translation/en/experience/patterns.md`](en/experience/patterns.md) | `translated` | Nine cross-domain diagnostic categories, recognition symptoms, general handling routes and domain references translated; category overlap and technical-validation boundary preserved. [Review record](reviews/experience/patterns.md.md). |
 | `experience/bootloader-and-boot.md` | [`translation/en/experience/bootloader-and-boot.md`](en/experience/bootloader-and-boot.md) | `translated` | Recommended boot route, RAM/persistent completion criteria, first-boot checklist, boot-chain pitfalls and unresolved recovery questions translated; technical claims remain unvalidated. [Review record](reviews/experience/bootloader-and-boot.md.md). |
+| `experience/kernel-and-resources.md` | [`translation/en/experience/kernel-and-resources.md`](en/experience/kernel-and-resources.md) | `translated` | Kernel configuration, provider/consumer relationships, resource reclamation, module availability, regulator/OPP constraints and unresolved timing question translated. Chinese descriptive reconstruction and translation review recorded separately. [Review record](reviews/experience/kernel-and-resources.md.md). |
 
 The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
 
@@ -174,5 +175,15 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/README.md.md`](reviews/experience/README.md.md) records the `experience/README.md` source revision, collection role, navigation and maintenance structure, terminology choices, unresolved boundaries and review boundary.
 - [`translation/reviews/experience/patterns.md.md`](reviews/experience/patterns.md.md) records the `experience/patterns.md` source revision, nine-category diagnostic structure, cross-document relationships, terminology choices, overlapping-category ambiguity and review boundary.
 - [`translation/reviews/experience/bootloader-and-boot.md.md`](reviews/experience/bootloader-and-boot.md.md) records the `experience/bootloader-and-boot.md` source revision, boot route, acceptance criteria, pitfall structure, terminology choices, unresolved recovery questions and review boundary.
+- [`translation/reviews/experience/kernel-and-resources.md.md`](reviews/experience/kernel-and-resources.md.md) records the `experience/kernel-and-resources.md` source revision, Category B development, provider/consumer and timing distinctions, cross-document relationships, terminology choices and technical-validation boundary.
+
+### Chinese reconstruction surface
+
+A separate descriptive reconstruction surface has now been established under `reconstruction/zh/`.
+
+- [`reconstruction/zh/README.md`](../reconstruction/zh/README.md) defines its purpose, authority boundary and relationship to the original Chinese source, English reconstruction and functional translation.
+- [`reconstruction/zh/kernel-and-resources.md`](../reconstruction/zh/kernel-and-resources.md) records the retrospective Chinese reconstruction of the kernel/resource document, including observer position, source provenance, its relationship to problem pattern B and `display.md`, recovered mechanisms, unresolved questions and the current sufficiency boundary.
+
+This surface is our descriptive reconstruction, not a duplicate of the original source or a claim about author intent. Its records are retrospective where indicated. Author feedback, if obtained later, must be preserved as a separate source rather than silently merged into the original reconstruction.
 
 Future document translations should retain equivalent decision records rather than leaving them only in conversation. Each translation record is a separate reconstruction artifact; it is not part of the functional skill text.
