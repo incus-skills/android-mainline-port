@@ -138,3 +138,8 @@ The translation does not fill these gaps with assumptions from adjacent document
 ## Review boundary
 
 This review assesses translation fidelity and reconstructability of the source's structure and operational distinctions. It does not validate the kernel APIs, driver behaviour, PMIC values, GNOME/BlueZ policy, firmware procedures or device-specific claims. Those require a separate technical evidence pass.
+
+
+## Pass 3 — semantic review
+
+Source revision `92d2f179a5bdb65ccbf2c1560734f84e0ef13ffd` reviewed against the English artifact. No source-driven translation correction was required. The three touch architectures, route ordering, target-device provenance, user-facing acceptance criteria, separate electrical/protocol/firmware/lifecycle failure mechanisms, technical tokens, explicit cross-document references and unresolved issues are preserved. The source names stylus in its title/index scope but provides no stylus-specific route or acceptance criteria; this absence remains explicit. No universal input state model or complete test matrix is inferred. External technical correctness and real-device behaviour remain unvalidated. Next document: `experience/audio.md`.
