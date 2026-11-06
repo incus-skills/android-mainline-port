@@ -122,3 +122,57 @@ No sensor, remote-processor, rotation, camera, V4L2, firmware, GStreamer, regula
 Pass 1 remains the same declared traversal. The document position advances from `experience/power-and-time.md` (Checkpoint 07) to `experience/sensors-camera-media.md` (Checkpoint 08). The next source is determined by the ordering in `experience/README.md`: `experience/usb-and-storage.md`.
 
 Pass number, document position and session checkpoint number remain separate coordinates.
+
+
+---
+
+## Pass 3 — Technical and semantic review
+
+### Source and scope
+
+- Source: `experience/sensors-camera-media.md`, `main`, blob `98f85dbecb4ec3248a31ac337729784788f0423b`.
+- English target: `translation/en/experience/sensors-camera-media.md`, `translation/english-reconstruction`, blob `dbd1f5cef992ccccf1dbba3bc9ddc22342296343`.
+- Existing review: this file at Pass 1 baseline `fb434cf2ac490e8e7968d56049aacbc2f64d0cd5`.
+- Criteria: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-01.md`, blob `0870d3ea261a6354649379b96891cda4ca2a0ba6`.
+- Review dimensions: imperative force, conditional scope, decision logic, technical tokens, structure, cross-document references and uncertainty.
+- External technical correctness, current upstream behaviour and real-device validation: not performed and out of scope.
+
+### Comparison observations
+
+The complete Chinese source and English target preserve the three distinct routes and their acceptance conditions:
+
+- **Qualcomm SSC sensors and rotation:** the FastRPC → hexagonrpcd → libssc → iio-sensor-proxy → compositor chain; read-only import and public-repository exclusion for device-local registry/calibration data; the five-part, four-orientation acceptance evidence; the timing gap between remote-processor startup and registry readability; and fresh-boot testing because ADSP sensor-PD state survives a hexagonrpcd restart.
+- **Iris/Venus hardware video decoding:** upstream driver, device-specific signed firmware, module build, device-tree enablement and GStreamer prerequisites; separation of V4L2 queue/stream calls from firmware-message sequencing; and separate fast/slow frame-consumption tests with frame-by-frame software-decoder comparison.
+- **Camera:** CAMSS and camera-clock-controller support checks; real-scene image acceptance; distinction between frame capture and application-level availability through the daemon/PipeWire path; device-local voltage evidence before autofocus enablement; and the unresolved status of persistent `-EPIPE`.
+
+Imperative force and decision logic are preserved, including prohibitions against guessing regulator steps, judging sensor tests on stale state, unattended unload/rebind of real hardware drivers, and treating `/dev/video*` or successful frame capture as sufficient camera acceptance. Conditional applicability labels and technical tokens—including commands, paths, identifiers, error strings, `av1C`, `>>1`, units and version markers—remain aligned with the source.
+
+The translation preserves the source's uncertainty: the persistent `-EPIPE` cause remains explicitly possible, not confirmed; the source's new-SoC camera support, autofocus and recording remain unresolved. It does not add procedures or technical claims.
+
+### Cross-document references
+
+The Chinese document body contains no direct Markdown links or named domain-document dependencies requiring another document to assess a translation claim. The Pass 1 review records Pattern D/F/I relationships; these remain review-record observations, not source-explicit dependencies. The source and English experience-library indexes both place this document after `power-and-time.md`; this corroborates document order only and does not make the preceding document's findings evidence for this review.
+
+### Decisions
+
+- No material source/target discrepancy requiring correction was identified.
+- No target change is justified. The English target remains byte-for-byte unchanged at blob `dbd1f5cef992ccccf1dbba3bc9ddc22342296343`.
+- Appended this Pass 3 review while preserving the Pass 1 record.
+- No external technical validation, unified multimedia model, or additional cross-document dependency was introduced.
+
+### Unresolved matters and source boundaries
+
+The source continues to leave unresolved new-SoC camera-subsystem support, autofocus and video recording. The persistent `-EPIPE` condition remains not located, with only a possible cause recorded. The upstream Iris unload patch is described as under review; its present upstream status was not checked. These are not blockers to this bounded translation review and are not resolved here.
+
+### Validation
+
+- All twelve task-specified evidence baselines were fetched and their blob SHAs matched: source, target, Pass 1 review, Pass 3 criteria, current position, Checkpoint 18, completed Task 002, glossary, translation instructions, segmentation record, source experience index and English experience index.
+- The full source and target were compared against all seven Pass 3 dimensions.
+- The source and target indexes corroborate the selected document order.
+- The complete target was re-read; no target edit was made.
+- This review was appended after the existing Pass 1 material; the complete review record is to be re-read after the append.
+- No external technical or real-device validation was performed.
+
+### Disposition
+
+**Pass 3 translation review complete.** No target correction is required. Worker completion does not constitute orchestrator acceptance.
