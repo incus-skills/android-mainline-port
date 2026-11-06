@@ -102,3 +102,31 @@ These six labels belong to the discipline document's project/status-table instru
 - Whole-skill validation: outstanding.
 
 This record describes the translation and our reading of the source. It is not an authoritative statement of the original authors' intent beyond what the source text establishes.
+
+
+## Pass 3 — technical and semantic review
+
+Source/translation pair rechecked against `references/discipline.md` at blob `24b3eaa83f4ddfac70e08f0de5fbec6efce42313`.
+
+### Review results
+
+- All eight required-record categories are represented, with the source's record responsibilities and the distinction between the status table, work log, feature documents, technical-debt table, abandoned-approach record, experiment records and external documentation preserved.
+- The six status labels retain their distinct meanings. In particular, a source-code lead, an offline pass, a real-device boot and a real-device pass are not collapsed.
+- The distinction between unfinished features and temporary compromises registered as technical debt is preserved.
+- Record timing, single-owner/linking rule, append-only treatment of failures/rollbacks, evidence provenance and automated-check recommendation are retained.
+- The workspace layout, independent repository roles, private-data boundary, attribution rules and user authorisation requirements are retained.
+- The workload-estimation method preserves its layer-based uncertainty model, 2–5 real-device rounds per uncertain layer and 10–30 minute estimate per round.
+- Sub-agent scope, verification, stopping conditions, device restrictions and primary-agent accountability are retained.
+- No unsupported template, status transition, approval mechanism or technical-debt closure condition was added.
+
+### Corrections
+
+No source-driven semantic correction was required. The existing translation was retained unchanged.
+
+### Boundaries
+
+This review establishes source-based semantic correspondence only. It does not validate the empirical workload estimates, device-safety practices, repository recommendations or other technical claims against external evidence. The separate evidence classifications in `references/verification.md` remain to be reviewed independently; the six status terms here are not mapped onto them.
+
+- Source-based semantic review: completed for this document.
+- Technical correctness validation: not performed.
+- Whole-skill validation: outstanding.
