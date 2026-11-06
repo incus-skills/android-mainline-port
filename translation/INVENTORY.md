@@ -94,7 +94,7 @@ The repository indexes describe this as an evolving collection of domain-specifi
 | `experience/kernel-and-resources.md` | Kernel configuration, resource ownership/reclamation, PMIC and device-tree values | `reviewed` |
 | `experience/display.md` | Firmware display handoff, native display takeover, panel lifecycle and display behaviour | `reviewed` |
 | `experience/gpu.md` | Adreno kernel support, firmware, Mesa and graphics stack | `reviewed` |
-| `experience/touch-and-input.md` | Touch, keys, keyboard accessories, stylus and fingerprint | `uninspected` |
+| `experience/touch-and-input.md` | Touch, keys, keyboard accessories, stylus and fingerprint | `reviewed` |
 | `experience/audio.md` | Audio DSP, AudioReach, amplifiers, microphones, UCM and PipeWire | `uninspected` |
 | `experience/wireless.md` | Wi-Fi and Bluetooth | `uninspected` |
 | `experience/power-and-time.md` | Battery, charging, suspend, RTC/system time, watchdog and thermal management | `translated` |
