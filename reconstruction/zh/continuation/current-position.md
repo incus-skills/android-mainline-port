@@ -3,15 +3,15 @@
 ## 当前入口
 
 - 当前遍历：**Pass 3 — 操作性英文翻译的技术与语义审查**
-- 当前会话检查点：**Pass 3 / Checkpoint 22**
-- 最近完成文档：`experience/build-and-release.md`
-- 下一文档：`experience/testing-and-process.md`
-- 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`、`references/decisions.md`、`references/build-environment.md`、`references/verification.md`、`references/ubuntu.md`、`experience/README.md`、`experience/patterns.md`、`experience/bootloader-and-boot.md`、`experience/kernel-and-resources.md`、`experience/display.md`、`experience/gpu.md`、`experience/touch-and-input.md`、`experience/audio.md`、`experience/wireless.md`、`experience/power-and-time.md`、`experience/sensors-camera-media.md`、`experience/usb-and-storage.md`、`experience/ubuntu-userspace.md`、`experience/build-and-release.md`。
-- Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档。
-- 当前观察位置：检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
-- 明确排除：不以此轮证明技术主张在当前上游或真实设备上正确；不进行真机验证。
-- 最近检查点：[Pass 3 / Checkpoint 22 — experience/build-and-release.md](checkpoints/pass-3-checkpoint-22.md)。
-- 前一检查点：[Pass 3 / Checkpoint 21 — experience/ubuntu-userspace.md](checkpoints/pass-3-checkpoint-21.md)。
+- 当前会话检查点：**Pass 3 / Checkpoint 23 — 文件级审查范围闭合**
+- 最近完成文档：`experience/testing-and-process.md`
+- 下一文档：无；Checkpoint 01 声明的十五份 experience 文档已全部完成 Pass 3 审查。
+- 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`、`references/decisions.md`、`references/build-environment.md`、`references/verification.md`、`references/ubuntu.md`、`experience/README.md`、`experience/patterns.md`、`experience/bootloader-and-boot.md`、`experience/kernel-and-resources.md`、`experience/display.md`、`experience/gpu.md`、`experience/touch-and-input.md`、`experience/audio.md`、`experience/wireless.md`、`experience/power-and-time.md`、`experience/sensors-camera-media.md`、`experience/usb-and-storage.md`、`experience/ubuntu-userspace.md`、`experience/build-and-release.md`、`experience/testing-and-process.md`。
+- Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档；上述文件级 source-based semantic review 均已完成并记录。
+- 当前观察位置：Pass 3 的文件级审查 exit condition 已达到；保留 source-based translation review 与外部技术验证之间的边界。
+- 明确排除：本轮不证明技术主张在当前上游或真实设备上正确；未进行真机验证、skill activation 或代表性工作流执行。
+- 最近检查点：[Pass 3 / Checkpoint 23 — experience/testing-and-process.md](checkpoints/pass-3-checkpoint-23.md)。
+- 前一检查点：[Pass 3 / Checkpoint 22 — experience/build-and-release.md](checkpoints/pass-3-checkpoint-22.md)。
 - Pass 3 范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)。
 - 执行上下文分段：[Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)。该安排是执行层面的候选方案，不改变 Pass 3 的范围、标准或观察位置。
 
@@ -26,12 +26,11 @@
 
 ## 本轮入口顺序
 
-1. 阅读本文件，确认 Pass 3 的目的、范围和当前文档位置。
-2. 阅读 [Pass 3 / Checkpoint 22](checkpoints/pass-3-checkpoint-22.md)，必要时回看 [Checkpoint 21](checkpoints/pass-3-checkpoint-21.md) 及更早检查点。
-3. 阅读 `translation/README.md` Phase 4 和 `translation/GLOSSARY.md`。
-4. 阅读 [Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)，仅用于建立任务边界和上下文加载策略；不得将其误作新的翻译审查标准。
-5. 对照 `experience/testing-and-process.md` 的中文源文、英文译文和既有审查记录。
-6. 区分翻译语义审查与外部技术正确性验证；不要把后者默认为本轮任务。
+1. 阅读本文件，确认 Pass 3 文件级审查范围已闭合。
+2. 阅读 [Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，必要时回看 [Checkpoint 22](checkpoints/pass-3-checkpoint-22.md) 及更早检查点。
+3. 阅读 [Pass 3 范围声明 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，确认本轮 exit condition 与排除项。
+4. 阅读 `translation/README.md` Phase 4 和 `translation/INVENTORY.md`，区分已完成的 source-based review 与尚未执行的外部/whole-skill validation。
+5. 若启动后续工作，先建立新的观察位置、范围与证据边界；不要将后续验证隐含为 Pass 3 的延伸。
 
 ## 后续工作约束
 
@@ -42,3 +41,4 @@
 - 外部正确性、时效性和真机行为问题单独记录，不在此轮臆断。
 - 对未解决问题应用有界重构充分性：只有在存在新判别证据来源、相关观察位置变化或具体后果检验时，才继续追查。
 - 文件级 worker 若发现缺失依赖或无法支持下一跳的证据，应报告并停止，不得自行扩大范围；由协调位置决定是否加载额外材料或改变任务边界。
+- Pass 3 文件级审查完成不等于 whole-skill validation、skill activation、代表性工作流执行或技术正确性验证完成。
