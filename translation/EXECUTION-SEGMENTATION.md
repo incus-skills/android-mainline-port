@@ -54,6 +54,25 @@ The orchestrator or a separately assigned reviewer checks the returned change ag
 
 Integration does not mean re-reading the entire repository after every file. It means selecting the wider evidence required by the actual dependency and risk of the change.
 
+## Evidence boundary and separate investigation proposals
+
+The acceptance-bound reconstruction and any external investigation proposal are distinct outputs of the same traversal.
+
+For source-grounded translation review, every claim, distinction, technical token, qualification and proposed correction must be traceable to explicit evidence in the designated source or target. The source establishes what it says; the target establishes what the translation says; a finding describes only a correspondence demonstrable from those two. External knowledge may prompt a separate question, but it cannot establish a translation finding or justify a translation change.
+
+Before any target or review modification, identify the exact source and/or target evidence that necessitates it. If no such evidence can be identified, do not make the change. This rule applies to corrective passes as well: correction inherits the original evidence boundary and does not expand it.
+
+Workers and orchestrators may also notice questions or opportunities that require evidence beyond the current translation task, such as current upstream validation, real-device testing, time-sensitive technical review, improvement or extension of the skill. These may be recorded as **investigation proposals**, separately from source-grounded findings and acceptance decisions.
+
+A proposal should retain enough provenance to reconstruct:
+- where it originated (worker/task/document or orchestrator/integration observation);
+- what observation prompted it;
+- the question or opportunity;
+- what external evidence or test would be needed;
+- the possible consequence if resolved.
+
+Proposals are not findings, corrections, task instructions or acceptance evidence. They do not alter the translation task's scope, the Pass 3 criteria or the acceptance boundary. They may provide a starting point for separately bounded work after or alongside translation, when that work is explicitly selected. Do not create a proposal merely to fill a record, and do not introduce a proposal-management system before actual use demonstrates a need.
+
 ## Worker handoff record
 
 Each completed operation returns:
