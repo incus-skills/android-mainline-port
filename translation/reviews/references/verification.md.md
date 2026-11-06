@@ -102,6 +102,30 @@ The decision catalogue uses acceptance criteria and real-device evidence through
 - Technical tokens: commands, paths, interfaces, timings and numerical examples retained.
 - Source ambiguity: no state transitions or unified status mapping invented.
 - Technical correctness: **not reviewed or validated**.
-- Current status: **translated**. Semantic review and technical validation remain outstanding.
+## Pass 3 source-based semantic review
 
-The next review should compare this translation against the Chinese source and assess the guide in the context of the process, discipline and decision catalogue. Technical claims and test-method suitability require a separate evidence-based review.
+The complete source and English translation were compared section by section. No source-driven semantic correction was required; the English artifact remains unchanged.
+
+The comparison confirmed preservation of:
+- all seven status terms, their definitions and required records;
+- the distinction between source-code leads, offline checks, real-device boot, real-device functional pass, cold-boot pass and publishability;
+- the explicit non-evidence list and the distinction between hardware metrics, real results and human observation;
+- the conditional cold-boot/control requirement, clean-install condition, positive control, debugging-code confound, real-device test-data format and environment-difference assessment;
+- the safety-only immediate-stop exception, with evidence collection continuing for ordinary functional failures;
+- host orchestration, device-side self-checks, automatic recovery and the prerequisite for verifying recovery while the user is present;
+- the split between machine-substitutable checks and tasks requiring a person, including the GNOME automation description and the subsequent charging/rotation/boot-performance rows;
+- cold-boot acceptance timing, regression checks, negative testing, user participation, numerical performance examples, the four-part experiment record and the first-release standard.
+
+Technical tokens, commands, interface names, paths, timings, quantities and examples were retained. The English rendering repeats the header for the final three-row automation table after the GNOME paragraph; this remains a presentation aid for a table whose source layout continues without a repeated header.
+
+No formal state machine, mandatory adjacent transitions, unified status vocabulary or new technical acceptance criterion was introduced. The source's distinction between the seven labels in this document and the independently defined vocabularies in `discipline.md` remains explicit. The first-release threshold has not been strengthened.
+
+### Pass 3 disposition
+
+- Source-based semantic review: **completed**.
+- Translation changes: **none required**.
+- Technical correctness, present-day API availability, test-method suitability and real-device behaviour: **not validated**.
+- Whole-skill validation: **outstanding**.
+- Remaining source document in the framework-reference sequence: `references/ubuntu.md`.
+
+The separate technical-evidence review may revisit technical claims, but it must not be conflated with this translation-fidelity result.
