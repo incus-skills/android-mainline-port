@@ -11,7 +11,7 @@ This is a bounded document-level operation within Pass 3, not a new pass, safety
 - Pass: Pass 3 — technical and semantic review of the operational English translation set.
 - Previous accepted operation: Task 006 — Pass 3 review of `experience/build-and-release.md`; acceptance and correction provenance are recorded in [Checkpoint 22](../reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-22.md) and [completed Task 006](completed/006-pass3-experience-build-and-release.md).
 - Current position: Pass 3 / Checkpoint 22; `experience/build-and-release.md` is accepted and `experience/testing-and-process.md` is next.
-- Current-position record: `reconstruction/zh/continuation/current-position.md`, blob SHA `92858d4c038e0b0f85bff3f03fb05da8503f3dcf`.
+- Current-position record: `reconstruction/zh/continuation/current-position.md`, blob SHA `2e3f467ae1b04ed9ca8fd98cd4a6463c037fb022`.
 - Current checkpoint: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-22.md`, blob SHA `4713edd899ad76d828121da96b5d620e26bd4983`.
 - Previous checkpoint: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-21.md`, blob SHA `55694ab10197f62e80f2e7532df1a98993054e59`.
 - Pass 3 scope and review dimensions: `reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-01.md`, blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`.
