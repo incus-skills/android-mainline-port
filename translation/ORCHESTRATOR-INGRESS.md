@@ -32,9 +32,29 @@ Reconstruct and report, with provenance where available:
 - exact evidence a bounded worker will need, and what can remain unloaded unless requested;
 - any conflict between the repository records or any state that cannot be reconstructed.
 
+## Independent acceptance and adjudication
+
+Acceptance is an explicit responsibility of the orchestrator. It is not performed by the worker, implied by a task's move to `completed/`, or established merely because the worker reports successful validation.
+
+For every completed worker operation, independently reconstruct the handoff from repository evidence before integrating it:
+
+1. **Reconstruct:** retrieve the completed task, its stated evidence revisions, governing references, changed artifacts and relevant repository history. Verify the evidence against the recorded baselines.
+2. **Evaluate:** compare the worker's account with the actual source, target, review record and changes. Assess source correspondence, provenance, permitted scope, preservation of prior records, validation and unresolved matters.
+3. **Adjudicate:** record one of three dispositions:
+   - **ACCEPTED** — the bounded operation is sufficiently evidenced, within scope and suitable for integration into accepted project continuity.
+   - **REJECTED** — available evidence establishes a material defect or boundary violation that prevents acceptance. State the basis and the corrective or recovery action, if one is supportable.
+   - **UNRESOLVED** — evidence is incomplete, conflicting or inadequate to decide. Identify what further reconstruction or bounded investigation is needed.
+4. **Integrate:** only an **ACCEPTED** operation may be incorporated into the accepted project position and followed by the corresponding continuity reconciliation.
+
+Do not convert a rejected or unresolved operation into accepted progress by advancing the checkpoint, current position or review inventory. Preserve the worker's completion record and the orchestrator's separate adjudication; do not rewrite the worker's disposition to imply acceptance.
+
+Acceptance is scoped to the assigned operation and its stated validation boundary. For example, accepting a Pass 3 translation review establishes that the translation changes are sufficiently supported by the Chinese source and comply with the review task. It does not certify underlying Android technical claims when external technical validation was excluded.
+
+Acceptance is also distinct from overall pass or project completeness. Do not infer either from a sequence of accepted file operations. Whole-pass and receiving-state readiness require their own appropriately scoped reconstruction and assessment.
+
 ## Reconcile continuity records
 
-After independently evaluating a completed worker handoff, compare the resulting accepted project position against all durable position-bearing records before preparing the next task:
+Only after an operation has been independently **ACCEPTED**, compare the resulting accepted project position against all durable position-bearing records before preparing the next task:
 
 - preserve prior checkpoints as historical records; create the next checkpoint for the newly established position;
 - advance `current-position.md` to identify the latest completed document, next document and current reading sequence;
