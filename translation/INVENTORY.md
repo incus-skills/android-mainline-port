@@ -97,7 +97,6 @@ The repository indexes describe this as an evolving collection of domain-specifi
 | `experience/touch-and-input.md` | Touch, keys, keyboard accessories, stylus and fingerprint | `uninspected` |
 | `experience/audio.md` | Audio DSP, AudioReach, amplifiers, microphones, UCM and PipeWire | `uninspected` |
 | `experience/wireless.md` | Wi-Fi and Bluetooth | `uninspected` |
-| `experience/sensors-camera-media.md` | [`translation/en/experience/sensors-camera-media.md`](en/experience/sensors-camera-media.md) | `translated` | Sensor/automatic-rotation, camera and hardware-video routes, layered acceptance evidence, fresh-boot state, application-level availability, explicit pattern references and unresolved boundaries translated; technical claims remain unvalidated. [Review record](reviews/experience/sensors-camera-media.md.md). |
 | `experience/power-and-time.md` | Battery, charging, suspend, RTC/system time, watchdog and thermal management | `translated` |
 | `experience/sensors-camera-media.md` | Sensors, rotation, camera and hardware video decoding | `uninspected` |
 | `experience/usb-and-storage.md` | USB/Type-C, external display, storage, partitioning, dual boot, flashing and installation | `uninspected` |
@@ -159,6 +158,7 @@ This section records work completed after the Phase 0 baseline above; it does no
 | `experience/kernel-and-resources.md` | [`translation/en/experience/kernel-and-resources.md`](en/experience/kernel-and-resources.md) | `translated` | Kernel configuration, provider/consumer relationships, resource reclamation, module availability, regulator/OPP constraints and unresolved timing question translated. Chinese descriptive reconstruction and translation review recorded separately. [Review record](reviews/experience/kernel-and-resources.md.md). |
 | `experience/display.md` | [`translation/en/experience/display.md`](en/experience/display.md) | `translated` | Firmware-display borrowing, native takeover, acceptance criteria, lifecycle and display-specific failure records translated; technical claims remain unvalidated. [Review record](reviews/experience/display.md.md). |
 | `experience/gpu.md` | [`translation/en/experience/gpu.md`](en/experience/gpu.md) | `translated` | Kernel/firmware/Mesa route, hardware-rendering acceptance, GPU and Mesa failure records, explicit resource relationship and unresolved new-GPU issues translated; technical claims remain unvalidated. [Review record](reviews/experience/gpu.md.md). |
+| `experience/sensors-camera-media.md` | [`translation/en/experience/sensors-camera-media.md`](en/experience/sensors-camera-media.md) | `translated` | Sensor/automatic-rotation, camera and hardware-video routes, layered acceptance evidence, fresh-boot state, application-level availability, explicit pattern references and unresolved boundaries translated; technical claims remain unvalidated. [Review record](reviews/experience/sensors-camera-media.md.md). |
 
 The English path `translation/en/` is the current working destination for translated documents. The Chinese source tree remains unchanged.
 
