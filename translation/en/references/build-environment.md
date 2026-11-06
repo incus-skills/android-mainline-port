@@ -68,7 +68,7 @@ Methods, from fastest to slowest:
 
 | Method | Speed | Use |
 |---|---|---|
-| Native ARM64 (host or CI ARM64 runner) | Fastest; a complete root build takes tens of minutes | Preferred |
+| Native ARM64 (host or CI ARM64 runner) | Fastest; a complete root build takes around a dozen minutes | Preferred |
 | Root privileges + qemu-user chroot (binfmt) | Approximately twice as fast as full-system emulation | When no ARM64 machine is available |
 | QEMU full-system emulation (TCG) | Slowest; the same build takes more than 40 minutes | Only to verify init and systemd behaviour |
 
