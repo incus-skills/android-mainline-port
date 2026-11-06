@@ -105,3 +105,98 @@ Do not resolve external technical questions or silently expand the task.
 Append the reconstructable handoff to this task record, following the eight fields in `translation/EXECUTION-SEGMENTATION.md`: task identity; observer position; observations; decisions; unresolved matters; validation; change boundary; next dependency.
 
 The handoff must state whether the task was completed, stopped for an adequacy reason, or requires further evidence. Do not move this task to `completed/` until worker execution and handoff are complete. Moving it does not constitute orchestrator acceptance.
+
+
+---
+
+## Worker handoff — Pass 3 execution
+
+### 1. Task identity
+
+- Task: 005 — Pass 3 review of `experience/ubuntu-userspace.md`.
+- Pass: Pass 3 — technical and semantic review of the operational English translation set.
+- Position: Pass 3 / Checkpoint 20; Task 004's USB/storage review is complete; Ubuntu userspace is the selected next document.
+- Chinese source: `experience/ubuntu-userspace.md`, `main`, blob `091d4ba144a77ad20707259a840d6599b2e501da`.
+- English target before review: `translation/en/experience/ubuntu-userspace.md`, `translation/english-reconstruction`, blob `baa0b4ee44c5507e3fc5df2ad527da24e6c06355`.
+- English target after review: `translation/en/experience/ubuntu-userspace.md`, blob `47324f6d9e29c4ea19dc911cd6f67f144e4e5954`.
+- Pass 1 review before append: `translation/reviews/experience/ubuntu-userspace.md.md`, blob `c9d57da433c3dbfb92321fa1ef92874b1a2d6a35`.
+- Review after Pass 3 append: `translation/reviews/experience/ubuntu-userspace.md.md`, blob `181d7c2de13af82f24c5697c316a9a713e6f7f6d`.
+
+### 2. Observer position
+
+Determine whether the complete English Ubuntu userspace experience document preserves the Chinese source's meaning and operational force across the seven Pass 3 dimensions. This is one bounded source-to-target translation review, not a new pass or technical audit. Excluded current upstream correctness, external technical validation, real-device behaviour and project-wide architecture review.
+
+### 3. Observations
+
+- Compared the complete source and target across imperative force, conditional scope, decision logic, technical tokens, structure, cross-document references and uncertainty.
+- The target preserves the source's specific-pitfall role and its explicit delegation of overall architecture and package splitting to `../references/ubuntu.md`.
+- Requirements and safeguards remain distinct: hook exit status 0 when prerequisites are absent; no slot write or image-set deletion; harmless initramfs rebuilds at every installation stage; generic-kernel package ordering; consumer-side snap dependency loading; snap seeding completion and deb-presence checks; cold-boot checks; and conditional power-button behaviour.
+- Decision branches remain distinct for APT kernel protection, the `gpu-2404` to `gpu-2604` interface transition, Firefox snap removal, suspend state and upgrade-path service enablement.
+- Technical tokens, commands, paths, package names, service names, interface names, configuration keys, error strings and version identifiers were checked and did not require correction.
+- The source and English experience indexes corroborate the ordering after `usb-and-storage.md`. This is document-order evidence, not a dependency between the two documents.
+- The source-explicit named reference is `../references/ubuntu.md`. The Pass 1 review's pattern associations and observer-reconstructed correspondences remain review-record observations, not source-authored dependencies.
+- The source explicitly leaves the identity of the gnome-shell sleep-delay inhibitor lock unresolved. The target retains that uncertainty. The source has no dedicated unresolved section; this absence was not treated as proof that all questions are resolved.
+
+### 4. Decisions
+
+- Completed the full seven-dimension source-to-English comparison.
+- Corrected exactly two material omissions in the English target: restored the source's `2026` applicability qualifier for the SquashFS/snap-confine entry and for the zram-generator entry.
+- Made no style-only rewrites and no other target changes.
+- Appended a Pass 3 section to the review record, preserving the complete Pass 1 record.
+- Did not review the architecture reference beyond confirming the named source/counterpart and reference boundary.
+- Did not perform external technical validation or real-device testing.
+
+### 5. Unresolved matters
+
+- The specific gnome-shell sleep-delay inhibitor lock remains unidentified, as stated in the source.
+- Current upstream status, real-device behaviour and technical correctness of the recorded remedies remain unverified by design.
+- No further evidence is required to complete this bounded translation review.
+
+### 6. Validation
+
+Verified all 14 task-specified evidence baselines before relying on them; every fetched blob SHA matched:
+
+- Chinese source: `091d4ba144a77ad20707259a840d6599b2e501da`.
+- English target: `baa0b4ee44c5507e3fc5df2ad527da24e6c06355`.
+- Pass 1 review: `c9d57da433c3dbfb92321fa1ef92874b1a2d6a35`.
+- Pass 3 criteria: `0870d3ea261a6354649379b96891cda4ca2a0ba6`.
+- Current position: `7082412453ff68ad2184fcda4ba0a7e9ed2b8229`.
+- Checkpoint 20: `fa0f3a3231b516aaf35197d095e854b158fc14dd`.
+- Completed Task 004: `91b478fb9453ff68bcf4ea09b26d49a7a000bf7b`.
+- Glossary: `7cd456b51223fd2cd3cf408cb14bae7f7d167254`.
+- Translation instructions: `f9bf34ae28e838ae881f9e207797f26c1b327baa`.
+- Segmentation arrangement: `412268a0c065a628d65c0c2c1799830f718e92d1`.
+- Source experience index: `b8b4b9110215280c35316df33d540e292c09356a`.
+- English experience index: `a7a28190615253246749909b380ddcba17268769`.
+- Architecture source (boundary check only): `2f87d2512753af379615e05a7d15ea773fbafc0f`.
+- English architecture counterpart (boundary check only): `7e70f8bb2457641984c194bc13a48396d5956ded`.
+
+Post-change validation:
+
+- Re-fetched the Chinese source; it remains at `091d4ba144a77ad20707259a840d6599b2e501da`.
+- Re-fetched the English target; it is now `47324f6d9e29c4ea19dc911cd6f67f144e4e5954`.
+- Compared the complete target against the original target blob after applying the two intended replacements; the resulting text matches exactly, confirming no other target changes.
+- Re-fetched the review record; it is now `181d7c2de13af82f24c5697c316a9a713e6f7f6d`.
+- Compared the updated review with the original Pass 1 review blob; the complete original content remains an exact prefix and the Pass 3 section is appended.
+- Confirmed both restored `2026` qualifiers in the updated target.
+- No source file or excluded project-control file was modified.
+
+### 7. Change boundary
+
+Changed only:
+
+- `translation/en/experience/ubuntu-userspace.md` — two source-justified applicability-year restorations.
+- `translation/reviews/experience/ubuntu-userspace.md.md` — appended Pass 3 review, preserving Pass 1.
+- `translation/tasks/005-pass3-experience-ubuntu-userspace.md` — appended this eight-field worker handoff.
+
+Left unchanged:
+
+- Chinese source `experience/ubuntu-userspace.md`.
+- `references/ubuntu.md` and its English counterpart.
+- Pass 3 criteria, current-position/checkpoint records, glossary, translation instructions, indexes, inventory and unrelated files.
+
+### 8. Next dependency
+
+No additional file evidence is required for this bounded translation review. Worker execution and handoff are complete. The orchestrator must independently reconstruct and evaluate this handoff, determine acceptance and select the next operation. No project-level continuation position was changed.
+
+**Worker disposition: COMPLETED.** This records worker execution completion only; it does not constitute orchestrator acceptance or technical validation.
