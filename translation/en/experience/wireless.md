@@ -29,7 +29,7 @@
 Tag: **[Time-consuming]**
 
 - **Symptoms:** Authentication and key exchange succeed every time. About six seconds later, beacons are lost, the transmit queue cannot drain, and the local connection is dropped; DHCP never obtains an address. GNOME reports this misleadingly as an incorrect password. 2.4 GHz works; limiting the channel to 40 MHz works.
-- **Cause:** Above approximately 20 dBm transmit power, the link freezes. The vendor driver applies a SAR power limit at every startup; the mainline driver does not.
+- **Cause:** Above approximately 20 dBm transmit power, the link freezes. The vendor driver applies a SAR power limit at every startup, so transmit power never reaches this threshold; the mainline driver does not apply that limit.
 - **Confirmation:** Within the same boot, compare a fixed 20 dBm setting with automatic power. Note that limiting the channel to 40 MHz also disables HE, so test channel width and HE as separate variables.
 - **Resolution:** Apply the same SAR limit during driver initialisation as the vendor implementation. Do not treat a fixed 20 dBm value as the production solution, and do not copy another device's board data: it contains that device's calibration.
 - **Prevention:** When the symptom is "can scan but cannot connect", compare the vendor driver's initialisation command sequence before changing firmware or board files.
