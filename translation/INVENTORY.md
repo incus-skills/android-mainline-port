@@ -97,6 +97,7 @@ The repository indexes describe this as an evolving collection of domain-specifi
 | `experience/touch-and-input.md` | Touch, keys, keyboard accessories, stylus and fingerprint | `uninspected` |
 | `experience/audio.md` | Audio DSP, AudioReach, amplifiers, microphones, UCM and PipeWire | `uninspected` |
 | `experience/wireless.md` | Wi-Fi and Bluetooth | `uninspected` |
+| `experience/sensors-camera-media.md` | [`translation/en/experience/sensors-camera-media.md`](en/experience/sensors-camera-media.md) | `translated` | Sensor/automatic-rotation, camera and hardware-video routes, layered acceptance evidence, fresh-boot state, application-level availability, explicit pattern references and unresolved boundaries translated; technical claims remain unvalidated. [Review record](reviews/experience/sensors-camera-media.md.md). |
 | `experience/power-and-time.md` | Battery, charging, suspend, RTC/system time, watchdog and thermal management | `translated` |
 | `experience/sensors-camera-media.md` | Sensors, rotation, camera and hardware video decoding | `uninspected` |
 | `experience/usb-and-storage.md` | USB/Type-C, external display, storage, partitioning, dual boot, flashing and installation | `uninspected` |
@@ -184,6 +185,7 @@ Translation commentary, reconstruction decisions and first-pass review are prese
 - [`translation/reviews/experience/audio.md.md`](reviews/experience/audio.md.md) records the AudioReach/ADSP route, layered evidence boundaries, topology and amplifier distinctions, PipeWire/UCM and fresh-state issues, explicit collection-level links, unresolved risks and technical-validation boundary.
 - [`translation/reviews/experience/wireless.md.md`](reviews/experience/wireless.md.md) records the separate Wi-Fi/Bluetooth routes and acceptance sequences, firmware/board-data and device-identity distinctions, regulatory/lifecycle cases, explicit pattern references, unresolved issues and technical-validation boundary.
 - [`translation/reviews/experience/power-and-time.md.md`](reviews/experience/power-and-time.md.md) records the power/time route, measurement-versus-status distinction, suspend and clock evidence, explicit pattern references, watchdog/thermal coverage gaps, unresolved issues and technical-validation boundary.
+- [`translation/reviews/experience/sensors-camera-media.md.md`](reviews/experience/sensors-camera-media.md.md) records the sensor/rotation, hardware-video and camera routes, layered acceptance evidence, explicit Pattern D/F/I references, unresolved camera boundaries and technical-validation boundary.
 
 ### Chinese reconstruction surface
 
