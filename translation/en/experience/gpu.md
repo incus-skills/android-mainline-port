@@ -3,7 +3,7 @@
 ## Recommended Route
 
 1. **Kernel:** Use upstream drm/msm support for the relevant Adreno generation, including the GPU clock controller, GMU, SMMU and OPP table. Newer GPUs often appear first in linux-next, Qualcomm review series or community kernels. Import them with their provenance, then replace them with the official upstream versions once merged.
-2. **Firmware:** The relevant files are sqe, GMU and zap shader firmware. The secure world on retail devices usually rejects a zap signed with a generic key, so the device's original vendor-signed file may be required. Some platforms can first validate rendering through a path that does not require zap.
+2. **Firmware:** The relevant files are sqe, GMU and zap shader firmware. The secure world on retail devices usually rejects a zap signed with a generic key, so only the device's original factory-signed file can be used. Some platforms can first validate rendering through a path that does not require zap.
 3. **Userspace:** First check whether the distribution's Mesa recognises the GPU (use the complete chip ID, not just the series number). If it does not, build Mesa yourself and install it under a separate prefix. Enable it through environment variables only when the GPU driver is loaded; removing it should return the system to the distribution version.
 4. **Sandboxed applications:** Snap and Flatpak use their own GL libraries; see ubuntu-userspace.md.
 5. **Immature Mesa support for a new GPU:** Video textures, multiple contexts and the Vulkan path are the most likely areas to fail. Track fixes in upstream stable and main, backport them by commit, and record each backport as technical debt. Replace the backports with the upstream release when available.
@@ -26,8 +26,8 @@
 
 ### A GMU or GPU Timeout Is Actually Caused by Display-Resource Reclamation
 
-- **Symptoms:** GMU HFI timeout or hangcheck, apparently unrelated to GPU code.
-- **Cause:** When borrowing the firmware display, the display-bus clock can be reclaimed, slowing the memory path (see kernel-and-resources.md). Alternatively, an MX dependency vote may use the wrong OPP table, or a power domain may be placed in retention.
+- **Symptoms:** GMU HFI timeout or hangcheck, unrelated to GPU code.
+- **Cause:** When borrowing the firmware display, the display-bus clock can be reclaimed, slowing the memory path (see kernel-and-resources.md). Alternatively, an MX dependency vote uses the wrong OPP table, or a power domain is placed in the retention level.
 - **Resolution:** Rule out display-side resource problems first, then investigate GPU power votes.
 - **Applicability:** Qualcomm; 2026.
 
@@ -36,7 +36,7 @@
 Tag: **[Time-consuming]**
 
 - **Symptoms:** Opening a Settings page containing several video demonstrations immediately crashes with SIGSEGV in _mesa_release_pending_resource ← delete_buffers.
-- **Cause:** The generic Mesa GL frontend adds a new context to the shared list before its state tracker is ready. Under threaded context operation, traversal of that list can encounter a null pointer. freedreno always enables threaded context, so the failure is reproducible; the distribution's software renderer does not reproduce it.
+- **Cause:** The generic Mesa GL frontend adds a new context to the shared list before its state tracker is ready. Under threaded context operation, traversal of that list can encounter a null pointer. freedreno always enables threaded context, so the failure reproduces every time; the distribution's software renderer does not reproduce it.
 - **Confirmation:** Find the context being created in the core dump. Write a stress test that creates and destroys contexts concurrently; the original version should crash and the fixed version should not.
 - **Resolution:** Add the new context to the list only after it is ready, then submit the minimal fix upstream. GALLIUM_THREAD=0 is a workaround, but carries a performance cost.
 - **Applicability:** General GL frontend issue in Mesa 26.x and earlier; 2026.
