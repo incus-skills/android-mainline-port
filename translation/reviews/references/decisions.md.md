@@ -94,3 +94,34 @@ The catalogue therefore connects technical choices to the project's broader proc
 - Current status: **translated**. Semantic review and technical validation remain outstanding.
 
 The next review should compare the English line by line with the Chinese source, then assess how this decision catalogue is used alongside the process, discipline, verification and experience documents. Technical claims should be assessed in a distinct pass with appropriate source and device evidence.
+
+
+## Pass 3 — technical and semantic review
+
+Source/translation pair rechecked against `references/decisions.md` at blob `bc424790646c0de63c36fce2824dd09752d289d7`.
+
+### Review results
+
+- The nine-section catalogue structure and topic order are retained.
+- The decision-entry grammar remains default, conditional rules, rationale, applicability limits and acceptance where present; missing elements are not filled in.
+- The nine general criteria retain their order and decision-record requirements.
+- Conditional branches, prohibitions, temporary diagnostic measures, user-owned decisions and acceptance checks were checked across the translated sections.
+- Numerical values, command names, kernel parameters, service properties, paths, subsystem names and version labels were retained.
+- Qualcomm-, GKI-, Ubuntu-, Debian- and interface-specific scopes remain attached to the corresponding source rules.
+- The list of uneconomical approaches remains conditional on new evidence; it is not translated as an unconditional timeless prohibition.
+- No universal scoring system, priority weighting, extra acceptance gate or cross-document dependency graph was introduced.
+
+### Corrections
+
+No source-driven semantic correction was required. The existing translation was retained unchanged.
+
+### Boundaries
+
+The source contains compressed and domain-specific expressions, including the speaker-gain "value chain" and active-slot image-set rotation. The existing review record preserves these as interpretation boundaries. They are not resolved through stylistic rewriting.
+
+This review does not validate the technical recommendations, current upstream status, safety or hardware behaviour.
+
+- Source-based semantic review: completed for this document.
+- Translation changes: none.
+- Technical correctness validation: not performed.
+- Whole-skill validation: outstanding.
