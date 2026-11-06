@@ -3,14 +3,15 @@
 ## 当前入口
 
 - 当前遍历：**Pass 3 — 操作性英文翻译的技术与语义审查**
-- 当前会话检查点：**Pass 3 / Checkpoint 03**
-- 最近完成文档：`references/discipline.md`
-- 下一文档：`references/process.md`
+- 当前会话检查点：**Pass 3 / Checkpoint 04**
+- 最近完成文档：`references/process.md`
+- 下一文档：`references/decisions.md`
+- 已完成审查：`SKILL.md`、`references/discipline.md`、`references/process.md`。
 - Pass 3 范围：`SKILL.md`、六份 `references/` 文档和十五份 `experience/` 文档。
-- 当前观察位置：逐项检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
+- 当前观察位置：检查英文功能表达是否保留源文命令力度、条件范围、决策逻辑、技术 token、结构和跨文件引用。
 - 明确排除：不以此轮证明技术主张在当前上游或真实设备上正确；不进行真机验证。
-- 最近检查点：[Pass 3 / Checkpoint 03 — references/discipline.md](checkpoints/pass-3-checkpoint-03.md)。
-- 前一检查点：[Pass 3 / Checkpoint 02 — SKILL.md](checkpoints/pass-3-checkpoint-02.md)。
+- 最近检查点：[Pass 3 / Checkpoint 04 — references/process.md](checkpoints/pass-3-checkpoint-04.md)。
+- 前一检查点：[Pass 3 / Checkpoint 03 — references/discipline.md](checkpoints/pass-3-checkpoint-03.md)。
 - Pass 3 范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)。
 
 ## 遍历编号约定
@@ -25,9 +26,9 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass 3 的目的、范围和当前文档位置。
-2. 阅读 [Pass 3 / Checkpoint 03](checkpoints/pass-3-checkpoint-03.md)，再按需回看 Checkpoint 02 和 01。
+2. 阅读 [Pass 3 / Checkpoint 04](checkpoints/pass-3-checkpoint-04.md)，再按需回看前序检查点。
 3. 阅读 `translation/README.md` Phase 4 和 `translation/GLOSSARY.md`。
-4. 对照 `references/process.md` 的中文源文、英文译文和既有审查记录。
+4. 对照 `references/decisions.md` 的中文源文、英文译文和既有审查记录。
 5. 区分翻译语义审查与外部技术正确性验证；不要把后者默认为本轮任务。
 
 ## 后续工作约束
