@@ -10,7 +10,7 @@
 
 **Root filesystem delivery:** Format on the device and extract a tar archive (preserving extended attributes and numeric ownership). If an image must be distributed, encode only used blocks.
 
-**Maintenance image:** A small image that runs only in memory, includes storage drivers, a root shell and partitioning tools, mounts no partitions, and automatically returns to Fastboot on timeout without requiring a session. Use it to write the partition table and preload device-local files before first boot.
+**Maintenance image:** A small image that runs only in memory, includes storage drivers, a root shell and partitioning tools, mounts no partitions, and automatically returns to Fastboot if no session is active when the timeout expires. Use it to write the partition table and preload device-local files before first boot.
 
 ## Completion Criteria
 
@@ -57,21 +57,21 @@ Tags: **[Fatal] [Time-consuming]**
 - **Symptoms:** booting slot B enters an old firmware chain or fails; recovery rejects an image containing a kernel.
 - **Cause:** slot B may contain an old factory firmware chain or be all zeros; the super partition can hold only one Android installation; recovery is treated only as a ramdisk.
 - **Confirmation:** compare hashes of the partitions in both slots first.
-- **Applicability:** Qualcomm.
+- **Applicability:** Qualcomm; 2026.
 
 ### Host-side Fastboot Slot Writes Reset the Retry Count; a Custom System That Does Not Mark Success Becomes Unbootable
 
 - **Symptom:** after several boots, the slot is marked unbootable.
 - **Cause:** host-side `fastboot flash` resets the retry count to 7; Linux does not mark the boot successful as Android does.
 - **Resolution:** write using `dd` from within the system (preserving attributes); use a service to mark the slot successful after boot.
-- **Applicability:** Qualcomm A/B.
+- **Applicability:** Qualcomm A/B; 2026.
 
 ### Android Fails on Its First Boot After Dual-Boot Installation
 
 - **Symptom:** switching back to Android enters recovery or shows a black screen.
 - **Cause:** firmware partitions required by Android (modem, Bluetooth, DSP) are damaged, while the installer checked only the boot chain.
 - **Resolution:** have the installer verify all firmware partitions required by Android; use kernel logs from the rawdump as evidence.
-- **Applicability:** Qualcomm.
+- **Applicability:** Qualcomm; 2026.
 
 ### The Slot-Switching Tool Deletes the Image Set Currently in Use When a Slot Write Fails
 
@@ -144,7 +144,7 @@ Tag: **[Fatal]**
 
 - **Causes:** the USB 3 PHY parameter table does not match the device generation (the vendor's complete table must be ported); the `maximum-speed` property causes an out-of-range condition and is rewritten by the bootloader; `allow_userspace_control` is not set; the pipe clock is enabled too early.
 - **Resolution:** address each item above. During driver development, build drivers that could hang the bus as modules.
-- **Applicability:** Qualcomm DWC3 + QMP.
+- **Applicability:** Qualcomm DWC3 + QMP; 2026.
 
 ### A Single Type-C Port Disconnects the Debugging Channel When Switched to Host Mode
 
