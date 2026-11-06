@@ -22,10 +22,10 @@
 ## 本轮入口顺序
 
 1. 阅读本文件，确认 Pass、当前文档位置和调查边界。
-2. 阅读 [Pass 1 / Checkpoint 03](checkpoints/pass-1-checkpoint-03.md)，再按需回看 Checkpoint 05、Checkpoint 04 和更早检查点。
+2. 阅读 [Pass 1 / Checkpoint 06](checkpoints/pass-1-checkpoint-06.md)，再按需回看 Checkpoint 05、Checkpoint 04 和更早检查点。
 3. 阅读 `reconstruction/zh/README.md` 和 `translation/INVENTORY.md`。
 4. 按需回看 `experience/patterns.md`、`experience/kernel-and-resources.md`、`experience/audio.md`、`experience/wireless.md` 与 `experience/touch-and-input.md` 的相关源文和重构记录。
-5. 独立检查原始源文件 `experience/wireless.md`，区分其自身陈述与此前音频/输入材料形成的预期。
+5. 独立检查原始源文件 `experience/power-and-time.md`，区分其自身陈述与此前无线/音频/输入材料形成的预期。
 
 ## 当前继续约束
 
