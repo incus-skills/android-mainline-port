@@ -114,6 +114,10 @@ Do not resolve external technical questions or silently expand the task.
 - Preserve Pass 1 review content as an exact prefix.
 - Record exact revisions examined, changed files, checks performed and unresolved matters.
 
+## Separate investigation proposals
+
+If the review raises questions that require current upstream evidence, real-device testing or other external investigation, do not resolve them within this task. Where useful, record them separately from Pass 3 findings in the handoff, identifying the observation that prompted the question and the external evidence or test that would be needed. Such proposals are not translation findings, corrections or acceptance evidence. Do not manufacture proposals if none arise.
+
 ## Required handoff
 
 Append the reconstructable handoff to this task record, following the eight fields in `translation/EXECUTION-SEGMENTATION.md`: task identity; observer position; observations; decisions; unresolved matters; validation; change boundary; next dependency.
