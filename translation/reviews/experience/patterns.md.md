@@ -7,7 +7,8 @@
 - Source path: `experience/patterns.md`
 - Source blob SHA: `c485e34f6fb06808d7c2678b5a2280494e5f71c0`
 - English artifact: [`translation/en/experience/patterns.md`](../../en/experience/patterns.md)
-- Review status: `translated`; semantic and technical review remain outstanding.
+- Review status: `reviewed` in Pass 3; technical validation remains outstanding.
+- Latest English translation commit: `e8a0f09a194da27da04cfed8fccad46c85801981`.
 
 ## Translation intent and boundary
 
@@ -104,4 +105,28 @@ This record reconstructs the file's diagnostic role, nine-category structure and
 - the examples remain current;
 - every linked domain entry supports the pattern in the same way.
 
-Those questions require a separate semantic/technical review, including whole-library and, where appropriate, real-device evidence. The Chinese source remains authoritative for this translation pass.
+## Pass 3 source-based semantic review
+
+The source and English translation were compared across the introduction and all nine categories. One terminology correction was made in Category D: `已移动的标签` is rendered as **moved tags**, rather than “moved labels”, preserving the source's tag terminology without adding an unsupported claim about the specific tag system. No other source-driven semantic correction was required.
+
+The comparison confirmed preservation of:
+- the instruction to classify a new symptom using recognition criteria, investigate through general handling and then consult concrete domain entries;
+- the explicit allowance for one symptom to belong to multiple categories;
+- all nine category distinctions and their recognition symptoms, general handling steps, manifestations and domain references;
+- the sequence of evidence capture, comparison, reproduction and correction in the bootloader and resource-ownership patterns;
+- timing/lifecycle investigation, residual-state isolation and measurement-method controls;
+- the distinction between lower-layer signals and end-to-end user-facing acceptance;
+- upstream-fix checking, implementation-transfer boundaries and recovery-path testing;
+- technical identifiers, commands, paths, interfaces, examples and cross-file references.
+
+No category priority, tie-break rule, formal diagnostic decision tree, root-cause confirmation threshold or exhaustive classification claim was introduced. The source's heuristic overlap remains explicit.
+
+### Pass 3 disposition
+
+- Source-based semantic review: **completed**.
+- Translation correction: **moved labels** → **moved tags** in Category D's residual-state examples.
+- Technical correctness, current upstream status, safety and device-specific applicability: **not validated**.
+- Whole-library validation: **outstanding**.
+- Next document: `experience/bootloader-and-boot.md`.
+
+The nine patterns remain diagnostic orientation aids, not proven diagnoses or mutually exclusive classes. The Chinese source remains authoritative.
