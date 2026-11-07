@@ -16,6 +16,7 @@
 - Task 009 接受与 Task 010 位置：[Pass 4 / Checkpoint 03](checkpoints/pass-4-checkpoint-03.md)，blob SHA `e6b0a752a82d7484b75083ad4a5279bc81342549`。
 - Task 010 接受与 Task 011 位置：[Pass 4 / Checkpoint 04](checkpoints/pass-4-checkpoint-04.md)，blob SHA `23e479d0988f0e289650aae718b55a9182cdb11e`。
 - Task 011 接受与 Task 012 位置：[Pass 4 / Checkpoint 05](checkpoints/pass-4-checkpoint-05.md)，blob SHA `bd80287c4db36295b5883ea0153b5fed9f1ebe8a`。
+- Task 012 接受与 Task 013 位置：[Pass 4 / Checkpoint 06](checkpoints/pass-4-checkpoint-06.md)，blob SHA `c91664de1db8e06af3341292748d5123b92362af`。
 - 前一遍历闭合记录：[Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`。
 - Pass 3 原始范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`。
 - Phase 5 定义：[translation/README.md](../../../translation/README.md)，blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`。
