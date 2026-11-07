@@ -90,6 +90,6 @@ Following acceptance:
 - Task 011's completed record is preserved at its handoff-bearing blob SHA 502f6da88d98fa3f22518b8511b7c3aaf19bacce.
 - The pending Task 011 path is absent; the worker reported the pending task directory empty after the move.
 - Task 012 is prepared as the next unused numbered task.
-- The current-position record is to identify Checkpoint 05, accepted Task 011, Task 012 as the next operation, and the exact Task 012 blob SHA.
+- The current-position record now identifies Checkpoint 05, accepted Task 011, and Task 012 as the next operation. Task 012's prepared task-record blob SHA is fe42c5846315b28eada1188b8e333b4d43968cee.
 - Pass 3 inventory entries are not changed: Task 011 is a Phase 5 workflow validation, not a Pass 3 translation review.
 - The pending/completed task sequence is reconciled with this checkpoint and the current-position record.
