@@ -11,7 +11,7 @@
 - Pass 4 已完成并接受的 worker 操作：Task 008 — Phase 5 entrypoint and navigation integrity（仅接受入口/导航结构验证）。
 - 下一操作：**Task 009 — Phase 5 representative technical-decision workflow**，沿技术决策入口追踪 `Backup and Root Access` 单一决策记录。
 - 当前观察位置：项目级验证英文 skill 的导航、依赖、工作流可用性、一致性，以及安装和 skill-discovery metadata。此位置不是 Pass 3 的延伸。
-- Pass 4 范围与 exit condition：[Pass 4 / Checkpoint 01](checkpoints/pass-4-checkpoint-01.md)，blob SHA `598722e61e115068af5c90d90dbdf8224c55563`。
+- Pass 4 范围与 exit condition：[Pass 4 / Checkpoint 01](checkpoints/pass-4-checkpoint-01.md)，blob SHA `598722e61e115068af5c90d90dbdf8224dd7c764`。
 - Task 008 接受与下一位置：[Pass 4 / Checkpoint 02](checkpoints/pass-4-checkpoint-02.md)，blob SHA `e2eee68d113988b3aed8a01fb03682fa130aa1f0`.
 - 前一遍历闭合记录：[Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`。
 - Pass 3 原始范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`。
