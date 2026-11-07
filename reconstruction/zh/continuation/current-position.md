@@ -4,19 +4,19 @@
 
 - 当前遍历：**Pass 4 — whole-skill English validation**。
 - 当前项目阶段：**Phase 5 — Whole-skill validation**，依照 `translation/README.md`。
-- 当前会话检查点：**Pass 4 / Checkpoint 06 — Task 008、Task 009、Task 010、Task 011、Task 012 已接受；Task 013 待执行**。
+- 当前会话检查点：**Pass 4 / Checkpoint 07 — Task 008–013 已接受；Task 014 待执行**。
 - 前一遍历：Pass 3 — 操作性英文翻译的技术与语义审查。
 - 前一遍历完成位置：Pass 3 / Checkpoint 23；`experience/testing-and-process.md` 是最后一份文件级审查文档。
 - Pass 3 已声明的文件级 source-based review exit condition 已达到；这不代表 Phase 5 或整个 skill 已验证。
-- Pass 4 已完成并接受的 worker 操作：Task 008 — entrypoint/navigation integrity（仅结构验证）；Task 009 — Backup and Root Access 技术决策工作流（仅程序连贯性验证）；Task 010 — sparse-image troubleshooting workflow（单一案例的程序连贯性验证）；Task 011 — new-device assessment workflow（Stage 0 程序可重构性验证）；Task 012 — existing-project continuation workflow（项目记录与 process-stage identification 的程序可重构性验证）。
-- 下一操作：**Task 013 — Phase 5 cross-document stage-identification and record-reconciliation contract review**，检查 pinned English tree 中是否存在 Task 012 evidence boundary 之外的 stage representation、overlap handling、record precedence/reconciliation 或 Stage 8 completion rule。
+- Pass 4 已完成并接受的 worker 操作：Task 008 — entrypoint/navigation integrity（仅结构验证）；Task 009 — Backup and Root Access 技术决策工作流（仅程序连贯性验证）；Task 010 — sparse-image troubleshooting workflow（单一案例的程序连贯性验证）；Task 011 — new-device assessment workflow（Stage 0 程序可重构性验证）；Task 012 — existing-project continuation workflow（项目记录与 process-stage identification 的程序可重构性验证）；Task 013 — cross-document stage/record contract review（固定 English tree 内跨文档程序一致性验证）。
+- 下一操作：**Task 014 — Phase 5 English-tree source-language leakage review**，对固定 English tree 进行只读扫描，区分意外残留的源语言文本与专名、技术标识符及有意保留的术语。
 - 当前观察位置：项目级验证英文 skill 的导航、依赖、工作流可用性、一致性，以及安装和 skill-discovery metadata。此位置不是 Pass 3 的延伸。
 - Pass 4 范围与 exit condition：[Pass 4 / Checkpoint 01](checkpoints/pass-4-checkpoint-01.md)，blob SHA `598722e61e115068af5c90d90dbdf8224dd7c764`。
 - Task 008 接受与 Task 009 位置：[Pass 4 / Checkpoint 02](checkpoints/pass-4-checkpoint-02.md)，blob SHA `e2eee68d113988b3aed8a01fb03682fa130aa1f0`。
 - Task 009 接受与 Task 010 位置：[Pass 4 / Checkpoint 03](checkpoints/pass-4-checkpoint-03.md)，blob SHA `e6b0a752a82d7484b75083ad4a5279bc81342549`。
 - Task 010 接受与 Task 011 位置：[Pass 4 / Checkpoint 04](checkpoints/pass-4-checkpoint-04.md)，blob SHA `23e479d0988f0e289650aae718b55a9182cdb11e`。
 - Task 011 接受与 Task 012 位置：[Pass 4 / Checkpoint 05](checkpoints/pass-4-checkpoint-05.md)，blob SHA `bd80287c4db36295b5883ea0153b5fed9f1ebe8a`。
-- Task 012 接受与 Task 013 位置：[Pass 4 / Checkpoint 06](checkpoints/pass-4-checkpoint-06.md)，blob SHA `c91664de1db8e06af3341292748d5123b92362af`。
+- Task 012 接受与 Task 013 位置：[Pass 4 / Checkpoint 06](checkpoints/pass-4-checkpoint-06.md)，blob SHA `c91664de1db8e06af3341292748d5123b92362af`。\n- Task 013 接受与 Task 014 位置：[Pass 4 / Checkpoint 07](checkpoints/pass-4-checkpoint-07.md)，待验证 checkpoint blob SHA 见分支记录。
 - 前一遍历闭合记录：[Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`。
 - Pass 3 原始范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`。
 - Phase 5 定义：[translation/README.md](../../../translation/README.md)，blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`。
@@ -33,7 +33,7 @@
 - Task 011 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/process.md` `3e770386533dda9f0b5162043c08e9ffea454467`；`translation/en/references/decisions.md` `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`；`translation/en/experience/testing-and-process.md` `b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca`.
 - Task 010 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/experience/patterns.md` `7309618ad08085bb514b6800a580774f829fe312`；`translation/en/experience/usb-and-storage.md` `7c3225d7a7f8650ce27a345922937cdadcf0cc59`；`translation/en/experience/README.md` `a7a28190615253246749909b380ddcba17268769`.
 - Task 012 prepared-blob provenance discrepancy: Checkpoint 05 retains `fe42c5846315b28eada1188b8e333b4d43968cee`, while the current-position record and executed task used `6e11828a95881f56157c8ca6166ce0e35870125b`; Checkpoint 06 records why the latter is the executed revision. Historical Checkpoint 05 remains unchanged.
-- 已知未决记录差异：`translation/EXECUTION-SEGMENTATION.md` 的 “Application to the current position” 段仍指向 Pass 3 / Checkpoint 16 / `experience/wireless.md`。当前入口与 active checkpoint 是位置权威；该旧段落不得覆盖它。此问题不阻止当前 Task 013；其历史发现与优先级见 Pass 4 / Checkpoint 01、Checkpoint 04 和 Checkpoint 05。
+- 已知未决记录差异：`translation/EXECUTION-SEGMENTATION.md` 的 “Application to the current position” 段仍指向 Pass 3 / Checkpoint 16 / `experience/wireless.md`。当前入口与 active checkpoint 是位置权威；该旧段落不得覆盖它。另有 Task 013 确认的 stage/record-contract gaps、Stage 8 completion omission 与 status-vocabulary discrepancy；均未在本轮制定或应用修复政策。
 
 ## 遍历编号约定
 
@@ -53,7 +53,7 @@
 4. 回看 [Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，确认前一遍历的接受范围及明确排除项；不要重开已闭合的文件级翻译审查。
 5. 阅读 `translation/README.md` Phase 5 和 `translation/INVENTORY.md`，区分已完成的 source-based review 与 whole-skill validation。
 6. 阅读 `translation/EXECUTION-SEGMENTATION.md`，按其 evidence-boundary、worker/orchestrator 分工和八字段 handoff 工作；不要把该方案视为已验证，也不要将其中陈旧的嵌入位置段落视为当前状态。
-7. 阅读 [Task 013](../../../translation/tasks/013-phase5-cross-document-stage-record-contract.md)，并从 pinned English tree revision 建立 worker 证据边界。
+7. 阅读 [Task 014](../../../translation/tasks/014-phase5-english-tree-language-leakage-review.md)，并从 pinned English tree revision 建立 worker 证据边界。
 
 ## Pass 4 约束
 
