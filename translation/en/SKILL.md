@@ -107,3 +107,15 @@ After assessment, present all items together. For each item, provide options, tr
 ## Maintaining this skill
 
 After completing a project or solving a new problem, write the experience back to the relevant file in `experience/` (see `experience/README.md` for the format). Change the outer framework only when the process or working discipline changes. Do not include device models, serial numbers, personal information or internal project codenames.
+
+### Experience development and upstream contribution
+
+Treat experience development as a recurring lifecycle:
+
+**Use → encounter → record → accumulate → validate → select → translate/adapt → propose upstream → review/incorporate → use again.**
+
+Use of the skill may produce observations and candidate experiences. Capture and retain those candidates in this English project with enough context, provenance, evidence and applicability to make them reconstructable. The English project is the accumulating home for experiences generated through its own use; local capture does not depend on an upstream contribution being selected, submitted or accepted.
+
+Consolidate each candidate against the existing experience library before adding anything: extend an existing entry where it describes the same problem, create an entry where a distinct confirmed problem warrants one, or retain unresolved material in the relevant file's `Unresolved` section. Follow the library's entry and maintenance rules. An observation is not automatically a confirmed cause or reusable recommendation; validate it against the evidence available, preserve the conditions and limits, and do not invent a universal validation threshold.
+
+Only select sufficiently supported, reusable improvements for possible upstream contribution. Translate and adapt selected material to the upstream project's language and context while retaining its evidence, provenance, conditions and applicability. A pull request is a proposal for upstream review, not proof of acceptance or incorporation. Keep the English project's experience and records regardless of whether upstream accepts, rejects, delays or does not respond. When upstream incorporates a change, record the relevant upstream version or commit in the experience entry as appropriate; subsequent use may confirm, refine or challenge the experience. Ordinary library additions do not by themselves change the outer framework.
