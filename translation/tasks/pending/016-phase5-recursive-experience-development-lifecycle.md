@@ -18,17 +18,23 @@ The task is a bounded documentation operation. It is not a packaging redesign, i
 
 - Traversal: **Pass 4 — whole-skill English validation**.
 - Project phase: **Phase 5 — Whole-skill validation**.
-- Current position before this task: Pass 4 / Checkpoint 09; Tasks 008–015 accepted.
+- Current position: **Pass 4 / Checkpoint 10**; Tasks 008–015 accepted within their recorded boundaries.
 - Repository: `incus-skills/android-mainline-port`.
 - Branch: `translation/english-reconstruction`.
-- Branch head at task preparation: `2faaa228cb8b58c0376806d105f67cda26ce3b6b`.
+- Original task preparation commit: `01967054f6024e1f4f355dc69468a7dfbb42be55` (historical; the worker stop report is preserved below).
+- Current branch head at reconciliation: `018c7e8e92c2e8d107416bf4e818c7a6aceca178`.
 - Checkpoint 09: `reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-09.md`, blob SHA `e7fe1c861c4ebbedc528e891e7d256c8d1e0fa1f`.
-- Current position: `reconstruction/zh/continuation/current-position.md`, blob SHA `0316b733edc97d2874e9df2c1b14772880053501`.
+- Governing current position: `reconstruction/zh/continuation/current-position.md`, blob SHA `aed111416f4b33682fc66deda0af7b61a0a97ef7`.
+- Active checkpoint: `reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-10.md`, blob SHA `c0ff7fa6eb50c3647d3159deb199c7cf1b6ad41d`.
+
+The current-position pin in the original task packet (`0316b733edc97d2874e9df2c1b14772880053501`) was the pre-Checkpoint10 revision. It became stale because the orchestrator advanced the continuity record after preparing Task016. The worker correctly stopped under the task's strict pin rule. The stop report below is retained as provenance and is not an execution result.
 - Phase 5 criteria: `translation/README.md`, blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`.
 - Worker/orchestrator boundary and eight-field handoff: `translation/EXECUTION-SEGMENTATION.md`, blob SHA `05ee569421b89366bbc0993afe62cb22a0644913`.
 - Worker ingress: `translation/WORKER-INGRESS.md`, blob SHA `774db08a06b5b27d89a43e709f3944981afcea82`.
 
-## Evidence boundary and pinned English documents
+## Evidence boundary and pinned documents
+
+The orchestrator has reconciled the single mismatch reported by the worker. The current-position pin is deliberately advanced to the governing Checkpoint10 revision; this is an explicit re-authorization, not a silent substitution. The original worker stop report remains below.
 
 Retrieve the current branch/tree before editing and verify each listed blob SHA. If any pin differs, stop and report the mismatch; do not silently substitute another revision.
 
@@ -148,3 +154,35 @@ Determine whether the English documentation can explicitly reconstruct the recur
 
 ### 8. Next dependency
 Orchestrator review of the current-position revision and Task 016's evidence pins is required. Worker execution can resume only after a reconciled task packet establishes the governing checkpoint and matching revisions. No orchestrator acceptance is implied.
+
+
+---
+
+## Orchestrator reconciliation and re-authorization — 2026-11-07
+
+### 1. Reconstructed mismatch
+
+The worker's stop report is accurate. The original task packet pinned the current-position record at pre-Checkpoint10 blob `0316b733edc97d2874e9df2c1b14772880053501`. After preparing Task016, the orchestrator advanced that record to Checkpoint10; the resulting blob is `aed111416f4b33682fc66deda0af7b61a0a97ef7`. The active Checkpoint10 record is blob `c0ff7fa6eb50c3647d3159deb199c7cf1b6ad41d`.
+
+This was an orchestrator sequencing error in task preparation: the task's position pin was not refreshed after the continuity update. It was not a worker error and does not indicate a change to the pinned English evidence.
+
+### 2. Independent pin reconciliation
+
+The orchestrator independently retrieved the pending task and governing records from the branch. The worker-reported evidence status was checked against the exact blob pins in the task. The four English documents, Phase 5 criteria and Checkpoint09 remain at their task-pinned revisions. Only the current-position record differs from the original task pin, for the reason above.
+
+The task now explicitly identifies Checkpoint10 and the current-position blob `aed111416f4b33682fc66deda0af7b61a0a97ef7` as governing context. The original Checkpoint09 pin remains as historical context, not as the active position.
+
+### 3. Decision
+
+**Re-authorized for worker execution after this task-record revision.**
+
+- Preserve the worker's stop report unchanged as an accurate record of the earlier stop.
+- Replace the stale current-position pin with the verified Checkpoint10 current-position pin.
+- Retain all other evidence pins and the original scope/change boundary.
+- No English documentation review or modification has yet been completed under Task016.
+- The worker must start a fresh ingress session and re-verify all pins against the updated task. If any pin now differs, stop again; do not infer permission to substitute.
+- This re-authorization does not accept worker work, alter the English documentation, or authorise packaging, metadata, automation or upstream contribution changes.
+
+### 4. Current task state
+
+Task016 remains in `translation/tasks/pending/`. The worker's previous session is closed at its prescribed evidence boundary. A fresh worker session may now execute the task against this reconciled packet. Orchestrator acceptance remains pending until a completed handoff is independently reconstructed.
