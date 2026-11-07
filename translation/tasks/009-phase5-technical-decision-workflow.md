@@ -148,7 +148,7 @@ Trace the English technical-decision route for the single **Backup and Root Acce
 
 ### 6. Validation
 
-- Exact blob SHA matches confirmed for all pinned files: entrypoint `f613aa7ef89eb9204c4f9804faf7aebace596a4e`; decision reference `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`; discipline reference `078e020ad497e9ec69388ad55c5beeb4677fd22a`; README `f9bf34ae28e838ae881f9e207797f26c1b327baa`; inventory `0a8e58e9a6f45fd54c718672dc8d7a3a9056f7ee); Checkpoint 01 `598722e61e115068af5c90d90dbdf8224dd7c764`; Checkpoint 02 `e2eee68d113988b3aed8a01fb03682fa130aa1f0`.
+- Exact blob SHA matches confirmed for all pinned files: entrypoint `f613aa7ef89eb9204c4f9804faf7aebace596a4e`; decision reference `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`; discipline reference `078e020ad497e9ec69388ad55c5beeb4677fd22a`; README `f9bf34ae28e838ae881f9e207797f26c1b327baa`; inventory `0a8e58e9a6f45fd54c718672dc8d7a3a9056f7ee`; Checkpoint 01 `598722e61e115068af5c90d90dbdf8224dd7c764`; Checkpoint 02 `e2eee68d113988b3aed8a01fb03682fa130aa1f0`.
 - The pinned English tree was retrieved by its exact tree SHA `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`; GitHub returned the same SHA, 22 file blobs and `truncated: false`. The three task-specific English files appear in that tree at their expected blob SHAs.
 - The active checkpoint confirms Task 008 was accepted and identifies Task 009 as the next bounded representative technical-decision workflow. The accepted Task 008 record and the current Pass 4 checkpoint agree on that position.
 - The eight handoff fields follow `translation/EXECUTION-SEGMENTATION.md`. The walk-through was confined to the designated evidence; no upstream, device, vendor or other external technical sources were consulted.
