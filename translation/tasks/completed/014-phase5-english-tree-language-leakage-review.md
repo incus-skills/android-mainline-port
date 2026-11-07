@@ -102,3 +102,63 @@ Append a reconstructable handoff using the eight fields in `translation/EXECUTIO
 8. Next dependency.
 
 State whether the task was completed, stopped for an adequacy reason, or requires additional evidence. The worker must not claim orchestrator acceptance.
+
+
+---
+
+## Worker handoff — Task 014
+
+### 1. Task identity
+
+- Pass 4 — whole-skill English validation; Phase 5 — whole-skill validation.
+- Task 014 — English-tree source-language leakage review.
+- Branch: `translation/english-reconstruction`.
+- Task record before handoff: blob `1181aebbaf0d66270617a1870f612dbf38a71a81`.
+- Pinned English tree: `translation/en/`, tree SHA `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`.
+- The complete recursive tree contained 22 file blobs and returned `truncated: false`. All 22 files were fetched in full; every fetched blob SHA matched its tree entry.
+
+### 2. Observer position
+
+Determine whether the pinned English operational tree contains accidental untranslated source-language prose, mixed-language residue or other language leakage that could impede an English-reading agent. This was a detection and classification pass only. Pass 3, source-to-target comparison, technical correctness, upstream validation and correction were excluded.
+
+### 3. Observations
+
+- No accidental non-English prose, untranslated source-language fragment or mixed-language instruction was identified in the 22-file tree.
+- A CJK-range scan found only the full-width bracket glyphs in the experience-library markers, for example `【Frequent】`, `【Time-consuming】` and `【Critical】`. Context was inspected in `experience/README.md` (lines 30, 37, 48–50), `experience/bootloader-and-boot.md` (including line 25 and subsequent marker-bearing entries), and `experience/kernel-and-resources.md` (including line 22 and subsequent marker-bearing entries). The bracketed contents are English labels; the glyphs function as visual delimiters, not untranslated text.
+- A broader Unicode-script scan found no characters belonging to non-Latin scripts in any of the 22 files.
+- Headings, section labels, Markdown comments and visible code-comment lines were inspected across the tree. No mixed-language heading, label or comment was identified.
+- The heading `The App Store Displays Chinese as Squares` in `experience/ubuntu-userspace.md` (line 188) is English prose describing a reported display symptom; it is not retained Chinese text.
+- Commands, paths, filenames, identifiers, configuration keys, protocol names, quoted strings and code were treated as technical or documentary tokens where applicable, not as prose leakage.
+
+### 4. Decisions
+
+- **No confirmed leakage candidate.** No correction, translation or terminology decision is proposed.
+- The full-width marker delimiters are classified as intentional formatting around English labels, with high confidence.
+- The App Store heading is classified as ordinary English descriptive prose, with high confidence.
+- Overall result: no source-language leakage was found that appears to impede an English-reading agent.
+
+### 5. Unresolved matters
+
+- No candidate requires source-author clarification on the evidence available.
+- This English-only review cannot establish translation fidelity, identify omissions relative to the Chinese source, or determine whether a Latin-script term was intentionally retained or transliterated. Those questions are outside this task's evidence boundary and were not inferred.
+- No external investigation proposal arose; none has been manufactured.
+
+### 6. Validation
+
+- Retrieved the recursive Git tree by the pinned tree SHA `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`; returned SHA matched and `truncated` was `false`.
+- Confirmed 22 blob entries and fetched the complete contents of every listed file by repository path at the specified branch. Every returned blob SHA matched the corresponding pinned tree entry.
+- Inspected 3,491 lines across the 22 files.
+- Ran a CJK/Japanese/Korean character-range scan and a broader Unicode-script scan over the complete contents. The only CJK-range hits were the documented full-width marker delimiters; the broader non-Latin-script scan returned no hits.
+- Inspected headings, section labels, Markdown comments and code-comment lines across all files, and reviewed the marker hits in context.
+- The character scans are detection aids, not proof of translation fidelity or completeness. In particular, they cannot reliably classify possible Latin-script transliterations without source comparison, which was prohibited.
+
+### 7. Change boundary
+
+- No English skill file, Chinese source, README, inventory, glossary, metadata, checkpoint, current-position record or previous task record was modified.
+- Only this Task 014 record was extended with the handoff.
+- The task record was then moved, with its appended handoff, from `translation/tasks/` to `translation/tasks/completed/`. No task-management mechanism or project-level continuation position was changed.
+
+### 8. Next dependency
+
+- No additional evidence is required to complete this bounded leakage-detection operation.
+- The task is **completed by the worker and awaiting independent orchestrator reconstruction and acceptance**. Completion does not establish orchestrator acceptance, Pass 4 closure, whole-skill completeness or context-segmentation effectiveness.
