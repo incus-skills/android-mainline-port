@@ -72,7 +72,7 @@ The Task 002 acceptance record contains a paragraph claiming that retaining acce
 
 The translation workstream provides the structural reference for the lightweight task lifecycle. Its orchestrator ingress specifies pending task records, worker-appended handoffs, movement of the completed task record to tasks/completed/, and independent orchestrator acceptance. Restructuring must reconstruct that actual arrangement and align its own task lifecycle deliberately; do not assume the current active/ directory arrangement is correct or move files before the lifecycle rule is recorded.
 
-No restructuring-level orchestrator ingress, worker ingress or current-position record existed before this update. The present commit establishes those entry points. It does not yet reconcile the existing task records or prove the procedures operational.
+No restructuring-level orchestrator ingress, worker ingress or current-position record existed before this update. This documentation update establishes those entry points. It does not yet reconcile the existing task records or prove the procedures operational.
 
 ## Next required operation
 
