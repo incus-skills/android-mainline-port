@@ -103,3 +103,48 @@ Append a reconstructable eight-field handoff to this task record, following `tra
 8. **Next dependency:** any necessary follow-up, without presuming orchestrator acceptance.
 
 When execution and handoff are complete, move this task record from `translation/tasks/pending/` to `translation/tasks/completed/`. Moving the record means worker execution is complete only; **orchestrator acceptance remains pending**. Do not update project continuation records or create another task.
+
+
+---
+
+## Worker stop report — evidence-pin mismatch
+
+### 1. Task identity
+- Pass 4 / Phase 5, Task 016.
+- Branch: `translation/english-reconstruction`.
+- Task record before this report: blob `dc63516e9d6fe9e8cb93fae7830314c33fdc7c45`.
+- Ingress: `translation/WORKER-INGRESS.md`, blob `774db08a06b5b27d89a43e709f3944981afcea82`.
+- Execution contract: `translation/EXECUTION-SEGMENTATION.md`, blob `05ee569421b89366bbc0993afe62cb22a0644913`.
+
+### 2. Observer position
+Determine whether the English documentation can explicitly reconstruct the recursive experience-development and upstream-contribution lifecycle. The task's pinned evidence must be verified before any substantive review or edit. External technical validation, packaging changes, automation, contribution submission and project-level continuity changes are excluded.
+
+### 3. Observations
+- The four pinned English documents and `translation/README.md` match their task-record blob SHAs.
+- Pass 4 / Checkpoint 09 matches its pinned blob SHA `e7fe1c861c4ebbedc528e891e7d256c8d1e0fa1f`.
+- The pinned current-position record does **not** match: task expects `0316b733edc97d2874e9df2c1b14772880053501`; current branch returns `aed111416f4b33682fc66deda0af7b61a0a97ef7`.
+- The current branch's current-position record now identifies Pass 4 / Checkpoint 10 and says Task 016 is prepared and awaiting worker execution. It also records the English edition's independent experience-continuity and upstream-contribution direction.
+- Because the task explicitly requires stopping on any pin mismatch, the newer current-position revision was not substituted for the pinned revision.
+
+### 4. Decisions
+- Stopped before substantive document review, lifecycle analysis or edits.
+- No alternative revision was adopted and no task scope was inferred from the newer position record.
+- Appended this stop report to the pending task record so the orchestrator can reconcile the changed project position and re-pin or reissue the task.
+
+### 5. Unresolved matters
+- The task's prepared current-position pin is stale relative to the branch.
+- The orchestrator must determine whether the Checkpoint 10 position is the intended governing context and issue a task with consistent pins before execution resumes.
+- No conclusion has been reached about the existing lifecycle coverage in the English documents.
+
+### 6. Validation
+- Verified all seven evidence pins listed for the English documents, Phase 5 criteria and Checkpoint 09.
+- Six matched; the current-position pin did not.
+- No lifecycle reconstruction, link validation of proposed edits or diff review was performed because the mandatory pin gate failed.
+
+### 7. Change boundary
+- Changed only this pending task record to append the stop report.
+- No English skill documentation, source-language files, checkpoint, current-position record, package metadata or other project files were changed.
+- Task remains in `translation/tasks/pending/`; it was not moved to `completed/`.
+
+### 8. Next dependency
+Orchestrator review of the current-position revision and Task 016's evidence pins is required. Worker execution can resume only after a reconciled task packet establishes the governing checkpoint and matching revisions. No orchestrator acceptance is implied.
