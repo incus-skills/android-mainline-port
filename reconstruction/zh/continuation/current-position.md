@@ -26,8 +26,7 @@
 - 当前待执行任务：[Task 011](../../../translation/tasks/011-phase5-new-device-assessment-workflow.md)，blob SHA `102db73d29daa7bf0f805eb81f932966a1d53ace`.
 - Task 011 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/process.md` `3e770386533dda9f0b5162043c08e9ffea454467`；`translation/en/references/decisions.md` `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`；`translation/en/experience/testing-and-process.md` `b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca`.
 - Task 010 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/experience/patterns.md` `7309618ad08085bb514b6800a580774f829fe312`；`translation/en/experience/usb-and-storage.md` `7c3225d7a7f8650ce27a345922937cdadcf0cc59`；`translation/en/experience/README.md` `a7a28190615253246749909b380ddcba17268769`.
-- Task 010 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/experience/patterns.md` `7309618ad08085bb514b6800a580774f829fe312`；`translation/en/experience/usb-and-storage.md` `7c3225d7a7f8650ce27a345922937cdadcf0cc59`；`translation/en/experience/README.md` `a7a28190615253246749909b380ddcba17268769`.
-- 已知未决记录差异：`translation/EXECUTION-SEGMENTATION.md` 的 “Application to the current position” 段仍指向 Pass 3 / Checkpoint 16 / `experience/wireless.md`。当前入口与 active checkpoint 是位置权威；该旧段落不得覆盖它。此问题不阻止 Task 008 或 Task 009，详见 Pass 4 / Checkpoint 01。
+- 已知未决记录差异：`translation/EXECUTION-SEGMENTATION.md` 的 “Application to the current position” 段仍指向 Pass 3 / Checkpoint 16 / `experience/wireless.md`。当前入口与 active checkpoint 是位置权威；该旧段落不得覆盖它。此问题不阻止当前 Task 011；其历史发现与优先级见 Pass 4 / Checkpoint 01 和 Checkpoint 04。
 
 ## 遍历编号约定
 
