@@ -18,7 +18,8 @@
 - Task 011 接受与 Task 012 位置：[Pass 4 / Checkpoint 05](checkpoints/pass-4-checkpoint-05.md)，blob SHA `bd80287c4db36295b5883ea0153b5fed9f1ebe8a`。
 - Task 012 接受与 Task 013 位置：[Pass 4 / Checkpoint 06](checkpoints/pass-4-checkpoint-06.md)，blob SHA `c91664de1db8e06af3341292748d5123b92362af`。
 - Task 013 接受与 Task 014 位置：[Pass 4 / Checkpoint 07](checkpoints/pass-4-checkpoint-07.md)，blob SHA `becd598fa8e122e1084b28f29e9da177fde7b723`。
-- Task 014 接受与 Task 015 位置：[Pass 4 / Checkpoint 08](checkpoints/pass-4-checkpoint-08.md)，blob SHA `4767279b7c191608e20ffc52d00d9346c2347229`。\n- Task 015 接受与 distribution-intent 依赖：[Pass 4 / Checkpoint 09](checkpoints/pass-4-checkpoint-09.md)，blob SHA `e7fe1c861c4ebbedc528e891e7d256c8d1e0fa1f`。
+- Task 014 接受与 Task 015 位置：[Pass 4 / Checkpoint 08](checkpoints/pass-4-checkpoint-08.md)，blob SHA `4767279b7c191608e20ffc52d00d9346c2347229`。
+- Task 015 接受与 distribution-intent 依赖：[Pass 4 / Checkpoint 09](checkpoints/pass-4-checkpoint-09.md)，blob SHA `e7fe1c861c4ebbedc528e891e7d256c8d1e0fa1f`。
 - 前一遍历闭合记录：[Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`。
 - Pass 3 原始范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`。
 - Phase 5 定义：[translation/README.md](../../../translation/README.md)，blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`。
@@ -30,7 +31,8 @@
 - 已接受任务：[Task 011](../../../translation/tasks/completed/011-phase5-new-device-assessment-workflow.md)，worker handoff blob SHA `502f6da88d98fa3f22518b8511b7c3aaf19bacce`；接受范围与限制见 Checkpoint 05。
 - 已接受任务：[Task 012](../../../translation/tasks/completed/012-phase5-project-continuation-workflow.md)，worker handoff blob SHA `d2a86399ab84a22f8d31e198157d3507f64b69ad`；接受范围与限制见 Checkpoint 06。
 - 已接受任务：[Task 013](../../../translation/tasks/completed/013-phase5-cross-document-stage-record-contract.md)，worker handoff blob SHA `d566e425ba34ec7092193d2805876e644597e8f3`；接受范围与限制见 Checkpoint 07。
-- 已接受任务：[Task 014](../../../translation/tasks/completed/014-phase5-english-tree-language-leakage-review.md)，worker handoff blob SHA `f877b910a27ace9c12834b33b9215f91fb859cc6`；接受范围与限制见 Checkpoint 08。\n- 已接受任务：[Task 015](../../../translation/tasks/completed/015-phase5-installation-skill-discovery-compatibility.md)，worker handoff blob SHA `44e21f48a98e9a79c8c9a0ac6506fde756435e0c`；接受范围与限制见 Checkpoint 09。
+- 已接受任务：[Task 014](../../../translation/tasks/completed/014-phase5-english-tree-language-leakage-review.md)，worker handoff blob SHA `f877b910a27ace9c12834b33b9215f91fb859cc6`；接受范围与限制见 Checkpoint 08。
+- 已接受任务：[Task 015](../../../translation/tasks/completed/015-phase5-installation-skill-discovery-compatibility.md)，worker handoff blob SHA `44e21f48a98e9a79c8c9a0ac6506fde756435e0c`；接受范围与限制见 Checkpoint 09。
 - Task 014 固定证据：`translation/en/` tree `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`（22 blobs，3,491 lines；所有路径 blob SHA 与 tree 一致；recursive listing `truncated: false`）；未发现会妨碍英文阅读者的意外源语言文本。
 - Task 013 固定证据：`translation/en/` tree `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`（22 blobs，recursive listing `truncated: false`）；stage/record-contract gaps、Stage 8 completion omission 与 status-vocabulary discrepancy 均保留为未决发现。
 - Task 015 结果：README 中的安装命令与 Claude marketplace 选择上游 root/source-language skill；English entrypoint 的 15 个引用路径均存在，但其父目录 `en` 与 frontmatter `name: android-mainline-port` 不一致。中文 discovery descriptions 不构成 schema 违规。是否发布独立 English edition 尚待项目级决定。
