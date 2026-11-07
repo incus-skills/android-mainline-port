@@ -22,7 +22,7 @@ This is a documentation-only workflow trace. It is not an actual project takeove
 - Previous accepted operations: Task 008 — entrypoint/navigation integrity; Task 009 — technical-decision workflow; Task 010 — troubleshooting workflow; Task 011 — new-device assessment workflow.
 - Pass 4 / Checkpoint 01: reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-01.md, blob SHA 598722e61e115068af5c90d90dbdf8224dd7c764.
 - Previous Pass 4 / Checkpoint 04: reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-04.md, blob SHA 23e479d0988f0e289650aae718b55a9182cdb11e.
-- Current Pass 4 / Checkpoint 05: reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-05.md, blob SHA ec67e719fb2f973d5e2c4c39dbdbb64d090efcca.
+- Current Pass 4 / Checkpoint 05: reconstruction/zh/continuation/checkpoints/pass-4-checkpoint-05.md, blob SHA bd80287c4db36295b5883ea0153b5fed9f1ebe8a.
 - Pass 3 closure: reconstruction/zh/continuation/checkpoints/pass-3-checkpoint-23.md, blob SHA 2f356c06db43c84e5112c7a23c4bb51240c55563.
 - Phase definitions and Phase 5 criteria: translation/README.md, blob SHA f9bf34ae28e838ae881f9e207797f26c1b327baa.
 - Translation inventory: translation/INVENTORY.md, blob SHA 0a8e58e9a6f45fd54c718672dc8d7a3a9056f7ee.
