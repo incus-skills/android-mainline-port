@@ -31,7 +31,7 @@ The five pinned English files were fetched independently from translation/englis
 - translation/en/references/discipline.md: 078e020ad497e9ec69388ad55c5beeb4677fd22a.
 - translation/en/experience/testing-and-process.md: b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca.
 
-The worker's pinned English tree is ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc. The five independently fetched file blobs match the recorded tree members.
+The worker reports the pinned English tree as ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc. The five pinned file blobs were independently fetched during adjudication and each matched the handoff's recorded blob SHA. The tree object itself was not independently fetched during this adjudication.
 
 The route and workflow were checked directly:
 
