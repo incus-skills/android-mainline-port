@@ -4,12 +4,12 @@
 
 - 当前遍历：**Pass 4 — whole-skill English validation**。
 - 当前项目阶段：**Phase 5 — Whole-skill validation**，依照 `translation/README.md`。
-- 当前会话检查点：**Pass 4 / Checkpoint 08 — Task 008–014 已接受；Task 015 待执行**。
+- 当前会话检查点：**Pass 4 / Checkpoint 09 — Task 008–015 已接受；等待 English distribution intent 决策**。
 - 前一遍历：Pass 3 — 操作性英文翻译的技术与语义审查。
 - 前一遍历完成位置：Pass 3 / Checkpoint 23；`experience/testing-and-process.md` 是最后一份文件级审查文档。
 - Pass 3 已声明的文件级 source-based review exit condition 已达到；这不代表 Phase 5 或整个 skill 已验证。
-- Pass 4 已完成并接受的 worker 操作：Task 008 — entrypoint/navigation integrity（仅结构验证）；Task 009 — Backup and Root Access 技术决策工作流（仅程序连贯性验证）；Task 010 — sparse-image troubleshooting workflow（单一案例的程序连贯性验证）；Task 011 — new-device assessment workflow（Stage 0 程序可重构性验证）；Task 012 — existing-project continuation workflow（项目记录与 process-stage identification 的程序可重构性验证）；Task 013 — cross-document stage/record contract review（固定 English tree 内跨文档程序一致性验证）；Task 014 — English-tree source-language leakage review（固定 English tree 内源语言泄漏检测）。
-- 下一操作：**Task 015 — Phase 5 installation and skill-discovery metadata compatibility review**，检查 README 所述安装路径、根目录/英文入口点、Agent Skills frontmatter 与 Claude Code marketplace/plugin 元数据的兼容性。
+- Pass 4 已完成并接受的 worker 操作：Task 008 — entrypoint/navigation integrity（仅结构验证）；Task 009 — Backup and Root Access 技术决策工作流（仅程序连贯性验证）；Task 010 — sparse-image troubleshooting workflow（单一案例的程序连贯性验证）；Task 011 — new-device assessment workflow（Stage 0 程序可重构性验证）；Task 012 — existing-project continuation workflow（项目记录与 process-stage identification 的程序可重构性验证）；Task 013 — cross-document stage/record contract review（固定 English tree 内跨文档程序一致性验证）；Task 014 — English-tree source-language leakage review（固定 English tree 内源语言泄漏检测）；Task 015 — installation and skill-discovery metadata compatibility review（静态 package/schema/route review）。
+- 下一依赖：**English distribution intent 决策**。Task 015 已接受；在确定该分支是否需要独立可安装的 English edition 前，不准备或派发 package/metadata 修正任务。
 - 当前观察位置：项目级验证英文 skill 的导航、依赖、工作流可用性、一致性，以及安装和 skill-discovery metadata。此位置不是 Pass 3 的延伸。
 - Pass 4 范围与 exit condition：[Pass 4 / Checkpoint 01](checkpoints/pass-4-checkpoint-01.md)，blob SHA `598722e61e115068af5c90d90dbdf8224dd7c764`。
 - Task 008 接受与 Task 009 位置：[Pass 4 / Checkpoint 02](checkpoints/pass-4-checkpoint-02.md)，blob SHA `e2eee68d113988b3aed8a01fb03682fa130aa1f0`。
@@ -18,7 +18,7 @@
 - Task 011 接受与 Task 012 位置：[Pass 4 / Checkpoint 05](checkpoints/pass-4-checkpoint-05.md)，blob SHA `bd80287c4db36295b5883ea0153b5fed9f1ebe8a`。
 - Task 012 接受与 Task 013 位置：[Pass 4 / Checkpoint 06](checkpoints/pass-4-checkpoint-06.md)，blob SHA `c91664de1db8e06af3341292748d5123b92362af`。
 - Task 013 接受与 Task 014 位置：[Pass 4 / Checkpoint 07](checkpoints/pass-4-checkpoint-07.md)，blob SHA `becd598fa8e122e1084b28f29e9da177fde7b723`。
-- Task 014 接受与 Task 015 位置：[Pass 4 / Checkpoint 08](checkpoints/pass-4-checkpoint-08.md)，blob SHA `4767279b7c191608e20ffc52d00d9346c2347229`。
+- Task 014 接受与 Task 015 位置：[Pass 4 / Checkpoint 08](checkpoints/pass-4-checkpoint-08.md)，blob SHA `4767279b7c191608e20ffc52d00d9346c2347229`。\n- Task 015 接受与 distribution-intent 依赖：[Pass 4 / Checkpoint 09](checkpoints/pass-4-checkpoint-09.md)，blob SHA `e7fe1c861c4ebbedc528e891e7d256c8d1e0fa1f`。
 - 前一遍历闭合记录：[Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`。
 - Pass 3 原始范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`。
 - Phase 5 定义：[translation/README.md](../../../translation/README.md)，blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`。
@@ -30,10 +30,10 @@
 - 已接受任务：[Task 011](../../../translation/tasks/completed/011-phase5-new-device-assessment-workflow.md)，worker handoff blob SHA `502f6da88d98fa3f22518b8511b7c3aaf19bacce`；接受范围与限制见 Checkpoint 05。
 - 已接受任务：[Task 012](../../../translation/tasks/completed/012-phase5-project-continuation-workflow.md)，worker handoff blob SHA `d2a86399ab84a22f8d31e198157d3507f64b69ad`；接受范围与限制见 Checkpoint 06。
 - 已接受任务：[Task 013](../../../translation/tasks/completed/013-phase5-cross-document-stage-record-contract.md)，worker handoff blob SHA `d566e425ba34ec7092193d2805876e644597e8f3`；接受范围与限制见 Checkpoint 07。
-- 已接受任务：[Task 014](../../../translation/tasks/completed/014-phase5-english-tree-language-leakage-review.md)，worker handoff blob SHA `f877b910a27ace9c12834b33b9215f91fb859cc6`；接受范围与限制见 Checkpoint 08。
+- 已接受任务：[Task 014](../../../translation/tasks/completed/014-phase5-english-tree-language-leakage-review.md)，worker handoff blob SHA `f877b910a27ace9c12834b33b9215f91fb859cc6`；接受范围与限制见 Checkpoint 08。\n- 已接受任务：[Task 015](../../../translation/tasks/completed/015-phase5-installation-skill-discovery-compatibility.md)，worker handoff blob SHA `44e21f48a98e9a79c8c9a0ac6506fde756435e0c`；接受范围与限制见 Checkpoint 09。
 - Task 014 固定证据：`translation/en/` tree `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`（22 blobs，3,491 lines；所有路径 blob SHA 与 tree 一致；recursive listing `truncated: false`）；未发现会妨碍英文阅读者的意外源语言文本。
 - Task 013 固定证据：`translation/en/` tree `ba8a19206173ccde8fd26b6ae731ca4a0ee8c7cc`（22 blobs，recursive listing `truncated: false`）；stage/record-contract gaps、Stage 8 completion omission 与 status-vocabulary discrepancy 均保留为未决发现。
-- 当前待执行任务：[Task 015](../../../translation/tasks/015-phase5-installation-skill-discovery-compatibility.md)，blob SHA `8c94208505bfbabfa2d077acaa33f52e23f7cb8e`；任务涉及 root `SKILL.md`、`.claude-plugin/marketplace.json`、`README.en.md` 与 `translation/en/SKILL.md`，以及当期 primary specifications。
+- Task 015 结果：README 中的安装命令与 Claude marketplace 选择上游 root/source-language skill；English entrypoint 的 15 个引用路径均存在，但其父目录 `en` 与 frontmatter `name: android-mainline-port` 不一致。中文 discovery descriptions 不构成 schema 违规。是否发布独立 English edition 尚待项目级决定。
 - Task 012 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/process.md` `3e770386533dda9f0b5162043c08e9ffea454467`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`.
 - Task 011 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/process.md` `3e770386533dda9f0b5162043c08e9ffea454467`；`translation/en/references/decisions.md` `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`；`translation/en/experience/testing-and-process.md` `b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca`.
 - Task 010 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/experience/patterns.md` `7309618ad08085bb514b6800a580774f829fe312`；`translation/en/experience/usb-and-storage.md` `7c3225d7a7f8650ce27a345922937cdadcf0cc59`；`translation/en/experience/README.md` `a7a28190615253246749909b380ddcba17268769`.
@@ -58,7 +58,7 @@
 4. 回看 [Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，确认前一遍历的接受范围及明确排除项；不要重开已闭合的文件级翻译审查。
 5. 阅读 `translation/README.md` Phase 5 和 `translation/INVENTORY.md`，区分已完成的 source-based review 与 whole-skill validation。
 6. 阅读 `translation/EXECUTION-SEGMENTATION.md`，按其 evidence-boundary、worker/orchestrator 分工和八字段 handoff 工作；不要把该方案视为已验证，也不要将其中陈旧的嵌入位置段落视为当前状态。
-7. 阅读 [Task 015](../../../translation/tasks/015-phase5-installation-skill-discovery-compatibility.md)，并按任务中 pinned repository revisions 和 primary specifications 建立 worker 证据边界。
+7. 阅读 [Task 015 completed record](../../../translation/tasks/completed/015-phase5-installation-skill-discovery-compatibility.md) 与 [Pass 4 / Checkpoint 09](checkpoints/pass-4-checkpoint-09.md)，确认接受边界及待决 distribution intent；不得据此推断或实施 packaging redesign。
 
 ## Pass 4 约束
 
