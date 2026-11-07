@@ -4,23 +4,25 @@
 
 - 当前遍历：**Pass 4 — whole-skill English validation**。
 - 当前项目阶段：**Phase 5 — Whole-skill validation**，依照 `translation/README.md`。
-- 当前会话检查点：**Pass 4 / Checkpoint 02 — Task 008 已接受；Task 009 待执行**。
+- 当前会话检查点：**Pass 4 / Checkpoint 03 — Task 008、Task 009 已接受；Task 010 待执行**。
 - 前一遍历：Pass 3 — 操作性英文翻译的技术与语义审查。
 - 前一遍历完成位置：Pass 3 / Checkpoint 23；`experience/testing-and-process.md` 是最后一份文件级审查文档。
 - Pass 3 已声明的文件级 source-based review exit condition 已达到；这不代表 Phase 5 或整个 skill 已验证。
-- Pass 4 已完成并接受的 worker 操作：Task 008 — Phase 5 entrypoint and navigation integrity（仅接受入口/导航结构验证）。
-- 下一操作：**Task 009 — Phase 5 representative technical-decision workflow**，沿技术决策入口追踪 `Backup and Root Access` 单一决策记录。
+- Pass 4 已完成并接受的 worker 操作：Task 008 — entrypoint/navigation integrity（仅结构验证）；Task 009 — Backup and Root Access 技术决策工作流（仅程序连贯性验证）。
+- 下一操作：**Task 010 — Phase 5 representative troubleshooting workflow**，沿 troubleshooting 入口追踪 Category D 与 sparse-image 具体案例。
 - 当前观察位置：项目级验证英文 skill 的导航、依赖、工作流可用性、一致性，以及安装和 skill-discovery metadata。此位置不是 Pass 3 的延伸。
 - Pass 4 范围与 exit condition：[Pass 4 / Checkpoint 01](checkpoints/pass-4-checkpoint-01.md)，blob SHA `598722e61e115068af5c90d90dbdf8224dd7c764`。
-- Task 008 接受与下一位置：[Pass 4 / Checkpoint 02](checkpoints/pass-4-checkpoint-02.md)，blob SHA `e2eee68d113988b3aed8a01fb03682fa130aa1f0`.
+- Task 008 接受与 Task 009 位置：[Pass 4 / Checkpoint 02](checkpoints/pass-4-checkpoint-02.md)，blob SHA `e2eee68d113988b3aed8a01fb03682fa130aa1f0`。
+- Task 009 接受与 Task 010 位置：[Pass 4 / Checkpoint 03](checkpoints/pass-4-checkpoint-03.md)，blob SHA `e6b0a752a82d7484b75083ad4a5279bc81342549`。
 - 前一遍历闭合记录：[Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`。
 - Pass 3 原始范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`。
 - Phase 5 定义：[translation/README.md](../../../translation/README.md)，blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`。
 - 翻译清单：[translation/INVENTORY.md](../../../translation/INVENTORY.md)，blob SHA `0a8e58e9a6f45fd54c718672dc8d7a3a9056f7ee`。
 - 执行上下文分段：[Context-segmented execution](../../../translation/EXECUTION-SEGMENTATION.md)，blob SHA `05ee569421b89366bbc0993afe62cb22a0644913`。这是仍待观察效果的执行安排，不改变 Phase 5 的验证标准。
 - 已接受任务：[Task 008](../../../translation/tasks/completed/008-phase5-entrypoint-navigation-integrity.md)，worker handoff blob SHA `3b334e3537cb25dae7faffc0d6778b048d6529e6`；接受范围与限制见 Checkpoint 02。
-- 当前待执行任务：[Task 009](../../../translation/tasks/009-phase5-technical-decision-workflow.md)，blob SHA `63fa9b2262878f96521398b5c6aff156f6175737`。
-- Task 009 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/decisions.md` `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`.
+- 已接受任务：[Task 009](../../../translation/tasks/completed/009-phase5-technical-decision-workflow.md)，worker handoff blob SHA `5662215f0ef445748c3174b1740c0b2efff7018e`；接受范围与限制见 Checkpoint 03。
+- 当前待执行任务：[Task 010](../../../translation/tasks/010-phase5-troubleshooting-workflow.md)，blob SHA `${t.result.sha}`。
+- Task 010 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/experience/patterns.md` `7309618ad08085bb514b6800a580774f829fe312`；`translation/en/experience/usb-and-storage.md` `7c3225d7a7f8650ce27a345922937cdadcf0cc59`；`translation/en/experience/README.md` `a7a28190615253246749909b380ddcba17268769`.
 - 已知未决记录差异：`translation/EXECUTION-SEGMENTATION.md` 的 “Application to the current position” 段仍指向 Pass 3 / Checkpoint 16 / `experience/wireless.md`。当前入口与 active checkpoint 是位置权威；该旧段落不得覆盖它。此问题不阻止 Task 008 或 Task 009，详见 Pass 4 / Checkpoint 01。
 
 ## 遍历编号约定
@@ -35,13 +37,13 @@
 
 ## 本轮入口顺序
 
-1. 阅读本文件，确认 Pass 4 / Checkpoint 02 和当前待执行任务。
-2. 阅读 [Pass 4 / Checkpoint 02](checkpoints/pass-4-checkpoint-02.md)，确认 Task 008 的接受范围与 Task 009 的下一位置。
+1. 阅读本文件，确认 Pass 4 / Checkpoint 03 和当前待执行任务。
+2. 阅读 [Pass 4 / Checkpoint 03](checkpoints/pass-4-checkpoint-03.md)，确认 Task 009 的接受范围与 Task 010 的下一位置。
 3. 阅读 [Pass 4 / Checkpoint 01](checkpoints/pass-4-checkpoint-01.md)，确认新遍历的目的、范围、证据边界与 exit condition。
 4. 回看 [Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，确认前一遍历的接受范围及明确排除项；不要重开已闭合的文件级翻译审查。
 5. 阅读 `translation/README.md` Phase 5 和 `translation/INVENTORY.md`，区分已完成的 source-based review 与 whole-skill validation。
 6. 阅读 `translation/EXECUTION-SEGMENTATION.md`，按其 evidence-boundary、worker/orchestrator 分工和八字段 handoff 工作；不要把该方案视为已验证，也不要将其中陈旧的嵌入位置段落视为当前状态。
-7. 阅读 [Task 009](../../../translation/tasks/009-phase5-technical-decision-workflow.md)，并从其固定 blob revisions 建立 worker 证据边界。
+7. 阅读 [Task 010](../../../translation/tasks/010-phase5-troubleshooting-workflow.md)，并从其固定 blob revisions 建立 worker 证据边界。
 
 ## Pass 4 约束
 
