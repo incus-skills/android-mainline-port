@@ -40,7 +40,7 @@
 - Task 011 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/process.md` `3e770386533dda9f0b5162043c08e9ffea454467`；`translation/en/references/decisions.md` `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`；`translation/en/experience/testing-and-process.md` `b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca`.
 - Task 010 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/experience/patterns.md` `7309618ad08085bb514b6800a580774f829fe312`；`translation/en/experience/usb-and-storage.md` `7c3225d7a7f8650ce27a345922937cdadcf0cc59`；`translation/en/experience/README.md` `a7a28190615253246749909b380ddcba17268769`.
 - Task 012 prepared-blob provenance discrepancy: Checkpoint 05 retains `fe42c5846315b28eada1188b8e333b4d43968cee`, while the current-position record and executed task used `6e11828a95881f56157c8ca6166ce0e35870125b`; Checkpoint 06 records why the latter is the executed revision. Historical Checkpoint 05 remains unchanged.
-- 已知未决记录差异：`translation/EXECUTION-SEGMENTATION.md` 的 “Application to the current position” 段仍指向 Pass 3 / Checkpoint 16 / `experience/wireless.md`。当前入口与 active checkpoint 是位置权威；该旧段落不得覆盖它。另有 Task 013 确认的 stage/record-contract gaps、Stage 8 completion omission 与 status-vocabulary discrepancy；均未在本轮制定或应用修复政策。 Task 014 的 source-language leakage scan 未发现会妨碍英文阅读者的残留；安装与 skill-discovery metadata 仍待 Task 015 验证。
+- 已知未决记录差异：`translation/EXECUTION-SEGMENTATION.md` 的 “Application to the current position” 段仍指向 Pass 3 / Checkpoint 16 / `experience/wireless.md`。当前入口与 active checkpoint 是位置权威；该旧段落不得覆盖它。另有 Task 013 确认的 stage/record-contract gaps、Stage 8 completion omission 与 status-vocabulary discrepancy；均未在本轮制定或应用修复政策。 Task 014 的 source-language leakage scan 未发现会妨碍英文阅读者的残留；Task 015 已完成并接受，结果与未决 distribution intent 见 Checkpoint 09。
 
 ## 遍历编号约定
 
@@ -54,8 +54,8 @@
 
 ## 本轮入口顺序
 
-1. 阅读本文件，确认 Pass 4 / Checkpoint 08 和当前待执行任务。
-2. 阅读 [Pass 4 / Checkpoint 08](checkpoints/pass-4-checkpoint-08.md)，确认 Task 014 的接受范围与 Task 015 的证据边界。
+1. 阅读本文件，确认 Pass 4 / Checkpoint 09 和当前待决的 distribution intent。
+2. 阅读 [Pass 4 / Checkpoint 09](checkpoints/pass-4-checkpoint-09.md)，确认 Task 015 的接受范围与 distribution-intent 依赖。
 3. 阅读 [Pass 4 / Checkpoint 01](checkpoints/pass-4-checkpoint-01.md)，确认新遍历的目的、范围、证据边界与 exit condition。
 4. 回看 [Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，确认前一遍历的接受范围及明确排除项；不要重开已闭合的文件级翻译审查。
 5. 阅读 `translation/README.md` Phase 5 和 `translation/INVENTORY.md`，区分已完成的 source-based review 与 whole-skill validation。
