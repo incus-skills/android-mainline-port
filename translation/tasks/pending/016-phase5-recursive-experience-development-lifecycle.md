@@ -186,3 +186,57 @@ The task now explicitly identifies Checkpoint10 and the current-position blob `a
 ### 4. Current task state
 
 Task016 remains in `translation/tasks/pending/`. The worker's previous session is closed at its prescribed evidence boundary. A fresh worker session may now execute the task against this reconciled packet. Orchestrator acceptance remains pending until a completed handoff is independently reconstructed.
+
+
+---
+
+## Worker execution handoff — Task 016
+
+### 1. Task identity
+- Pass 4 / Phase 5, Task 016 — recursive experience development and upstream contribution lifecycle.
+- Repository: `incus-skills/android-mainline-port`; branch: `translation/english-reconstruction`.
+- Task record at execution start: blob `394ad4dc5946edc27307934d1c95b01b5ab607b6`.
+- Governing position: Pass 4 / Checkpoint 10; current-position blob `aed111416f4b33682fc66deda0af7b61a0a97ef7`; Checkpoint 10 blob `c0ff7fa6eb50c3647d3159deb199c7cf1b6ad41d`.
+- All ten checked ingress, execution-contract, task-evidence and governing-record pins matched before substantive work.
+
+### 2. Observer position
+- Question: can an agent independently reconstruct how use of the English skill generates candidate experiences, how those experiences are retained and consolidated locally, how evidence supports reuse and selection, and how selected improvements may be adapted and proposed upstream without making local continuity dependent on upstream acceptance?
+- Excluded: Chinese-source translation review, external technical validation, packaging or installation changes, metadata, automation, contribution-management tooling, upstream PR creation, and project-level continuity changes.
+
+### 3. Observations
+- `translation/en/SKILL.md` already distinguished a relatively stable outer framework from a growing experience library and directed agents to write new experience back after project completion or problem resolution. It did not explain the full recursive lifecycle or independent local retention.
+- `translation/en/experience/README.md` already supplied a concrete entry format and consolidation rules: search for similar problems, extend an existing entry or create a new one, keep unresolved problems in an `Unresolved` section, and add pitfalls only when the root cause is confirmed. It did not distinguish local capture from validation, selection or upstream contribution.
+- `translation/en/references/discipline.md` supplies the general evidence/provenance discipline, including version information, evidence locations, one-place recording and reconstructable handoffs.
+- `translation/en/experience/testing-and-process.md` includes guidance for reviewing incoming community contributions, but does not define the outgoing experience-to-upstream lifecycle. Neither file required modification for this task.
+- The prior worker stop report and the orchestrator's explicit re-authorization were preserved; the stale current-position pin was replaced in the task packet by the verified Checkpoint 10 pin before this fresh execution.
+
+### 4. Decisions
+- Updated only `translation/en/SKILL.md` and `translation/en/experience/README.md`.
+- Added a concise lifecycle overview and independent-continuity rule to the skill's maintenance section.
+- Added operational detail to the experience library maintenance section: local candidate capture; consolidation against existing entries; unresolved versus confirmed material; evidence, version, scope and applicability retention; separate validation and selection; contextual translation/adaptation; PR as proposal rather than acceptance; local retention regardless of upstream outcome; and feedback after upstream incorporation.
+- Preserved the existing experience-entry format and the existing rule that only confirmed-root-cause problems enter pitfalls entries. Unresolved observations remain in the existing `Unresolved` section; no new schema or contribution record was introduced.
+- Kept ordinary library additions distinct from changes to the outer framework. No universal validation threshold or upstream governance policy was invented.
+- Left `references/discipline.md` and `experience/testing-and-process.md` unchanged because their existing roles did not require additional process or incoming-contribution rules.
+
+### 5. Unresolved matters
+- The repository still does not define quantitative validation or selection thresholds, reviewer/maintainer roles, PR labels/templates, or a contribution-management workflow. These were explicitly left unspecified rather than inferred.
+- No unresolved conflict prevented completion within the permitted documentation scope.
+
+### 6. Validation
+- Re-verified all ten pinned records against the current branch before editing; all matched.
+- Retrieved both changed files after writing and confirmed the additions are present.
+- Reconstructed the full lifecycle from the resulting skill overview and library maintenance instructions, including the distinction between observation, local capture, consolidation, validation, selection, proposal, upstream incorporation and subsequent use.
+- Confirmed local retention is explicitly independent of upstream acceptance, rejection, delay or non-response.
+- Confirmed the existing entry format and unresolved/confirmed-root-cause distinction remain intact.
+- Reviewed the branch comparison from the reconciled worker-stop commit through the documentation changes: the only documentation paths changed are the two authorised English files; the remaining task-record change is this task's orchestrator reconciliation and worker handoff. No unpermitted project files appear in the comparison.
+- No new links or cross-file paths were introduced by the additions; existing references to `experience/README.md` and the `Unresolved` sections follow the existing file conventions.
+
+### 7. Change boundary
+- Modified `translation/en/SKILL.md`: before blob `f613aa7ef89eb9204c4f9804faf7aebace596a4e`; after blob `b8c4e4e8e625552f9fd4dbd44e613f54ef359aec`.
+- Modified `translation/en/experience/README.md`: before blob `a7a28190615253246749909b380ddcba17268769`; after blob `8670ddde09f42af5591f792c626d4028bb53fb14`.
+- Deliberately untouched: `translation/en/references/discipline.md`, `translation/en/experience/testing-and-process.md`, all other English documents, Chinese source files, package metadata/frontmatter, installation instructions, marketplace configuration, translation inventory, checkpoints and current-position records.
+- No automation, templates, metadata schema, PR or contribution-management subsystem was created.
+
+### 8. Next dependency
+- Worker execution and handoff are complete. Move this task record to `translation/tasks/completed/` to mark execution completion.
+- Orchestrator must independently reconstruct and evaluate the two documentation changes and this handoff before acceptance. No orchestrator acceptance or Phase 5 completion is implied.
