@@ -15,7 +15,7 @@
 - Task 008 接受与 Task 009 位置：[Pass 4 / Checkpoint 02](checkpoints/pass-4-checkpoint-02.md)，blob SHA `e2eee68d113988b3aed8a01fb03682fa130aa1f0`。
 - Task 009 接受与 Task 010 位置：[Pass 4 / Checkpoint 03](checkpoints/pass-4-checkpoint-03.md)，blob SHA `e6b0a752a82d7484b75083ad4a5279bc81342549`。
 - Task 010 接受与 Task 011 位置：[Pass 4 / Checkpoint 04](checkpoints/pass-4-checkpoint-04.md)，blob SHA `23e479d0988f0e289650aae718b55a9182cdb11e`。
-- Task 011 接受与 Task 012 位置：[Pass 4 / Checkpoint 05](checkpoints/pass-4-checkpoint-05.md)，blob SHA `a2c0bf6f2fb1d1dd0bc32d33916c7b8c32890172`。
+- Task 011 接受与 Task 012 位置：[Pass 4 / Checkpoint 05](checkpoints/pass-4-checkpoint-05.md)，blob SHA `ec67e719fb2f973d5e2c4c39dbdbb64d090efcca`。
 - 前一遍历闭合记录：[Pass 3 / Checkpoint 23](checkpoints/pass-3-checkpoint-23.md)，blob SHA `2f356c06db43c84e5112c7a23c4bb51240c55563`。
 - Pass 3 原始范围声明：[Pass 3 / Checkpoint 01](checkpoints/pass-3-checkpoint-01.md)，blob SHA `0870d3ea261a6354649379b96891cda4ca2a0ba6`。
 - Phase 5 定义：[translation/README.md](../../../translation/README.md)，blob SHA `f9bf34ae28e838ae881f9e207797f26c1b327baa`。
@@ -25,7 +25,7 @@
 - 已接受任务：[Task 009](../../../translation/tasks/completed/009-phase5-technical-decision-workflow.md)，worker handoff blob SHA `5662215f0ef445748c3174b1740c0b2efff7018e`；接受范围与限制见 Checkpoint 03。
 - 已接受任务：[Task 010](../../../translation/tasks/completed/010-phase5-troubleshooting-workflow.md)，worker handoff blob SHA `0357640e694f52b687d8d20b45270cdba1496cf1`；接受范围与限制见 Checkpoint 04。
 - 已接受任务：[Task 011](../../../translation/tasks/completed/011-phase5-new-device-assessment-workflow.md)，worker handoff blob SHA `502f6da88d98fa3f22518b8511b7c3aaf19bacce`；接受范围与限制见 Checkpoint 05。
-- 当前待执行任务：[Task 012](../../../translation/tasks/012-phase5-project-continuation-workflow.md)，blob SHA `dc2346ad491c55957520e84d970ece0a87c89b03`.
+- 当前待执行任务：[Task 012](../../../translation/tasks/012-phase5-project-continuation-workflow.md)，blob SHA `fe42c5846315b28eada1188b8e333b4d43968cee`.
 - Task 012 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/process.md` `3e770386533dda9f0b5162043c08e9ffea454467`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`.
 - Task 011 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/references/process.md` `3e770386533dda9f0b5162043c08e9ffea454467`；`translation/en/references/decisions.md` `3e63f6f4b54ab987c9e438dbf015d4f7f72d85c9`；`translation/en/references/discipline.md` `078e020ad497e9ec69388ad55c5beeb4677fd22a`；`translation/en/experience/testing-and-process.md` `b78afbf1b3a9f05a6765a51b2241eb56bd5c0eca`.
 - Task 010 固定证据：`translation/en/SKILL.md` `f613aa7ef89eb9204c4f9804faf7aebace596a4e`；`translation/en/experience/patterns.md` `7309618ad08085bb514b6800a580774f829fe312`；`translation/en/experience/usb-and-storage.md` `7c3225d7a7f8650ce27a345922937cdadcf0cc59`；`translation/en/experience/README.md` `a7a28190615253246749909b380ddcba17268769`.
